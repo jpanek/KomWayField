@@ -15,17 +15,17 @@ class KomWayFieldView extends WatchUi.DataField {
     var gpsMissCount = 0;
     var gpsMissCountMax = 5;
 
-
-
     // Layout
-    const TOP_Y_RATIO = 0.18;
+    const TOP_Y_RATIO = 0.17;
     const CENTER_Y_RATIO = 0.50;
-    const BOTTOM_Y_RATIO = 0.87;
+    const BOTTOM_Y_RATIO = 0.90;
 
     // Chevron style
-    const CHEVRON_SIZE = 18.0;
-    const CHEVRON_SPACING = 9.0;
-    const CHEVRON_PEN_WIDTH = 4.0;
+    //const CHEVRON_SIZE = 16.0; // 840
+    const CHEVRON_SIZE = 21.0;
+    const CHEVRON_SPACING = 12.0;
+    //const CHEVRON_PEN_WIDTH = 5.0; // 840
+    const CHEVRON_PEN_WIDTH = 6.0;
     const CHEVRON_HEAD_ANGLE = 2.35619;
 
     // 8-point compass labels
@@ -137,7 +137,7 @@ class KomWayFieldView extends WatchUi.DataField {
 
         // ################################### DEBUG ONLY: ###################################
         /*
-        if (false){
+        if (true){
             getApp().saveLatestCoords({
                 "lat" => 50.103,
                 "lon" => 14.403,
@@ -146,6 +146,7 @@ class KomWayFieldView extends WatchUi.DataField {
             gpsReady = true;
         }
         */
+
         // ################################### DEBUG ONLY: ###################################
 
         if (!(info has :currentHeading) || info.currentHeading == null) {
@@ -176,17 +177,6 @@ class KomWayFieldView extends WatchUi.DataField {
         viewData["WindAngleFrom"] = relativeFrom;
         viewData["WindAngleTo"] = relativeTo;
         viewData["WindAngleToRounded"] = relativeToRounded;
-
-        // debug log:
-        /*
-        System.println(
-            "heading=" + viewData["heading"].toString() +
-            " wd=" + weatherData["wd"].toString() +
-            " rel=" + viewData["WindAngleTo"].toString() +
-            " rounded=" + viewData["WindAngleToRounded"].toString() +
-            " compass=" + viewData["WindCompass"].toString()
-        );
-        */
     }
 
 
@@ -258,7 +248,53 @@ class KomWayFieldView extends WatchUi.DataField {
         var rain = weatherData["rain"] as Lang.Float;
         var weatherTime = weatherData["t"] as Lang.Number;
 
+        /*
         var windStr = windCompass + " " + ws.format("%.0f");
+
+        dc.drawText(
+            centerX,
+            (height * TOP_Y_RATIO).toNumber(),
+            Graphics.FONT_MEDIUM,
+            windStr,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
+        */
+
+        var mainStr = windCompass + " " + ws.format("%.0f");
+        var unitStr = "kmh";
+
+        var mainFont = Graphics.FONT_MEDIUM;
+        var unitFont = Graphics.FONT_XTINY;
+
+        var gap = 4;
+
+        var mainW = dc.getTextWidthInPixels(mainStr, mainFont);
+        var unitW = dc.getTextWidthInPixels(unitStr, unitFont);
+        var totalW = mainW + gap + unitW;
+
+        var baseX = centerX - (totalW / 2);
+        var y = (height * TOP_Y_RATIO).toNumber();
+        var unitY = y - 2;
+
+
+        // large NW + number
+        dc.drawText(
+            baseX,
+            y,
+            mainFont,
+            mainStr,
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
+        );
+
+        // tiny kmh
+        dc.drawText(
+            baseX + mainW + gap,
+            unitY,
+            unitFont,
+            unitStr,
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
+        );
+
 
         var nowEpoch = Time.now().value().toNumber();
         var ageMinutes = ((nowEpoch - weatherTime) / 60).toNumber();
@@ -272,13 +308,7 @@ class KomWayFieldView extends WatchUi.DataField {
             "  R" + rain.format("%.1f") +
             "  " + ageMinutes.format("%d") + "m";
 
-        dc.drawText(
-            centerX,
-            (height * TOP_Y_RATIO).toNumber(),
-            Graphics.FONT_SMALL,
-            windStr,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
-        );
+
 
         if (viewData["WindAngleToRounded"] != null) {
             var relativeToRounded = viewData["WindAngleToRounded"] as Lang.Float;

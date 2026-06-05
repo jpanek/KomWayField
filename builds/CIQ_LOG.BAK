@@ -1,0 +1,20 @@
+
+---
+Error: Unhandled Exception
+Time: 2026-06-05T18:09:48Z
+Part-Number: 006-B4305-00
+Firmware-Version: '30.19'
+Language-Code: eng
+ConnectIQ-API-Version: 6.0.0
+ConnectIQ-Version: 6.0.0
+Filename: KomWayField
+Appname: KomWayField
+Stack: 
+  - pc: 0x10000141
+    File: '/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc'
+    Line: 82
+    Function: startWeatherRefreshNow
+  - pc: 0x1000073c
+    File: '/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc'
+    Line: 123
+    Function: compute

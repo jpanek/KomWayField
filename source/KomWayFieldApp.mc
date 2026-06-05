@@ -79,7 +79,26 @@ class KomWayFieldApp extends Application.AppBase {
 
     function startWeatherRefreshNow() as Void {
         // Function: triggered from View.mc to fire off the background API call in Service.mc
-        Background.registerForTemporalEvent(Time.now());
+        var lastRun = Background.getLastTemporalEventTime();
+
+        try {
+            if (lastRun == null) {
+                Background.registerForTemporalEvent(Time.now());
+                return;
+            }
+
+            var earliestAllowed = lastRun.add(new Time.Duration(5 * 60 + 1));
+            var nowMoment = Time.now();
+
+            if (nowMoment.value() >= earliestAllowed.value()) {
+                Background.registerForTemporalEvent(nowMoment);
+            } else {
+                Background.registerForTemporalEvent(earliestAllowed);
+            }
+
+        } catch(e) {
+            System.println("startWeatherRefreshNow failed: " + e.toString());
+        }
     }
 
     // Getter and Setter of latest weather data

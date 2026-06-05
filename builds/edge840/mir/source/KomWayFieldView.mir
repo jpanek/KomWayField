@@ -59,18 +59,18 @@ class KomWayFieldView extends WatchUi.DataField {
     var gpsMissCount = 0;
     [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 16; @position = 8; @symbol_vardef = [gpsMissCountMax,16,8,23]; ]
     var gpsMissCountMax = 5;
-    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 19; @position = 10; @symbol_constdef = [TOP_Y_RATIO,19,10,21]; ]
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 21; @position = 10; @symbol_constdef = [TOP_Y_RATIO,21,10,21]; ]
     const TOP_Y_RATIO = 0.17;
-    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 20; @position = 10; @symbol_constdef = [CENTER_Y_RATIO,20,10,24]; ]
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 22; @position = 10; @symbol_constdef = [CENTER_Y_RATIO,22,10,24]; ]
     const CENTER_Y_RATIO = 0.50;
-    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 21; @position = 10; @symbol_constdef = [BOTTOM_Y_RATIO,21,10,24]; ]
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 23; @position = 10; @symbol_constdef = [BOTTOM_Y_RATIO,23,10,24]; ]
     const BOTTOM_Y_RATIO = 0.90;
-    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 25; @position = 10; @symbol_constdef = [CHEVRON_SIZE,25,10,22]; ]
-    const CHEVRON_SIZE = 21.0;
-    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 26; @position = 10; @symbol_constdef = [CHEVRON_SPACING,26,10,25]; ]
-    const CHEVRON_SPACING = 12.0;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 26; @position = 10; @symbol_constdef = [CHEVRON_SIZE,26,10,22]; ]
+    const CHEVRON_SIZE = 16.0;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 27; @position = 10; @symbol_constdef = [CHEVRON_SPACING,27,10,25]; ]
+    const CHEVRON_SPACING = 11.0;
     [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 28; @position = 10; @symbol_constdef = [CHEVRON_PEN_WIDTH,28,10,27]; ]
-    const CHEVRON_PEN_WIDTH = 6.0;
+    const CHEVRON_PEN_WIDTH = 5.0;
     [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 29; @position = 10; @symbol_constdef = [CHEVRON_HEAD_ANGLE,29,10,28]; ]
     const CHEVRON_HEAD_ANGLE = 2.35619;
     [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 32; @position = 10; @symbol_constdef = [COMPASS_8,32,10,19]; ]
