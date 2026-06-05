@@ -1,0 +1,1589 @@
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Activity,3,14,22]; ]
+import Toybox.Activity;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Graphics,4,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Lang,5,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Math,6,14,18]; ]
+import Toybox.Math;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [System,7,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [WatchUi,8,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 10; @symbol_classdef = [KomWayFieldView,10,6,21]; @symbol_extends<0> = [WatchUi,10,30,37]; @symbol_extends<1> = [DataField,10,38,47]; ]
+class KomWayFieldView extends WatchUi.DataField {
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 10; ]
+    <init> {
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 32 10 ]
+        %tmp.1 = newa 8;
+        %tmp.2 = "N";
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = "NE";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = "E";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = "SE";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        %tmp.14 = "S";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 4 %tmp.14;
+        %tmp.17 = "SW";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 5 %tmp.17;
+        %tmp.20 = "W";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 6 %tmp.20;
+        %tmp.23 = "NW";
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 7 %tmp.23;
+        putv self :COMPASS_8 %tmp.25;
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 12; @position = 15; @symbol_vardef = [viewData,12,15,23]; @symbol_type<0> = [Lang,12,27,31]; @symbol_type<1> = [Dictionary,12,32,42]; ]
+    protected
+    var viewData as Lang.Dictionary;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 13; @position = 15; @symbol_vardef = [weatherKickoffRequested,13,15,38]; @symbol_type<0> = [Lang,13,42,46]; @symbol_type<1> = [Boolean,13,47,54]; ]
+    protected
+    var weatherKickoffRequested as Lang.Boolean;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 14; @position = 15; @symbol_vardef = [gpsReady,14,15,23]; @symbol_type<0> = [Lang,14,27,31]; @symbol_type<1> = [Boolean,14,32,39]; ]
+    protected
+    var gpsReady as Lang.Boolean;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 15; @position = 8; @symbol_vardef = [gpsMissCount,15,8,20]; ]
+    var gpsMissCount = 0;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 16; @position = 8; @symbol_vardef = [gpsMissCountMax,16,8,23]; ]
+    var gpsMissCountMax = 5;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 21; @position = 10; @symbol_constdef = [TOP_Y_RATIO,21,10,21]; ]
+    const TOP_Y_RATIO = 0.18;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 22; @position = 10; @symbol_constdef = [CENTER_Y_RATIO,22,10,24]; ]
+    const CENTER_Y_RATIO = 0.50;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 23; @position = 10; @symbol_constdef = [BOTTOM_Y_RATIO,23,10,24]; ]
+    const BOTTOM_Y_RATIO = 0.87;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 26; @position = 10; @symbol_constdef = [CHEVRON_SIZE,26,10,22]; ]
+    const CHEVRON_SIZE = 18.0;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 27; @position = 10; @symbol_constdef = [CHEVRON_SPACING,27,10,25]; ]
+    const CHEVRON_SPACING = 9.0;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 28; @position = 10; @symbol_constdef = [CHEVRON_PEN_WIDTH,28,10,27]; ]
+    const CHEVRON_PEN_WIDTH = 4.0;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 29; @position = 10; @symbol_constdef = [CHEVRON_HEAD_ANGLE,29,10,28]; ]
+    const CHEVRON_HEAD_ANGLE = 2.35619;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 32; @position = 10; @symbol_constdef = [COMPASS_8,32,10,19]; ]
+    const COMPASS_8;
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 34; @symbol_functiondef = [initialize,34,13,23]; ]
+    function initialize() as Void {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_34_26_47_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 35 8 ]
+        symbol [ DataField %tmp.2 35 8 17 ];
+        %tmp.2 = getv ? :DataField;
+        symbol [ initialize %tmp.3 35 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 37 8 ]
+        %tmp.4 = false;
+        symbol [ gpsReady ? 37 8 16 ];
+        putv self :gpsReady %tmp.4;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 38 8 ]
+        %tmp.5 = false;
+        symbol [ weatherKickoffRequested ? 38 8 31 ];
+        putv self :weatherKickoffRequested %tmp.5;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 40 8 ]
+        %tmp.6 = newd 5;
+        %tmp.7 = "heading";
+        %tmp.8 = null;
+        %tmp.9 = dup %tmp.6;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.11 = "WindCompass";
+        %tmp.12 = "-";
+        %tmp.13 = dup %tmp.10;
+        %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+        %tmp.15 = "WindAngleFrom";
+        %tmp.16 = null;
+        %tmp.17 = dup %tmp.14;
+        %tmp.18 = aputv %tmp.17 %tmp.15 %tmp.16;
+        %tmp.19 = "WindAngleTo";
+        %tmp.20 = null;
+        %tmp.21 = dup %tmp.18;
+        %tmp.22 = aputv %tmp.21 %tmp.19 %tmp.20;
+        %tmp.23 = "WindAngleToRounded";
+        %tmp.24 = null;
+        %tmp.25 = dup %tmp.22;
+        %tmp.26 = aputv %tmp.25 %tmp.23 %tmp.24;
+        symbol [ viewData ? 40 8 16 ];
+        putv self :viewData %tmp.26;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_34_26_47_4_stop:
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 49; @symbol_functiondef = [onLayout,49,13,21]; @symbol_param<0> = [dc,49,22,24]; @symbol_param<0>_type<0> = [Dc,49,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 57; @symbol_functiondef = [normalizeDeg,57,21,33]; @symbol_param<0> = [angle,57,34,39]; @symbol_param<0>_type<0> = [Lang,57,43,47]; @symbol_param<0>_type<1> = [Float,57,48,53]; @symbol_return<0> = [Lang,57,58,62]; @symbol_return<1> = [Float,57,63,68]; ]
+    private
+    function normalizeDeg(angle as Lang.Float) as Lang.Float {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_57_69_69_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 58 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_57_69_69_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_57_69_69_4_stop" ]
+        %a.1 = local;
+        symbol [ a %a.1 58 12 13 ];
+        %tmp.1 = lgetv %angle;
+        symbol [ angle %tmp.1 58 16 21 ];
+        lputv %a.1 %tmp.1;
+        symbol [ a %a.1 58 12 13 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 60 8 ]
+        while @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_8_62_8_while_test @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_8_62_8_while_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_8_62_8_while_test:
+        %tmp.2 = lgetv %a.1;
+        symbol [ a %tmp.2 60 15 16 ];
+        %tmp.3 = 0.0;
+        %tmp.4 = lt %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_8_62_8_while_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_8_62_8_while_begin:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_24_62_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 61 12 ]
+        %tmp.5 = lgetv %a.1;
+        symbol [ a %tmp.5 61 12 13 ];
+        %tmp.6 = 360.0;
+        %tmp.7 = add %tmp.5 %tmp.6;
+        lputv %a.1 %tmp.7;
+        symbol [ a %a.1 61 12 13 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_24_62_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_8_62_8_while_test;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_60_8_62_8_while_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 64 8 ]
+        while @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_8_66_8_while_test @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_8_66_8_while_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_8_66_8_while_test:
+        %tmp.8 = lgetv %a.1;
+        symbol [ a %tmp.8 64 15 16 ];
+        %tmp.9 = 360.0;
+        %tmp.10 = gte %tmp.8 %tmp.9;
+        bf %tmp.10 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_8_66_8_while_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_8_66_8_while_begin:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_27_66_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 65 12 ]
+        %tmp.11 = lgetv %a.1;
+        symbol [ a %tmp.11 65 12 13 ];
+        %tmp.12 = 360.0;
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        lputv %a.1 %tmp.13;
+        symbol [ a %a.1 65 12 13 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_27_66_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_8_66_8_while_test;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_64_8_66_8_while_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 68 8 ]
+        %tmp.14 = lgetv %a.1;
+        symbol [ a %tmp.14 68 15 16 ];
+        ret %tmp.14;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_57_69_69_4_stop:
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 72; @symbol_functiondef = [roundToNearest45,72,21,37]; @symbol_param<0> = [angle,72,38,43]; @symbol_param<0>_type<0> = [Lang,72,47,51]; @symbol_param<0>_type<1> = [Float,72,52,57]; @symbol_return<0> = [Lang,72,62,66]; @symbol_return<1> = [Float,72,67,72]; ]
+    private
+    function roundToNearest45(angle as Lang.Float) as Lang.Float {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 73 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_stop" ]
+        %normalized.1 = local;
+        symbol [ normalized %normalized.1 73 12 22 ];
+        %tmp.1 = self;
+        symbol [ normalizeDeg %tmp.2 73 25 37 ];
+        %tmp.2 = getv function %tmp.1 :normalizeDeg;
+        %tmp.3 = lgetv %angle;
+        symbol [ angle %tmp.3 73 38 43 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %normalized.1 %tmp.4;
+        symbol [ normalized %normalized.1 73 12 22 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 74 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_stop" ]
+        %roundedStep.2 = local;
+        symbol [ roundedStep %roundedStep.2 74 12 23 ];
+        symbol [ Math %tmp.5 74 26 30 ];
+        %tmp.5 = getm $.Toybox.Math;
+        symbol [ round %tmp.6 74 31 36 ];
+        %tmp.6 = getv function %tmp.5 :round;
+        %tmp.7 = lgetv %normalized.1;
+        symbol [ normalized %tmp.7 74 37 47 ];
+        %tmp.8 = 45.0;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        %tmp.10 = invoke %tmp.5 %tmp.6(%tmp.9);
+        lputv %roundedStep.2 %tmp.10;
+        symbol [ roundedStep %roundedStep.2 74 12 23 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 75 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_stop" ]
+        %roundedAngle.3 = local;
+        symbol [ roundedAngle %roundedAngle.3 75 12 24 ];
+        %tmp.11 = lgetv %roundedStep.2;
+        symbol [ roundedStep %tmp.11 75 27 38 ];
+        symbol [ toFloat %tmp.12 75 39 46 ];
+        %tmp.12 = getv function %tmp.11 :toFloat;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        %tmp.14 = 45.0;
+        %tmp.15 = mul %tmp.13 %tmp.14;
+        lputv %roundedAngle.3 %tmp.15;
+        symbol [ roundedAngle %roundedAngle.3 75 12 24 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 76 8 ]
+        %tmp.16 = self;
+        symbol [ normalizeDeg %tmp.17 76 15 27 ];
+        %tmp.17 = getv function %tmp.16 :normalizeDeg;
+        %tmp.18 = lgetv %roundedAngle.3;
+        symbol [ roundedAngle %tmp.18 76 28 40 ];
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        ret %tmp.19;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_72_73_77_4_stop:
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 80; @symbol_functiondef = [windDirToCompass8,80,21,38]; @symbol_param<0> = [angle,80,39,44]; @symbol_param<0>_type<0> = [Lang,80,48,52]; @symbol_param<0>_type<1> = [Float,80,53,58]; @symbol_return<0> = [Lang,80,63,67]; @symbol_return<1> = [String,80,68,74]; ]
+    private
+    function windDirToCompass8(angle as Lang.Float) as Lang.String {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_80_75_89_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 81 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_80_75_89_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_80_75_89_4_stop" ]
+        %rounded.1 = local;
+        symbol [ rounded %rounded.1 81 12 19 ];
+        %tmp.1 = self;
+        symbol [ roundToNearest45 %tmp.2 81 22 38 ];
+        %tmp.2 = getv function %tmp.1 :roundToNearest45;
+        %tmp.3 = lgetv %angle;
+        symbol [ angle %tmp.3 81 39 44 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %rounded.1 %tmp.4;
+        symbol [ rounded %rounded.1 81 12 19 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 82 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_80_75_89_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_80_75_89_4_stop" ]
+        %index.2 = local;
+        symbol [ index %index.2 82 12 17 ];
+        %tmp.5 = lgetv %rounded.1;
+        symbol [ rounded %tmp.5 82 21 28 ];
+        %tmp.6 = 45.0;
+        %tmp.7 = div %tmp.5 %tmp.6;
+        symbol [ toNumber %tmp.8 82 37 45 ];
+        %tmp.8 = getv function %tmp.7 :toNumber;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        lputv %index.2 %tmp.9;
+        symbol [ index %index.2 82 12 17 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 84 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_84_8_86_8_if_stmt:
+        %tmp.10 = lgetv %index.2;
+        symbol [ index %tmp.10 84 12 17 ];
+        %tmp.11 = 8;
+        %tmp.12 = gte %tmp.10 %tmp.11;
+        bf %tmp.12 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_84_8_86_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_84_8_86_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_84_24_86_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 85 12 ]
+        %tmp.13 = 0;
+        lputv %index.2 %tmp.13;
+        symbol [ index %index.2 85 12 17 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_84_24_86_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_84_8_86_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_84_8_86_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 88 8 ]
+        symbol [ COMPASS_8 %tmp.15 88 15 24 ];
+        %tmp.15 = getv ? :COMPASS_8;
+        %tmp.16 = lgetv %index.2;
+        symbol [ index %tmp.16 88 25 30 ];
+        %tmp.17 = agetv %tmp.15 %tmp.16;
+        ret %tmp.17;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_80_75_89_4_stop:
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 92; @symbol_functiondef = [relativeFlowDegToScreenRad,92,21,47]; @symbol_param<0> = [relativeTo,92,48,58]; @symbol_param<0>_type<0> = [Lang,92,62,66]; @symbol_param<0>_type<1> = [Float,92,67,72]; @symbol_return<0> = [Lang,92,77,81]; @symbol_return<1> = [Float,92,82,87]; ]
+    private
+    function relativeFlowDegToScreenRad(relativeTo as Lang.Float) as Lang.Float {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_92_88_95_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 93 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_92_88_95_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_92_88_95_4_stop" ]
+        %screenDeg.1 = local;
+        symbol [ screenDeg %screenDeg.1 93 12 21 ];
+        %tmp.1 = 90.0;
+        %tmp.2 = lgetv %relativeTo;
+        symbol [ relativeTo %tmp.2 93 31 41 ];
+        %tmp.3 = sub %tmp.1 %tmp.2;
+        lputv %screenDeg.1 %tmp.3;
+        symbol [ screenDeg %screenDeg.1 93 12 21 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 94 8 ]
+        %tmp.4 = self;
+        symbol [ normalizeDeg %tmp.5 94 15 27 ];
+        %tmp.5 = getv function %tmp.4 :normalizeDeg;
+        %tmp.6 = lgetv %screenDeg.1;
+        symbol [ screenDeg %tmp.6 94 28 37 ];
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        symbol [ Math %tmp.8 94 42 46 ];
+        %tmp.8 = getm $.Toybox.Math;
+        symbol [ PI %tmp.9 94 47 49 ];
+        %tmp.9 = getv %tmp.8 :PI;
+        %tmp.10 = 180.0;
+        %tmp.11 = div %tmp.9 %tmp.10;
+        %tmp.12 = mul %tmp.7 %tmp.11;
+        ret %tmp.12;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_92_88_95_4_stop:
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 102; @symbol_functiondef = [compute,102,13,20]; @symbol_param<0> = [info,102,21,25]; @symbol_param<0>_type<0> = [Activity,102,29,37]; @symbol_param<0>_type<1> = [Info,102,38,42]; ]
+    function compute(info as Activity.Info) as Void {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 104 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_stop" ]
+        %weatherData.1 = local;
+        symbol [ weatherData %weatherData.1 104 12 23 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 104 26 32 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ getLatestWeather %tmp.4 104 35 51 ];
+        %tmp.4 = getv function %tmp.3 :getLatestWeather;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        lputv %weatherData.1 %tmp.5;
+        symbol [ weatherData %weatherData.1 104 12 23 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 107 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_8_136_8_if_stmt:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_12_107_67_begin:
+        %tmp.6 = lgetv %info;
+        symbol [ info %tmp.6 107 13 17 ];
+        %tmp.8 = const :currentLocation;
+        symbol [ currentLocation %tmp.8 107 23 38 const ];
+        %tmp.9 = canhazplz %tmp.6 %tmp.8;
+        bf %tmp.9 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_8_136_8_if_else_false;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_43_107_67_true:
+        %tmp.10 = lgetv %info;
+        symbol [ info %tmp.10 107 43 47 ];
+        %tmp.11 = as %tmp.10 { (interface { var currentLocation; }) };
+        symbol [ currentLocation %tmp.12 107 48 63 ];
+        %tmp.12 = getv %tmp.11 :currentLocation;
+        %tmp.13 = null;
+        %tmp.14 = ne %tmp.12 %tmp.13;
+        push %tmp.14;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_43_107_67_end:
+        %tmp.15 = phi [%tmp.9 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_12_107_67_begin] [%tmp.14 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_43_107_67_true] [%tmp.15 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_43_107_67_end];
+        bf %tmp.15 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_8_136_8_if_else_false;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_8_136_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_73_131_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 108 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_73_131_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_73_131_8_stop" ]
+        %pos.2 = local;
+        symbol [ pos %pos.2 108 16 19 ];
+        %tmp.16 = lgetv %info;
+        symbol [ info %tmp.16 108 22 26 ];
+        %tmp.17 = as %tmp.16 { (interface { var currentLocation; }) };
+        symbol [ currentLocation %tmp.18 108 27 42 ];
+        %tmp.18 = getv %tmp.17 :currentLocation;
+        symbol [ toDegrees %tmp.19 108 43 52 ];
+        %tmp.19 = getv function %tmp.18 :toDegrees;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %pos.2 %tmp.20;
+        symbol [ pos %pos.2 108 16 19 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 110 12 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_stmt:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_16_110_56_begin:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_16_110_41_begin:
+        %tmp.21 = lgetv %pos.2;
+        symbol [ pos %tmp.21 110 16 19 ];
+        %tmp.22 = null;
+        %tmp.23 = ne %tmp.21 %tmp.22;
+        bf %tmp.23 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_else_false;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_31_110_41_true:
+        %tmp.24 = lgetv %pos.2;
+        symbol [ pos %tmp.24 110 31 34 ];
+        %tmp.25 = as %tmp.24 { (!Null) };
+        %tmp.26 = 0;
+        %tmp.27 = agetv %tmp.25 %tmp.26;
+        %tmp.28 = 0;
+        %tmp.29 = ne %tmp.27 %tmp.28;
+        push %tmp.29;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_31_110_41_end:
+        %tmp.30 = phi [%tmp.23 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_16_110_41_begin] [%tmp.29 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_31_110_41_true] [%tmp.30 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_31_110_41_end];
+        bf %tmp.30 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_else_false;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_46_110_56_true:
+        %tmp.31 = lgetv %pos.2;
+        symbol [ pos %tmp.31 110 46 49 ];
+        %tmp.32 = as %tmp.31 { (!Null) };
+        %tmp.33 = 1;
+        %tmp.34 = agetv %tmp.32 %tmp.33;
+        %tmp.35 = 0;
+        %tmp.36 = ne %tmp.34 %tmp.35;
+        push %tmp.36;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_46_110_56_end:
+        %tmp.37 = phi [%tmp.30 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_16_110_56_begin] [%tmp.36 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_46_110_56_true] [%tmp.37 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_46_110_56_end];
+        bf %tmp.37 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_else_false;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_59_124_12_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 111 16 ]
+        %tmp.38 = 0;
+        symbol [ gpsMissCount ? 111 16 28 ];
+        putv self :gpsMissCount %tmp.38;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 112 16 ]
+        %tmp.39 = true;
+        symbol [ gpsReady ? 112 16 24 ];
+        putv self :gpsReady %tmp.39;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 114 16 ]
+        %tmp.40 = self;
+        symbol [ getApp %tmp.41 114 16 22 ];
+        %tmp.41 = getv function %tmp.40 :getApp;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        symbol [ saveLatestCoords %tmp.43 114 25 41 ];
+        %tmp.43 = getv function %tmp.42 :saveLatestCoords;
+        %tmp.44 = newd 3;
+        %tmp.45 = "lat";
+        %tmp.46 = lgetv %pos.2;
+        symbol [ pos %tmp.46 115 29 32 ];
+        %tmp.47 = as %tmp.46 { (!Null) };
+        %tmp.48 = 0;
+        %tmp.49 = agetv %tmp.47 %tmp.48;
+        %tmp.50 = dup %tmp.44;
+        %tmp.51 = aputv %tmp.50 %tmp.45 %tmp.49;
+        %tmp.52 = "lon";
+        %tmp.53 = lgetv %pos.2;
+        symbol [ pos %tmp.53 116 29 32 ];
+        %tmp.54 = as %tmp.53 { (!Null) };
+        %tmp.55 = 1;
+        %tmp.56 = agetv %tmp.54 %tmp.55;
+        %tmp.57 = dup %tmp.51;
+        %tmp.58 = aputv %tmp.57 %tmp.52 %tmp.56;
+        %tmp.59 = "source";
+        %tmp.60 = "activity";
+        %tmp.61 = dup %tmp.58;
+        %tmp.62 = aputv %tmp.61 %tmp.59 %tmp.60;
+        invoke %tmp.42 %tmp.43(%tmp.62);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 120 16 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_120_16_123_16_if_stmt:
+        symbol [ weatherKickoffRequested %tmp.64 120 21 44 ];
+        %tmp.64 = getv ? :weatherKickoffRequested;
+        %tmp.65 = not %tmp.64;
+        bf %tmp.65 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_120_16_123_16_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_120_16_123_16_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_120_46_123_16_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 121 20 ]
+        %tmp.66 = self;
+        symbol [ getApp %tmp.67 121 20 26 ];
+        %tmp.67 = getv function %tmp.66 :getApp;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        symbol [ startWeatherRefreshNow %tmp.69 121 29 51 ];
+        %tmp.69 = getv function %tmp.68 :startWeatherRefreshNow;
+        invoke %tmp.68 %tmp.69();
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 122 20 ]
+        %tmp.70 = true;
+        symbol [ weatherKickoffRequested ? 122 20 43 ];
+        putv self :weatherKickoffRequested %tmp.70;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_120_46_123_16_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_120_16_123_16_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_120_16_123_16_if_end:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_59_124_12_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_else_false:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_124_19_129_12_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 125 16 ]
+        symbol [ gpsMissCount %tmp.71 125 16 28 ];
+        %tmp.71 = getv self :gpsMissCount;
+        %tmp.72 = 1;
+        %tmp.73 = add %tmp.71 %tmp.72;
+        symbol [ gpsMissCount ? 125 16 28 ];
+        putv self :gpsMissCount dup %tmp.73;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 126 16 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_126_16_128_16_if_stmt:
+        symbol [ gpsMissCount %tmp.75 126 20 32 ];
+        %tmp.75 = getv ? :gpsMissCount;
+        symbol [ gpsMissCountMax %tmp.77 126 36 51 ];
+        %tmp.77 = getv ? :gpsMissCountMax;
+        %tmp.78 = gte %tmp.75 %tmp.77;
+        bf %tmp.78 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_126_16_128_16_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_126_16_128_16_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_126_53_128_16_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 127 20 ]
+        %tmp.79 = false;
+        symbol [ gpsReady ? 127 20 28 ];
+        putv self :gpsReady %tmp.79;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_126_53_128_16_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_126_16_128_16_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_126_16_128_16_if_end:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_124_19_129_12_stop:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_110_12_129_12_if_end:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_73_131_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_8_136_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_8_136_8_if_else_false:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_131_15_136_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 132 12 ]
+        symbol [ gpsMissCount %tmp.80 132 12 24 ];
+        %tmp.80 = getv self :gpsMissCount;
+        %tmp.81 = 1;
+        %tmp.82 = add %tmp.80 %tmp.81;
+        symbol [ gpsMissCount ? 132 12 24 ];
+        putv self :gpsMissCount dup %tmp.82;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 133 12 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_133_12_135_12_if_stmt:
+        symbol [ gpsMissCount %tmp.84 133 16 28 ];
+        %tmp.84 = getv ? :gpsMissCount;
+        symbol [ gpsMissCountMax %tmp.86 133 32 47 ];
+        %tmp.86 = getv ? :gpsMissCountMax;
+        %tmp.87 = gte %tmp.84 %tmp.86;
+        bf %tmp.87 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_133_12_135_12_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_133_12_135_12_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_133_49_135_12_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 134 16 ]
+        %tmp.88 = false;
+        symbol [ gpsReady ? 134 16 24 ];
+        putv self :gpsReady %tmp.88;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_133_49_135_12_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_133_12_135_12_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_133_12_135_12_if_end:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_131_15_136_8_stop:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_107_8_136_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 151 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_8_158_8_if_stmt:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_12_151_66_begin:
+        %tmp.89 = lgetv %info;
+        symbol [ info %tmp.89 151 14 18 ];
+        %tmp.91 = const :currentHeading;
+        symbol [ currentHeading %tmp.91 151 24 38 const ];
+        %tmp.92 = canhazplz %tmp.89 %tmp.91;
+        %tmp.93 = not %tmp.92;
+        bt %tmp.93 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_8_158_8_if_true;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_43_151_66_false:
+        %tmp.94 = lgetv %info;
+        symbol [ info %tmp.94 151 43 47 ];
+        %tmp.95 = as %tmp.94 { (interface { var currentHeading; }) };
+        symbol [ currentHeading %tmp.96 151 48 62 ];
+        %tmp.96 = getv %tmp.95 :currentHeading;
+        %tmp.97 = null;
+        %tmp.98 = eq %tmp.96 %tmp.97;
+        push %tmp.98;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_43_151_66_end:
+        %tmp.99 = phi [%tmp.93 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_12_151_66_begin] [%tmp.98 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_43_151_66_false] [%tmp.99 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_43_151_66_end];
+        bf %tmp.99 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_8_158_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_8_158_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_72_158_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 152 12 ]
+        symbol [ viewData %tmp.100 152 12 20 ];
+        %tmp.100 = getv self :viewData;
+        %tmp.101 = null;
+        %tmp.102 = "heading";
+        aputv %tmp.100 %tmp.102 %tmp.101;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 153 12 ]
+        symbol [ viewData %tmp.103 153 12 20 ];
+        %tmp.103 = getv self :viewData;
+        %tmp.104 = null;
+        %tmp.105 = "WindAngleFrom";
+        aputv %tmp.103 %tmp.105 %tmp.104;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 154 12 ]
+        symbol [ viewData %tmp.106 154 12 20 ];
+        %tmp.106 = getv self :viewData;
+        %tmp.107 = null;
+        %tmp.108 = "WindAngleTo";
+        aputv %tmp.106 %tmp.108 %tmp.107;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 155 12 ]
+        symbol [ viewData %tmp.109 155 12 20 ];
+        %tmp.109 = getv self :viewData;
+        %tmp.110 = null;
+        %tmp.111 = "WindAngleToRounded";
+        aputv %tmp.109 %tmp.111 %tmp.110;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 156 12 ]
+        symbol [ viewData %tmp.112 156 12 20 ];
+        %tmp.112 = getv self :viewData;
+        %tmp.113 = "-";
+        %tmp.114 = "WindCompass";
+        aputv %tmp.112 %tmp.114 %tmp.113;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 157 12 ]
+        ret ?;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_72_158_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_8_158_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_151_8_158_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 160 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_stop" ]
+        %headingDeg.3 = local;
+        symbol [ headingDeg %headingDeg.3 160 12 22 ];
+        %tmp.115 = self;
+        symbol [ normalizeDeg %tmp.116 160 25 37 ];
+        %tmp.116 = getv function %tmp.115 :normalizeDeg;
+        symbol [ Math %tmp.117 160 38 42 ];
+        %tmp.117 = getm $.Toybox.Math;
+        symbol [ toDegrees %tmp.118 160 43 52 ];
+        %tmp.118 = getv function %tmp.117 :toDegrees;
+        %tmp.119 = lgetv %info;
+        symbol [ info %tmp.119 160 53 57 ];
+        symbol [ currentHeading %tmp.120 160 58 72 ];
+        %tmp.120 = getv %tmp.119 :currentHeading;
+        %tmp.121 = invoke %tmp.117 %tmp.118(%tmp.120);
+        %tmp.122 = invoke %tmp.115 %tmp.116(%tmp.121);
+        lputv %headingDeg.3 %tmp.122;
+        symbol [ headingDeg %headingDeg.3 160 12 22 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 161 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_stop" ]
+        %windDir.4 = local;
+        symbol [ windDir %windDir.4 161 12 19 ];
+        %tmp.123 = lgetv %weatherData.1;
+        symbol [ weatherData %tmp.123 161 22 33 ];
+        %tmp.124 = "wd";
+        %tmp.125 = agetv %tmp.123 %tmp.124;
+        %tmp.126 = as %tmp.125 Lang.Float;
+        symbol [ Lang %tmp.126 161 43 47 ];
+        symbol [ Float %tmp.126 161 48 53 ];
+        lputv %windDir.4 %tmp.126;
+        symbol [ windDir %windDir.4 161 12 19 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 163 8 ]
+        symbol [ viewData %tmp.127 163 8 16 ];
+        %tmp.127 = getv self :viewData;
+        %tmp.128 = lgetv %headingDeg.3;
+        symbol [ headingDeg %tmp.128 163 30 40 ];
+        %tmp.129 = "heading";
+        aputv %tmp.127 %tmp.129 %tmp.128;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 164 8 ]
+        symbol [ viewData %tmp.130 164 8 16 ];
+        %tmp.130 = getv self :viewData;
+        %tmp.131 = self;
+        symbol [ windDirToCompass8 %tmp.132 164 34 51 ];
+        %tmp.132 = getv function %tmp.131 :windDirToCompass8;
+        %tmp.133 = lgetv %windDir.4;
+        symbol [ windDir %tmp.133 164 52 59 ];
+        %tmp.134 = invoke %tmp.131 %tmp.132(%tmp.133);
+        %tmp.135 = "WindCompass";
+        aputv %tmp.130 %tmp.135 %tmp.134;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 168 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_stop" ]
+        %relativeFrom.5 = local;
+        symbol [ relativeFrom %relativeFrom.5 168 12 24 ];
+        %tmp.136 = self;
+        symbol [ normalizeDeg %tmp.137 168 27 39 ];
+        %tmp.137 = getv function %tmp.136 :normalizeDeg;
+        %tmp.138 = lgetv %windDir.4;
+        symbol [ windDir %tmp.138 168 40 47 ];
+        %tmp.139 = lgetv %headingDeg.3;
+        symbol [ headingDeg %tmp.139 168 50 60 ];
+        %tmp.140 = sub %tmp.138 %tmp.139;
+        %tmp.141 = invoke %tmp.136 %tmp.137(%tmp.140);
+        lputv %relativeFrom.5 %tmp.141;
+        symbol [ relativeFrom %relativeFrom.5 168 12 24 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 171 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_stop" ]
+        %relativeTo.6 = local;
+        symbol [ relativeTo %relativeTo.6 171 12 22 ];
+        %tmp.142 = self;
+        symbol [ normalizeDeg %tmp.143 171 25 37 ];
+        %tmp.143 = getv function %tmp.142 :normalizeDeg;
+        %tmp.144 = lgetv %relativeFrom.5;
+        symbol [ relativeFrom %tmp.144 171 38 50 ];
+        %tmp.145 = 180.0;
+        %tmp.146 = add %tmp.144 %tmp.145;
+        %tmp.147 = invoke %tmp.142 %tmp.143(%tmp.146);
+        lputv %relativeTo.6 %tmp.147;
+        symbol [ relativeTo %relativeTo.6 171 12 22 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 174 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_stop" ]
+        %relativeToRounded.7 = local;
+        symbol [ relativeToRounded %relativeToRounded.7 174 12 29 ];
+        %tmp.148 = self;
+        symbol [ roundToNearest45 %tmp.149 174 32 48 ];
+        %tmp.149 = getv function %tmp.148 :roundToNearest45;
+        %tmp.150 = lgetv %relativeTo.6;
+        symbol [ relativeTo %tmp.150 174 49 59 ];
+        %tmp.151 = invoke %tmp.148 %tmp.149(%tmp.150);
+        lputv %relativeToRounded.7 %tmp.151;
+        symbol [ relativeToRounded %relativeToRounded.7 174 12 29 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 176 8 ]
+        symbol [ viewData %tmp.152 176 8 16 ];
+        %tmp.152 = getv self :viewData;
+        %tmp.153 = lgetv %relativeFrom.5;
+        symbol [ relativeFrom %tmp.153 176 36 48 ];
+        %tmp.154 = "WindAngleFrom";
+        aputv %tmp.152 %tmp.154 %tmp.153;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 177 8 ]
+        symbol [ viewData %tmp.155 177 8 16 ];
+        %tmp.155 = getv self :viewData;
+        %tmp.156 = lgetv %relativeTo.6;
+        symbol [ relativeTo %tmp.156 177 34 44 ];
+        %tmp.157 = "WindAngleTo";
+        aputv %tmp.155 %tmp.157 %tmp.156;
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 178 8 ]
+        symbol [ viewData %tmp.158 178 8 16 ];
+        %tmp.158 = getv self :viewData;
+        %tmp.159 = lgetv %relativeToRounded.7;
+        symbol [ relativeToRounded %tmp.159 178 41 58 ];
+        %tmp.160 = "WindAngleToRounded";
+        aputv %tmp.158 %tmp.160 %tmp.159;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_102_52_190_4_stop:
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 196; @symbol_functiondef = [onUpdate,196,13,21]; @symbol_param<0> = [dc,196,22,24]; @symbol_param<0>_type<0> = [Dc,196,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 197 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %weatherData.1 = local;
+        symbol [ weatherData %weatherData.1 197 12 23 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 197 26 32 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ getLatestWeather %tmp.4 197 35 51 ];
+        %tmp.4 = getv function %tmp.3 :getLatestWeather;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        lputv %weatherData.1 %tmp.5;
+        symbol [ weatherData %weatherData.1 197 12 23 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 199 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %width.2 = local;
+        symbol [ width %width.2 199 12 17 ];
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 199 20 22 ];
+        symbol [ getWidth %tmp.7 199 23 31 ];
+        %tmp.7 = getv function %tmp.6 :getWidth;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %width.2 %tmp.8;
+        symbol [ width %width.2 199 12 17 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 200 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %height.3 = local;
+        symbol [ height %height.3 200 12 18 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 200 21 23 ];
+        symbol [ getHeight %tmp.10 200 24 33 ];
+        %tmp.10 = getv function %tmp.9 :getHeight;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %height.3 %tmp.11;
+        symbol [ height %height.3 200 12 18 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 201 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %centerX.4 = local;
+        symbol [ centerX %centerX.4 201 12 19 ];
+        %tmp.12 = lgetv %width.2;
+        symbol [ width %tmp.12 201 23 28 ];
+        %tmp.13 = 2;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        symbol [ toNumber %tmp.15 201 34 42 ];
+        %tmp.15 = getv function %tmp.14 :toNumber;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %centerX.4 %tmp.16;
+        symbol [ centerX %centerX.4 201 12 19 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 203 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %bgColor.5 = local;
+        symbol [ bgColor %bgColor.5 203 12 19 ];
+        %tmp.17 = self;
+        symbol [ getBackgroundColor %tmp.18 203 22 40 ];
+        %tmp.18 = getv function %tmp.17 :getBackgroundColor;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        lputv %bgColor.5 %tmp.19;
+        symbol [ bgColor %bgColor.5 203 12 19 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 204 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %textColor.6 = local;
+        symbol [ textColor %textColor.6 204 12 21 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_begin:
+        %tmp.20 = lgetv %bgColor.5;
+        symbol [ bgColor %tmp.20 204 25 32 ];
+        symbol [ Graphics %tmp.21 204 36 44 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.22 204 45 56 ];
+        %tmp.22 = getv %tmp.21 :COLOR_BLACK;
+        %tmp.23 = eq %tmp.20 %tmp.22;
+        bf %tmp.23 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_else_false;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_true:
+        symbol [ Graphics %tmp.24 204 60 68 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.25 204 69 80 ];
+        %tmp.25 = getv %tmp.24 :COLOR_WHITE;
+        push %tmp.25;
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_else_false:
+        symbol [ Graphics %tmp.26 204 83 91 ];
+        %tmp.26 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.27 204 92 103 ];
+        %tmp.27 = getv %tmp.26 :COLOR_BLACK;
+        push %tmp.27;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_end:
+        %tmp.28 = phi [%tmp.23 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_begin] [%tmp.25 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_true] [%tmp.27 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_else_false] [%tmp.28 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_204_24_204_92_end];
+        lputv %textColor.6 %tmp.28;
+        symbol [ textColor %textColor.6 204 12 21 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 206 8 ]
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 206 8 10 ];
+        symbol [ setColor %tmp.30 206 11 19 ];
+        %tmp.30 = getv function %tmp.29 :setColor;
+        %tmp.31 = lgetv %bgColor.5;
+        symbol [ bgColor %tmp.31 206 20 27 ];
+        %tmp.32 = lgetv %bgColor.5;
+        symbol [ bgColor %tmp.32 206 29 36 ];
+        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 207 8 ]
+        %tmp.33 = lgetv %dc;
+        symbol [ dc %tmp.33 207 8 10 ];
+        symbol [ clear %tmp.34 207 11 16 ];
+        %tmp.34 = getv function %tmp.33 :clear;
+        invoke %tmp.33 %tmp.34();
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 209 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 209 8 10 ];
+        symbol [ setColor %tmp.36 209 11 19 ];
+        %tmp.36 = getv function %tmp.35 :setColor;
+        %tmp.37 = lgetv %textColor.6;
+        symbol [ textColor %tmp.37 209 20 29 ];
+        symbol [ Graphics %tmp.38 209 31 39 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.39 209 40 57 ];
+        %tmp.39 = getv %tmp.38 :COLOR_TRANSPARENT;
+        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.39);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 212 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %tempObj.7 = local;
+        symbol [ tempObj %tempObj.7 212 12 19 ];
+        %tmp.40 = lgetv %weatherData.1;
+        symbol [ weatherData %tmp.40 212 22 33 ];
+        %tmp.41 = "temp";
+        %tmp.42 = agetv %tmp.40 %tmp.41;
+        lputv %tempObj.7 %tmp.42;
+        symbol [ tempObj %tempObj.7 212 12 19 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 213 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %weatherReady.8 = local;
+        symbol [ weatherReady %weatherReady.8 213 12 24 ];
+        %tmp.43 = false;
+        lputv %weatherReady.8 %tmp.43;
+        symbol [ weatherReady %weatherReady.8 213 12 24 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 215 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_8_220_8_if_stmt:
+        %tmp.44 = lgetv %tempObj.7;
+        symbol [ tempObj %tmp.44 215 12 19 ];
+        %tmp.45 = null;
+        %tmp.46 = ne %tmp.44 %tmp.45;
+        bf %tmp.46 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_8_220_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_8_220_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_29_220_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 216 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_29_220_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_29_220_8_stop" ]
+        %tempVal.9 = local;
+        symbol [ tempVal %tempVal.9 216 16 23 ];
+        %tmp.47 = lgetv %tempObj.7;
+        symbol [ tempObj %tmp.47 216 26 33 ];
+        %tmp.48 = as %tmp.47 { (!Null) };
+        %tmp.49 = as %tmp.48 Lang.Float;
+        symbol [ Lang %tmp.49 216 37 41 ];
+        symbol [ Float %tmp.49 216 42 47 ];
+        lputv %tempVal.9 %tmp.49;
+        symbol [ tempVal %tempVal.9 216 16 23 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 217 12 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_12_219_12_if_stmt:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_16_217_46_begin:
+        %tmp.50 = lgetv %tempVal.9;
+        symbol [ tempVal %tmp.50 217 16 23 ];
+        %tmp.51 = null;
+        %tmp.52 = ne %tmp.50 %tmp.51;
+        bf %tmp.52 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_12_219_12_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_35_217_46_true:
+        %tmp.53 = lgetv %tempVal.9;
+        symbol [ tempVal %tmp.53 217 35 42 ];
+        %tmp.54 = as %tmp.53 { (!Null) };
+        %tmp.55 = -999.0;
+        %tmp.56 = gt %tmp.54 %tmp.55;
+        push %tmp.56;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_35_217_46_end:
+        %tmp.57 = phi [%tmp.52 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_16_217_46_begin] [%tmp.56 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_35_217_46_true] [%tmp.57 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_35_217_46_end];
+        bf %tmp.57 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_12_219_12_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_12_219_12_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_53_219_12_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 218 16 ]
+        %tmp.58 = true;
+        lputv %weatherReady.8 %tmp.58;
+        symbol [ weatherReady %weatherReady.8 218 16 28 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_53_219_12_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_12_219_12_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_217_12_219_12_if_end:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_29_220_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_8_220_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_215_8_220_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 223 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_223_8_232_8_if_stmt:
+        symbol [ gpsReady %tmp.60 223 13 21 ];
+        %tmp.60 = getv ? :gpsReady;
+        %tmp.61 = not %tmp.60;
+        bf %tmp.61 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_223_8_232_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_223_8_232_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_223_23_232_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 224 12 ]
+        %tmp.62 = lgetv %dc;
+        symbol [ dc %tmp.62 224 12 14 ];
+        symbol [ drawText %tmp.63 224 15 23 ];
+        %tmp.63 = getv function %tmp.62 :drawText;
+        %tmp.64 = lgetv %centerX.4;
+        symbol [ centerX %tmp.64 225 16 23 ];
+        %tmp.65 = lgetv %height.3;
+        symbol [ height %tmp.65 226 17 23 ];
+        %tmp.66 = 2;
+        %tmp.67 = div %tmp.65 %tmp.66;
+        symbol [ toNumber %tmp.68 226 29 37 ];
+        %tmp.68 = getv function %tmp.67 :toNumber;
+        %tmp.69 = invoke %tmp.67 %tmp.68();
+        symbol [ Graphics %tmp.70 227 16 24 ];
+        %tmp.70 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.71 227 25 34 ];
+        %tmp.71 = getv %tmp.70 :FONT_TINY;
+        %tmp.72 = "Waiting for GPS";
+        symbol [ Graphics %tmp.73 229 16 24 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.74 229 25 44 ];
+        %tmp.74 = getv %tmp.73 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.75 229 47 55 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.76 229 56 76 ];
+        %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_VCENTER;
+        %tmp.77 = bitor %tmp.74 %tmp.76;
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.69, %tmp.71, %tmp.72, %tmp.77);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 231 12 ]
+        ret ?;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_223_23_232_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_223_8_232_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_223_8_232_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 239 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_239_8_248_8_if_stmt:
+        %tmp.78 = lgetv %weatherReady.8;
+        symbol [ weatherReady %tmp.78 239 13 25 ];
+        %tmp.79 = not %tmp.78;
+        bf %tmp.79 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_239_8_248_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_239_8_248_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_239_27_248_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 240 12 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 240 12 14 ];
+        symbol [ drawText %tmp.81 240 15 23 ];
+        %tmp.81 = getv function %tmp.80 :drawText;
+        %tmp.82 = lgetv %centerX.4;
+        symbol [ centerX %tmp.82 241 16 23 ];
+        %tmp.83 = lgetv %height.3;
+        symbol [ height %tmp.83 242 17 23 ];
+        %tmp.84 = 2;
+        %tmp.85 = div %tmp.83 %tmp.84;
+        symbol [ toNumber %tmp.86 242 30 38 ];
+        %tmp.86 = getv function %tmp.85 :toNumber;
+        %tmp.87 = invoke %tmp.85 %tmp.86();
+        symbol [ Graphics %tmp.88 243 16 24 ];
+        %tmp.88 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.89 243 25 34 ];
+        %tmp.89 = getv %tmp.88 :FONT_TINY;
+        %tmp.90 = "Loading weather";
+        symbol [ Graphics %tmp.91 245 16 24 ];
+        %tmp.91 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.92 245 25 44 ];
+        %tmp.92 = getv %tmp.91 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.93 245 47 55 ];
+        %tmp.93 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.94 245 56 76 ];
+        %tmp.94 = getv %tmp.93 :TEXT_JUSTIFY_VCENTER;
+        %tmp.95 = bitor %tmp.92 %tmp.94;
+        invoke %tmp.80 %tmp.81(%tmp.82, %tmp.87, %tmp.89, %tmp.90, %tmp.95);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 247 12 ]
+        ret ?;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_239_27_248_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_239_8_248_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_239_8_248_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 254 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %windCompass.10 = local;
+        symbol [ windCompass %windCompass.10 254 12 23 ];
+        symbol [ viewData %tmp.97 254 26 34 ];
+        %tmp.97 = getv ? :viewData;
+        %tmp.98 = "WindCompass";
+        %tmp.99 = agetv %tmp.97 %tmp.98;
+        %tmp.100 = as %tmp.99 Lang.String;
+        symbol [ Lang %tmp.100 254 53 57 ];
+        symbol [ String %tmp.100 254 58 64 ];
+        lputv %windCompass.10 %tmp.100;
+        symbol [ windCompass %windCompass.10 254 12 23 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 255 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %ws.11 = local;
+        symbol [ ws %ws.11 255 12 14 ];
+        %tmp.101 = lgetv %weatherData.1;
+        symbol [ weatherData %tmp.101 255 17 28 ];
+        %tmp.102 = "ws";
+        %tmp.103 = agetv %tmp.101 %tmp.102;
+        %tmp.104 = as %tmp.103 Lang.Float;
+        symbol [ Lang %tmp.104 255 38 42 ];
+        symbol [ Float %tmp.104 255 43 48 ];
+        lputv %ws.11 %tmp.104;
+        symbol [ ws %ws.11 255 12 14 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 256 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %wg.12 = local;
+        symbol [ wg %wg.12 256 12 14 ];
+        %tmp.105 = lgetv %weatherData.1;
+        symbol [ weatherData %tmp.105 256 17 28 ];
+        %tmp.106 = "wg";
+        %tmp.107 = agetv %tmp.105 %tmp.106;
+        %tmp.108 = as %tmp.107 Lang.Float;
+        symbol [ Lang %tmp.108 256 38 42 ];
+        symbol [ Float %tmp.108 256 43 48 ];
+        lputv %wg.12 %tmp.108;
+        symbol [ wg %wg.12 256 12 14 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 257 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %temp.13 = local;
+        symbol [ temp %temp.13 257 12 16 ];
+        %tmp.109 = lgetv %weatherData.1;
+        symbol [ weatherData %tmp.109 257 19 30 ];
+        %tmp.110 = "temp";
+        %tmp.111 = agetv %tmp.109 %tmp.110;
+        %tmp.112 = as %tmp.111 Lang.Float;
+        symbol [ Lang %tmp.112 257 42 46 ];
+        symbol [ Float %tmp.112 257 47 52 ];
+        lputv %temp.13 %tmp.112;
+        symbol [ temp %temp.13 257 12 16 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 258 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %rain.14 = local;
+        symbol [ rain %rain.14 258 12 16 ];
+        %tmp.113 = lgetv %weatherData.1;
+        symbol [ weatherData %tmp.113 258 19 30 ];
+        %tmp.114 = "rain";
+        %tmp.115 = agetv %tmp.113 %tmp.114;
+        %tmp.116 = as %tmp.115 Lang.Float;
+        symbol [ Lang %tmp.116 258 42 46 ];
+        symbol [ Float %tmp.116 258 47 52 ];
+        lputv %rain.14 %tmp.116;
+        symbol [ rain %rain.14 258 12 16 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 259 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %weatherTime.15 = local;
+        symbol [ weatherTime %weatherTime.15 259 12 23 ];
+        %tmp.117 = lgetv %weatherData.1;
+        symbol [ weatherData %tmp.117 259 26 37 ];
+        %tmp.118 = "t";
+        %tmp.119 = agetv %tmp.117 %tmp.118;
+        %tmp.120 = as %tmp.119 Lang.Number;
+        symbol [ Lang %tmp.120 259 46 50 ];
+        symbol [ Number %tmp.120 259 51 57 ];
+        lputv %weatherTime.15 %tmp.120;
+        symbol [ weatherTime %weatherTime.15 259 12 23 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 261 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %windStr.16 = local;
+        symbol [ windStr %windStr.16 261 12 19 ];
+        %tmp.121 = lgetv %windCompass.10;
+        symbol [ windCompass %tmp.121 261 22 33 ];
+        %tmp.122 = " ";
+        %tmp.123 = add %tmp.121 %tmp.122;
+        %tmp.124 = lgetv %ws.11;
+        symbol [ ws %tmp.124 261 42 44 ];
+        symbol [ format %tmp.125 261 45 51 ];
+        %tmp.125 = getv function %tmp.124 :format;
+        %tmp.126 = "%.0f";
+        %tmp.127 = invoke %tmp.124 %tmp.125(%tmp.126);
+        %tmp.128 = add %tmp.123 %tmp.127;
+        lputv %windStr.16 %tmp.128;
+        symbol [ windStr %windStr.16 261 12 19 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 263 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %nowEpoch.17 = local;
+        symbol [ nowEpoch %nowEpoch.17 263 12 20 ];
+        symbol [ Time %tmp.130 263 23 27 ];
+        %tmp.130 = getv ? :Time;
+        symbol [ now %tmp.131 263 28 31 ];
+        %tmp.131 = getv function %tmp.130 :now;
+        %tmp.132 = invoke %tmp.130 %tmp.131();
+        symbol [ value %tmp.133 263 34 39 ];
+        %tmp.133 = getv function %tmp.132 :value;
+        %tmp.134 = invoke %tmp.132 %tmp.133();
+        symbol [ toNumber %tmp.135 263 42 50 ];
+        %tmp.135 = getv function %tmp.134 :toNumber;
+        %tmp.136 = invoke %tmp.134 %tmp.135();
+        lputv %nowEpoch.17 %tmp.136;
+        symbol [ nowEpoch %nowEpoch.17 263 12 20 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 264 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %ageMinutes.18 = local;
+        symbol [ ageMinutes %ageMinutes.18 264 12 22 ];
+        %tmp.137 = lgetv %nowEpoch.17;
+        symbol [ nowEpoch %tmp.137 264 27 35 ];
+        %tmp.138 = lgetv %weatherTime.15;
+        symbol [ weatherTime %tmp.138 264 38 49 ];
+        %tmp.139 = sub %tmp.137 %tmp.138;
+        %tmp.140 = 60;
+        %tmp.141 = div %tmp.139 %tmp.140;
+        symbol [ toNumber %tmp.142 264 57 65 ];
+        %tmp.142 = getv function %tmp.141 :toNumber;
+        %tmp.143 = invoke %tmp.141 %tmp.142();
+        lputv %ageMinutes.18 %tmp.143;
+        symbol [ ageMinutes %ageMinutes.18 264 12 22 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 265 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_265_8_267_8_if_stmt:
+        %tmp.144 = lgetv %ageMinutes.18;
+        symbol [ ageMinutes %tmp.144 265 12 22 ];
+        %tmp.145 = 0;
+        %tmp.146 = lt %tmp.144 %tmp.145;
+        bf %tmp.146 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_265_8_267_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_265_8_267_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_265_28_267_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 266 12 ]
+        %tmp.147 = 0;
+        lputv %ageMinutes.18 %tmp.147;
+        symbol [ ageMinutes %ageMinutes.18 266 12 22 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_265_28_267_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_265_8_267_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_265_8_267_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 269 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop" ]
+        %detailStr.19 = local;
+        symbol [ detailStr %detailStr.19 269 12 21 ];
+        %tmp.148 = "G";
+        %tmp.149 = lgetv %wg.12;
+        symbol [ wg %tmp.149 270 18 20 ];
+        symbol [ format %tmp.150 270 21 27 ];
+        %tmp.150 = getv function %tmp.149 :format;
+        %tmp.151 = "%.0f";
+        %tmp.152 = invoke %tmp.149 %tmp.150(%tmp.151);
+        %tmp.153 = add %tmp.148 %tmp.152;
+        %tmp.154 = "  ";
+        %tmp.155 = add %tmp.153 %tmp.154;
+        %tmp.156 = lgetv %temp.13;
+        symbol [ temp %tmp.156 271 19 23 ];
+        symbol [ format %tmp.157 271 24 30 ];
+        %tmp.157 = getv function %tmp.156 :format;
+        %tmp.158 = "%.0f";
+        %tmp.159 = invoke %tmp.156 %tmp.157(%tmp.158);
+        %tmp.160 = add %tmp.155 %tmp.159;
+        %tmp.161 = "°";
+        %tmp.162 = add %tmp.160 %tmp.161;
+        %tmp.163 = "  R";
+        %tmp.164 = add %tmp.162 %tmp.163;
+        %tmp.165 = lgetv %rain.14;
+        symbol [ rain %tmp.165 272 20 24 ];
+        symbol [ format %tmp.166 272 25 31 ];
+        %tmp.166 = getv function %tmp.165 :format;
+        %tmp.167 = "%.1f";
+        %tmp.168 = invoke %tmp.165 %tmp.166(%tmp.167);
+        %tmp.169 = add %tmp.164 %tmp.168;
+        %tmp.170 = "  ";
+        %tmp.171 = add %tmp.169 %tmp.170;
+        %tmp.172 = lgetv %ageMinutes.18;
+        symbol [ ageMinutes %tmp.172 273 19 29 ];
+        symbol [ format %tmp.173 273 30 36 ];
+        %tmp.173 = getv function %tmp.172 :format;
+        %tmp.174 = "%d";
+        %tmp.175 = invoke %tmp.172 %tmp.173(%tmp.174);
+        %tmp.176 = add %tmp.171 %tmp.175;
+        %tmp.177 = "m";
+        %tmp.178 = add %tmp.176 %tmp.177;
+        lputv %detailStr.19 %tmp.178;
+        symbol [ detailStr %detailStr.19 269 12 21 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 275 8 ]
+        %tmp.179 = lgetv %dc;
+        symbol [ dc %tmp.179 275 8 10 ];
+        symbol [ drawText %tmp.180 275 11 19 ];
+        %tmp.180 = getv function %tmp.179 :drawText;
+        %tmp.181 = lgetv %centerX.4;
+        symbol [ centerX %tmp.181 276 12 19 ];
+        %tmp.182 = lgetv %height.3;
+        symbol [ height %tmp.182 277 13 19 ];
+        symbol [ TOP_Y_RATIO %tmp.184 277 22 33 ];
+        %tmp.184 = getv ? :TOP_Y_RATIO;
+        %tmp.185 = mul %tmp.182 %tmp.184;
+        symbol [ toNumber %tmp.186 277 35 43 ];
+        %tmp.186 = getv function %tmp.185 :toNumber;
+        %tmp.187 = invoke %tmp.185 %tmp.186();
+        symbol [ Graphics %tmp.188 278 12 20 ];
+        %tmp.188 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.189 278 21 31 ];
+        %tmp.189 = getv %tmp.188 :FONT_SMALL;
+        %tmp.190 = lgetv %windStr.16;
+        symbol [ windStr %tmp.190 279 12 19 ];
+        symbol [ Graphics %tmp.191 280 12 20 ];
+        %tmp.191 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.192 280 21 40 ];
+        %tmp.192 = getv %tmp.191 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.193 280 43 51 ];
+        %tmp.193 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.194 280 52 72 ];
+        %tmp.194 = getv %tmp.193 :TEXT_JUSTIFY_VCENTER;
+        %tmp.195 = bitor %tmp.192 %tmp.194;
+        invoke %tmp.179 %tmp.180(%tmp.181, %tmp.187, %tmp.189, %tmp.190, %tmp.195);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 283 8 ]
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_8_293_8_if_stmt:
+        symbol [ viewData %tmp.197 283 12 20 ];
+        %tmp.197 = getv ? :viewData;
+        %tmp.198 = "WindAngleToRounded";
+        %tmp.199 = agetv %tmp.197 %tmp.198;
+        %tmp.200 = null;
+        %tmp.201 = ne %tmp.199 %tmp.200;
+        bf %tmp.201 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_8_293_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_8_293_8_if_true:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_52_293_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 284 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_52_293_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_52_293_8_stop" ]
+        %relativeToRounded.20 = local;
+        symbol [ relativeToRounded %relativeToRounded.20 284 16 33 ];
+        symbol [ viewData %tmp.203 284 36 44 ];
+        %tmp.203 = getv ? :viewData;
+        %tmp.204 = "WindAngleToRounded";
+        %tmp.205 = agetv %tmp.203 %tmp.204;
+        %tmp.206 = as %tmp.205 Lang.Float;
+        symbol [ Lang %tmp.206 284 70 74 ];
+        symbol [ Float %tmp.206 284 75 80 ];
+        lputv %relativeToRounded.20 %tmp.206;
+        symbol [ relativeToRounded %relativeToRounded.20 284 16 33 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 285 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_52_293_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_52_293_8_stop" ]
+        %angle.21 = local;
+        symbol [ angle %angle.21 285 16 21 ];
+        %tmp.207 = self;
+        symbol [ relativeFlowDegToScreenRad %tmp.208 285 24 50 ];
+        %tmp.208 = getv function %tmp.207 :relativeFlowDegToScreenRad;
+        %tmp.209 = lgetv %relativeToRounded.20;
+        symbol [ relativeToRounded %tmp.209 285 51 68 ];
+        %tmp.210 = invoke %tmp.207 %tmp.208(%tmp.209);
+        lputv %angle.21 %tmp.210;
+        symbol [ angle %angle.21 285 16 21 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 287 12 ]
+        %tmp.211 = self;
+        symbol [ drawChevron %tmp.212 287 12 23 ];
+        %tmp.212 = getv function %tmp.211 :drawChevron;
+        %tmp.213 = lgetv %dc;
+        symbol [ dc %tmp.213 288 16 18 ];
+        %tmp.214 = lgetv %centerX.4;
+        symbol [ centerX %tmp.214 289 16 23 ];
+        %tmp.215 = lgetv %height.3;
+        symbol [ height %tmp.215 290 17 23 ];
+        symbol [ CENTER_Y_RATIO %tmp.217 290 26 40 ];
+        %tmp.217 = getv ? :CENTER_Y_RATIO;
+        %tmp.218 = mul %tmp.215 %tmp.217;
+        symbol [ toNumber %tmp.219 290 42 50 ];
+        %tmp.219 = getv function %tmp.218 :toNumber;
+        %tmp.220 = invoke %tmp.218 %tmp.219();
+        %tmp.221 = lgetv %angle.21;
+        symbol [ angle %tmp.221 291 16 21 ];
+        invoke %tmp.211 %tmp.212(%tmp.213, %tmp.214, %tmp.220, %tmp.221);
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_52_293_8_stop:
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_8_293_8_if_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_283_8_293_8_if_end:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 295 8 ]
+        %tmp.222 = lgetv %dc;
+        symbol [ dc %tmp.222 295 8 10 ];
+        symbol [ drawText %tmp.223 295 11 19 ];
+        %tmp.223 = getv function %tmp.222 :drawText;
+        %tmp.224 = lgetv %centerX.4;
+        symbol [ centerX %tmp.224 296 12 19 ];
+        %tmp.225 = lgetv %height.3;
+        symbol [ height %tmp.225 297 13 19 ];
+        symbol [ BOTTOM_Y_RATIO %tmp.227 297 22 36 ];
+        %tmp.227 = getv ? :BOTTOM_Y_RATIO;
+        %tmp.228 = mul %tmp.225 %tmp.227;
+        symbol [ toNumber %tmp.229 297 38 46 ];
+        %tmp.229 = getv function %tmp.228 :toNumber;
+        %tmp.230 = invoke %tmp.228 %tmp.229();
+        symbol [ Graphics %tmp.231 298 12 20 ];
+        %tmp.231 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.232 298 21 31 ];
+        %tmp.232 = getv %tmp.231 :FONT_XTINY;
+        %tmp.233 = lgetv %detailStr.19;
+        symbol [ detailStr %tmp.233 299 12 21 ];
+        symbol [ Graphics %tmp.234 300 12 20 ];
+        %tmp.234 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.235 300 21 40 ];
+        %tmp.235 = getv %tmp.234 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.236 300 43 51 ];
+        %tmp.236 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.237 300 52 72 ];
+        %tmp.237 = getv %tmp.236 :TEXT_JUSTIFY_VCENTER;
+        %tmp.238 = bitor %tmp.235 %tmp.237;
+        invoke %tmp.222 %tmp.223(%tmp.224, %tmp.230, %tmp.232, %tmp.233, %tmp.238);
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_196_40_303_4_stop:
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 305; @symbol_functiondef = [drawChevron,305,21,32]; @symbol_param<0> = [dc,305,33,35]; @symbol_param<0>_type<0> = [Dc,305,39,41]; @symbol_param<1> = [cx,305,43,45]; @symbol_param<1>_type<0> = [Lang,305,49,53]; @symbol_param<1>_type<1> = [Number,305,54,60]; @symbol_param<2> = [cy,305,62,64]; @symbol_param<2>_type<0> = [Lang,305,68,72]; @symbol_param<2>_type<1> = [Number,305,73,79]; @symbol_param<3> = [angle,305,81,86]; @symbol_param<3>_type<0> = [Lang,305,90,94]; @symbol_param<3>_type<1> = [Float,305,95,100]; ]
+    private
+    function drawChevron(dc as Dc, cx as Lang.Number, cy as Lang.Number, angle as Lang.Float) as Void {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_305_110_329_4_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 306 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_305_110_329_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_305_110_329_4_stop" ]
+        %dirX.1 = local;
+        symbol [ dirX %dirX.1 306 12 16 ];
+        symbol [ Math %tmp.1 306 19 23 ];
+        %tmp.1 = getm $.Toybox.Math;
+        symbol [ cos %tmp.2 306 24 27 ];
+        %tmp.2 = getv function %tmp.1 :cos;
+        %tmp.3 = lgetv %angle;
+        symbol [ angle %tmp.3 306 28 33 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %dirX.1 %tmp.4;
+        symbol [ dirX %dirX.1 306 12 16 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 307 8 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_305_110_329_4_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_305_110_329_4_stop" ]
+        %dirY.2 = local;
+        symbol [ dirY %dirY.2 307 12 16 ];
+        symbol [ Math %tmp.5 307 20 24 ];
+        %tmp.5 = getm $.Toybox.Math;
+        symbol [ sin %tmp.6 307 25 28 ];
+        %tmp.6 = getv function %tmp.5 :sin;
+        %tmp.7 = lgetv %angle;
+        symbol [ angle %tmp.7 307 29 34 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        %tmp.9 = sub 0 %tmp.8;
+        lputv %dirY.2 %tmp.9;
+        symbol [ dirY %dirY.2 307 12 16 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 309 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 309 8 10 ];
+        symbol [ setPenWidth %tmp.11 309 11 22 ];
+        %tmp.11 = getv function %tmp.10 :setPenWidth;
+        symbol [ CHEVRON_PEN_WIDTH %tmp.13 309 23 40 ];
+        %tmp.13 = getv ? :CHEVRON_PEN_WIDTH;
+        invoke %tmp.10 %tmp.11(%tmp.13);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 311 8 ]
+        for @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_test @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_incr @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_init:
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_begin" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 311 17 18 ];
+        %tmp.14 = 0;
+        lputv %i.3 %tmp.14;
+        symbol [ i %i.3 311 17 18 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_test:
+        %tmp.15 = lgetv %i.3;
+        symbol [ i %tmp.15 311 24 25 ];
+        %tmp.16 = 2;
+        %tmp.17 = lt %tmp.15 %tmp.16;
+        bf %tmp.17 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_begin:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 312 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %shift.4 = local;
+        symbol [ shift %shift.4 312 16 21 ];
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_begin:
+        %tmp.18 = lgetv %i.3;
+        symbol [ i %tmp.18 312 25 26 ];
+        %tmp.19 = 0;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_else_false;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_true:
+        symbol [ CHEVRON_SPACING %tmp.22 312 37 52 ];
+        %tmp.22 = getv ? :CHEVRON_SPACING;
+        %tmp.23 = sub 0 %tmp.22;
+        %tmp.24 = 2.0;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        push %tmp.25;
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_end;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_else_false:
+        symbol [ CHEVRON_SPACING %tmp.27 312 63 78 ];
+        %tmp.27 = getv ? :CHEVRON_SPACING;
+        %tmp.28 = 2.0;
+        %tmp.29 = div %tmp.27 %tmp.28;
+        push %tmp.29;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_end:
+        %tmp.30 = phi [%tmp.20 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_begin] [%tmp.25 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_true] [%tmp.29 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_else_false] [%tmp.30 @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_312_24_312_84_end];
+        lputv %shift.4 %tmp.30;
+        symbol [ shift %shift.4 312 16 21 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 314 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %chevronCenterX.5 = local;
+        symbol [ chevronCenterX %chevronCenterX.5 314 16 30 ];
+        %tmp.31 = lgetv %cx;
+        symbol [ cx %tmp.31 314 33 35 ];
+        symbol [ toFloat %tmp.32 314 36 43 ];
+        %tmp.32 = getv function %tmp.31 :toFloat;
+        %tmp.33 = invoke %tmp.31 %tmp.32();
+        %tmp.34 = lgetv %dirX.1;
+        symbol [ dirX %tmp.34 314 48 52 ];
+        %tmp.35 = lgetv %shift.4;
+        symbol [ shift %tmp.35 314 55 60 ];
+        %tmp.36 = mul %tmp.34 %tmp.35;
+        %tmp.37 = add %tmp.33 %tmp.36;
+        lputv %chevronCenterX.5 %tmp.37;
+        symbol [ chevronCenterX %chevronCenterX.5 314 16 30 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 315 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %chevronCenterY.6 = local;
+        symbol [ chevronCenterY %chevronCenterY.6 315 16 30 ];
+        %tmp.38 = lgetv %cy;
+        symbol [ cy %tmp.38 315 33 35 ];
+        symbol [ toFloat %tmp.39 315 36 43 ];
+        %tmp.39 = getv function %tmp.38 :toFloat;
+        %tmp.40 = invoke %tmp.38 %tmp.39();
+        %tmp.41 = lgetv %dirY.2;
+        symbol [ dirY %tmp.41 315 48 52 ];
+        %tmp.42 = lgetv %shift.4;
+        symbol [ shift %tmp.42 315 55 60 ];
+        %tmp.43 = mul %tmp.41 %tmp.42;
+        %tmp.44 = add %tmp.40 %tmp.43;
+        lputv %chevronCenterY.6 %tmp.44;
+        symbol [ chevronCenterY %chevronCenterY.6 315 16 30 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 317 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %tipX.7 = local;
+        symbol [ tipX %tipX.7 317 16 20 ];
+        %tmp.45 = lgetv %chevronCenterX.5;
+        symbol [ chevronCenterX %tmp.45 317 23 37 ];
+        %tmp.46 = lgetv %dirX.1;
+        symbol [ dirX %tmp.46 317 40 44 ];
+        symbol [ CHEVRON_SIZE %tmp.48 317 48 60 ];
+        %tmp.48 = getv ? :CHEVRON_SIZE;
+        %tmp.49 = 2.0;
+        %tmp.50 = div %tmp.48 %tmp.49;
+        %tmp.51 = mul %tmp.46 %tmp.50;
+        %tmp.52 = add %tmp.45 %tmp.51;
+        lputv %tipX.7 %tmp.52;
+        symbol [ tipX %tipX.7 317 16 20 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 318 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %tipY.8 = local;
+        symbol [ tipY %tipY.8 318 16 20 ];
+        %tmp.53 = lgetv %chevronCenterY.6;
+        symbol [ chevronCenterY %tmp.53 318 23 37 ];
+        %tmp.54 = lgetv %dirY.2;
+        symbol [ dirY %tmp.54 318 40 44 ];
+        symbol [ CHEVRON_SIZE %tmp.56 318 48 60 ];
+        %tmp.56 = getv ? :CHEVRON_SIZE;
+        %tmp.57 = 2.0;
+        %tmp.58 = div %tmp.56 %tmp.57;
+        %tmp.59 = mul %tmp.54 %tmp.58;
+        %tmp.60 = add %tmp.53 %tmp.59;
+        lputv %tipY.8 %tmp.60;
+        symbol [ tipY %tipY.8 318 16 20 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 320 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %leftX.9 = local;
+        symbol [ leftX %leftX.9 320 16 21 ];
+        %tmp.61 = lgetv %tipX.7;
+        symbol [ tipX %tmp.61 320 24 28 ];
+        symbol [ Math %tmp.62 320 31 35 ];
+        %tmp.62 = getm $.Toybox.Math;
+        symbol [ cos %tmp.63 320 36 39 ];
+        %tmp.63 = getv function %tmp.62 :cos;
+        %tmp.64 = lgetv %angle;
+        symbol [ angle %tmp.64 320 40 45 ];
+        symbol [ CHEVRON_HEAD_ANGLE %tmp.66 320 48 66 ];
+        %tmp.66 = getv ? :CHEVRON_HEAD_ANGLE;
+        %tmp.67 = add %tmp.64 %tmp.66;
+        %tmp.68 = invoke %tmp.62 %tmp.63(%tmp.67);
+        symbol [ CHEVRON_SIZE %tmp.70 320 70 82 ];
+        %tmp.70 = getv ? :CHEVRON_SIZE;
+        %tmp.71 = mul %tmp.68 %tmp.70;
+        %tmp.72 = add %tmp.61 %tmp.71;
+        lputv %leftX.9 %tmp.72;
+        symbol [ leftX %leftX.9 320 16 21 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 321 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %leftY.10 = local;
+        symbol [ leftY %leftY.10 321 16 21 ];
+        %tmp.73 = lgetv %tipY.8;
+        symbol [ tipY %tmp.73 321 24 28 ];
+        symbol [ Math %tmp.74 321 31 35 ];
+        %tmp.74 = getm $.Toybox.Math;
+        symbol [ sin %tmp.75 321 36 39 ];
+        %tmp.75 = getv function %tmp.74 :sin;
+        %tmp.76 = lgetv %angle;
+        symbol [ angle %tmp.76 321 40 45 ];
+        symbol [ CHEVRON_HEAD_ANGLE %tmp.78 321 48 66 ];
+        %tmp.78 = getv ? :CHEVRON_HEAD_ANGLE;
+        %tmp.79 = add %tmp.76 %tmp.78;
+        %tmp.80 = invoke %tmp.74 %tmp.75(%tmp.79);
+        symbol [ CHEVRON_SIZE %tmp.82 321 70 82 ];
+        %tmp.82 = getv ? :CHEVRON_SIZE;
+        %tmp.83 = mul %tmp.80 %tmp.82;
+        %tmp.84 = sub %tmp.73 %tmp.83;
+        lputv %leftY.10 %tmp.84;
+        symbol [ leftY %leftY.10 321 16 21 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 323 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %rightX.11 = local;
+        symbol [ rightX %rightX.11 323 16 22 ];
+        %tmp.85 = lgetv %tipX.7;
+        symbol [ tipX %tmp.85 323 25 29 ];
+        symbol [ Math %tmp.86 323 32 36 ];
+        %tmp.86 = getm $.Toybox.Math;
+        symbol [ cos %tmp.87 323 37 40 ];
+        %tmp.87 = getv function %tmp.86 :cos;
+        %tmp.88 = lgetv %angle;
+        symbol [ angle %tmp.88 323 41 46 ];
+        symbol [ CHEVRON_HEAD_ANGLE %tmp.90 323 49 67 ];
+        %tmp.90 = getv ? :CHEVRON_HEAD_ANGLE;
+        %tmp.91 = sub %tmp.88 %tmp.90;
+        %tmp.92 = invoke %tmp.86 %tmp.87(%tmp.91);
+        symbol [ CHEVRON_SIZE %tmp.94 323 71 83 ];
+        %tmp.94 = getv ? :CHEVRON_SIZE;
+        %tmp.95 = mul %tmp.92 %tmp.94;
+        %tmp.96 = add %tmp.85 %tmp.95;
+        lputv %rightX.11 %tmp.96;
+        symbol [ rightX %rightX.11 323 16 22 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 324 12 ]
+        [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop" ]
+        %rightY.12 = local;
+        symbol [ rightY %rightY.12 324 16 22 ];
+        %tmp.97 = lgetv %tipY.8;
+        symbol [ tipY %tmp.97 324 25 29 ];
+        symbol [ Math %tmp.98 324 32 36 ];
+        %tmp.98 = getm $.Toybox.Math;
+        symbol [ sin %tmp.99 324 37 40 ];
+        %tmp.99 = getv function %tmp.98 :sin;
+        %tmp.100 = lgetv %angle;
+        symbol [ angle %tmp.100 324 41 46 ];
+        symbol [ CHEVRON_HEAD_ANGLE %tmp.102 324 49 67 ];
+        %tmp.102 = getv ? :CHEVRON_HEAD_ANGLE;
+        %tmp.103 = sub %tmp.100 %tmp.102;
+        %tmp.104 = invoke %tmp.98 %tmp.99(%tmp.103);
+        symbol [ CHEVRON_SIZE %tmp.106 324 71 83 ];
+        %tmp.106 = getv ? :CHEVRON_SIZE;
+        %tmp.107 = mul %tmp.104 %tmp.106;
+        %tmp.108 = sub %tmp.97 %tmp.107;
+        lputv %rightY.12 %tmp.108;
+        symbol [ rightY %rightY.12 324 16 22 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 326 12 ]
+        %tmp.109 = lgetv %dc;
+        symbol [ dc %tmp.109 326 12 14 ];
+        symbol [ drawLine %tmp.110 326 15 23 ];
+        %tmp.110 = getv function %tmp.109 :drawLine;
+        %tmp.111 = lgetv %tipX.7;
+        symbol [ tipX %tmp.111 326 24 28 ];
+        symbol [ toNumber %tmp.112 326 29 37 ];
+        %tmp.112 = getv function %tmp.111 :toNumber;
+        %tmp.113 = invoke %tmp.111 %tmp.112();
+        %tmp.114 = lgetv %tipY.8;
+        symbol [ tipY %tmp.114 326 41 45 ];
+        symbol [ toNumber %tmp.115 326 46 54 ];
+        %tmp.115 = getv function %tmp.114 :toNumber;
+        %tmp.116 = invoke %tmp.114 %tmp.115();
+        %tmp.117 = lgetv %leftX.9;
+        symbol [ leftX %tmp.117 326 58 63 ];
+        symbol [ toNumber %tmp.118 326 64 72 ];
+        %tmp.118 = getv function %tmp.117 :toNumber;
+        %tmp.119 = invoke %tmp.117 %tmp.118();
+        %tmp.120 = lgetv %leftY.10;
+        symbol [ leftY %tmp.120 326 76 81 ];
+        symbol [ toNumber %tmp.121 326 82 90 ];
+        %tmp.121 = getv function %tmp.120 :toNumber;
+        %tmp.122 = invoke %tmp.120 %tmp.121();
+        invoke %tmp.109 %tmp.110(%tmp.113, %tmp.116, %tmp.119, %tmp.122);
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 327 12 ]
+        %tmp.123 = lgetv %dc;
+        symbol [ dc %tmp.123 327 12 14 ];
+        symbol [ drawLine %tmp.124 327 15 23 ];
+        %tmp.124 = getv function %tmp.123 :drawLine;
+        %tmp.125 = lgetv %tipX.7;
+        symbol [ tipX %tmp.125 327 24 28 ];
+        symbol [ toNumber %tmp.126 327 29 37 ];
+        %tmp.126 = getv function %tmp.125 :toNumber;
+        %tmp.127 = invoke %tmp.125 %tmp.126();
+        %tmp.128 = lgetv %tipY.8;
+        symbol [ tipY %tmp.128 327 41 45 ];
+        symbol [ toNumber %tmp.129 327 46 54 ];
+        %tmp.129 = getv function %tmp.128 :toNumber;
+        %tmp.130 = invoke %tmp.128 %tmp.129();
+        %tmp.131 = lgetv %rightX.11;
+        symbol [ rightX %tmp.131 327 58 64 ];
+        symbol [ toNumber %tmp.132 327 65 73 ];
+        %tmp.132 = getv function %tmp.131 :toNumber;
+        %tmp.133 = invoke %tmp.131 %tmp.132();
+        %tmp.134 = lgetv %rightY.12;
+        symbol [ rightY %tmp.134 327 77 83 ];
+        symbol [ toNumber %tmp.135 327 84 92 ];
+        %tmp.135 = getv function %tmp.134 :toNumber;
+        %tmp.136 = invoke %tmp.134 %tmp.135();
+        invoke %tmp.123 %tmp.124(%tmp.127, %tmp.130, %tmp.133, %tmp.136);
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_36_328_8_stop:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_incr:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" 311 ]
+        %tmp.139 = lgetv %i.3;
+        symbol [ i %tmp.139 311 31 32 ];
+        %tmp.140 = add %tmp.139 1;
+        lputv %i.3 %tmp.140;
+        symbol [ i %i.3 311 31 32 ];
+        goto @_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_test;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_311_8_328_8_for_end:
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_source_KomWayFieldView_mc_305_110_329_4_stop:
+    }
+}
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc"; @line = 3; ]
+<init> {
+}
