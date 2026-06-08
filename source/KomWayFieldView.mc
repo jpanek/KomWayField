@@ -6,6 +6,7 @@ import Toybox.Lang;
 import Toybox.Math;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.Time;
 
 class KomWayFieldView extends WatchUi.DataField {
 
@@ -27,6 +28,12 @@ class KomWayFieldView extends WatchUi.DataField {
     //const CHEVRON_PEN_WIDTH = 5.0; // 840
     const CHEVRON_PEN_WIDTH = 6.0;
     const CHEVRON_HEAD_ANGLE = 2.35619;
+
+    var smoothedHeadingDeg = null;
+
+    // variable to load and cache arrows
+    var cachedArrowRes = null;
+    var cachedArrowBmp = null;
 
     // 8-point compass labels
     const COMPASS_8 = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
@@ -94,6 +101,26 @@ class KomWayFieldView extends WatchUi.DataField {
         return normalizeDeg(screenDeg) * (Math.PI / 180.0);
     }
 
+    // 5. Smooth heading while handling 0/360 wrap correctly
+    private function smoothHeadingDeg(newHeadingDeg as Lang.Float) as Lang.Float {
+        var alpha = 0.25; // lower = smoother, higher = more responsive
+
+        if (smoothedHeadingDeg == null) {
+            smoothedHeadingDeg = newHeadingDeg;
+            return smoothedHeadingDeg;
+        }
+
+        var delta = newHeadingDeg - smoothedHeadingDeg;
+
+        if (delta > 180.0) {
+            delta -= 360.0;
+        } else if (delta < -180.0) {
+            delta += 360.0;
+        }
+
+        smoothedHeadingDeg = normalizeDeg(smoothedHeadingDeg + (alpha * delta));
+        return smoothedHeadingDeg;
+    }
 
     /*======================================================================================================
                         Compute block
@@ -135,20 +162,6 @@ class KomWayFieldView extends WatchUi.DataField {
             }
         }
 
-        // ################################### DEBUG ONLY: ###################################
-        /*
-        if (true){
-            getApp().saveLatestCoords({
-                "lat" => 50.103,
-                "lon" => 14.403,
-                "source" => "debug"
-            });
-            gpsReady = true;
-        }
-        */
-
-        // ################################### DEBUG ONLY: ###################################
-
         if (!(info has :currentHeading) || info.currentHeading == null) {
             viewData["heading"] = null;
             viewData["WindAngleFrom"] = null;
@@ -158,7 +171,11 @@ class KomWayFieldView extends WatchUi.DataField {
             return;
         }
 
-        var headingDeg = normalizeDeg(Math.toDegrees(info.currentHeading));
+        // take the raw heading and smooth it out a bit (it can be noisy)
+        var rawHeadingDeg = normalizeDeg(Math.toDegrees(info.currentHeading));
+        var headingDeg = smoothHeadingDeg(rawHeadingDeg);
+
+
         var windDir = weatherData["wd"] as Lang.Float;
 
         viewData["heading"] = headingDeg;
@@ -177,6 +194,20 @@ class KomWayFieldView extends WatchUi.DataField {
         viewData["WindAngleFrom"] = relativeFrom;
         viewData["WindAngleTo"] = relativeTo;
         viewData["WindAngleToRounded"] = relativeToRounded;
+
+        // ################################### DEBUG ONLY: ###################################        
+        var riderHeadingCompass = windDirToCompass8(headingDeg);
+        var windCompass = windDirToCompass8(windDir);
+        var fromCompass = windDirToCompass8(relativeFrom);
+        var toCompass = windDirToCompass8(relativeToRounded);
+
+        System.println(
+            "HEAD " + riderHeadingCompass +
+            " | WIND " + windCompass +
+            " | FROM rider=" + relativeFrom.format("%.0f") + " " + fromCompass +
+            " | ARROW to=" + relativeToRounded.format("%.0f") + " " + toCompass
+        );
+
     }
 
 
@@ -221,10 +252,6 @@ class KomWayFieldView extends WatchUi.DataField {
             return;
         }
 
-        // ################################### DEBUG ONLY: ###################################
-        //weatherReady = true;
-        // ################################### DEBUG ONLY: ###################################
-
         // show when Weather is not ready
         if (!weatherReady) {
             dc.drawText(
@@ -248,18 +275,6 @@ class KomWayFieldView extends WatchUi.DataField {
         var rain = weatherData["rain"] as Lang.Float;
         var weatherTime = weatherData["t"] as Lang.Number;
 
-        /*
-        var windStr = windCompass + " " + ws.format("%.0f");
-
-        dc.drawText(
-            centerX,
-            (height * TOP_Y_RATIO).toNumber(),
-            Graphics.FONT_MEDIUM,
-            windStr,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
-        );
-        */
-
         var mainStr = windCompass + " " + ws.format("%.0f");
         var unitStr = "kmh";
 
@@ -276,7 +291,8 @@ class KomWayFieldView extends WatchUi.DataField {
         var y = (height * TOP_Y_RATIO).toNumber();
         var unitY = y - 2;
 
-
+        // ----------------------------------------------------------------------------
+        // [Section 1]: Large wind direction + wind speed
         // large NW + number
         dc.drawText(
             baseX,
@@ -285,7 +301,6 @@ class KomWayFieldView extends WatchUi.DataField {
             mainStr,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
-
         // tiny kmh
         dc.drawText(
             baseX + mainW + gap,
@@ -296,6 +311,67 @@ class KomWayFieldView extends WatchUi.DataField {
         );
 
 
+        // ----------------------------------------------------------------------------
+        // [Section 2]: Drawing the arrow bitmap instead of chevrons
+        if (viewData["WindAngleToRounded"] != null) {
+            var angle = viewData["WindAngleToRounded"] as Lang.Float;
+            var arrowRes = null;
+
+            // pick the file name
+            if (bgColor == Graphics.COLOR_BLACK) {
+                if (angle == 0.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_0;
+                } else if (angle == 45.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_45;
+                } else if (angle == 90.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_90;
+                } else if (angle == 135.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_135;
+                } else if (angle == 180.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_180;
+                } else if (angle == 225.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_225;
+                } else if (angle == 270.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_270;
+                } else if (angle == 315.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_white_315;
+                }
+            } else {
+                if (angle == 0.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_0;
+                } else if (angle == 45.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_45;
+                } else if (angle == 90.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_90;
+                } else if (angle == 135.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_135;
+                } else if (angle == 180.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_180;
+                } else if (angle == 225.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_225;
+                } else if (angle == 270.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_270;
+                } else if (angle == 315.0) {
+                    arrowRes = Rez.Drawables.Arrow_60_black_315;
+                }
+            }
+
+            if (arrowRes != null) {
+                if (cachedArrowRes != arrowRes || cachedArrowBmp == null) {
+                    cachedArrowRes = arrowRes;
+                    cachedArrowBmp = WatchUi.loadResource(arrowRes);
+                }
+
+                var arrowSize = 60;
+                var arrowX = (centerX - (arrowSize / 2)).toNumber();
+                var arrowY = ((height * CENTER_Y_RATIO) - (arrowSize / 2) + 6).toNumber();
+
+                dc.drawBitmap(arrowX, arrowY, cachedArrowBmp);
+            }
+        }
+
+        // ----------------------------------------------------------------------------
+        // [Section 3]: Bottom line with gusts, temperature, rain and minutes since update
         var nowEpoch = Time.now().value().toNumber();
         var ageMinutes = ((nowEpoch - weatherTime) / 60).toNumber();
         if (ageMinutes < 0) {
@@ -307,55 +383,14 @@ class KomWayFieldView extends WatchUi.DataField {
             "  " + temp.format("%.0f") + "°" +
             "  R" + rain.format("%.1f") +
             "  " + ageMinutes.format("%d") + "m";
-
-
-
-        if (viewData["WindAngleToRounded"] != null) {
-            var relativeToRounded = viewData["WindAngleToRounded"] as Lang.Float;
-            var angle = relativeFlowDegToScreenRad(relativeToRounded);
-
-            drawChevron(
-                dc,
-                centerX,
-                (height * CENTER_Y_RATIO).toNumber(),
-                angle
-            );
-        }
-
         dc.drawText(
             centerX,
             (height * BOTTOM_Y_RATIO).toNumber(),
-            Graphics.FONT_XTINY,
+            Graphics.FONT_TINY,
             detailStr,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
-    }
-
-    private function drawChevron(dc as Dc, cx as Lang.Number, cy as Lang.Number, angle as Lang.Float) as Void {
-        var dirX = Math.cos(angle);
-        var dirY = -Math.sin(angle);
-
-        dc.setPenWidth(CHEVRON_PEN_WIDTH);
-
-        for (var i = 0; i < 2; i++) {
-            var shift = (i == 0) ? (-CHEVRON_SPACING / 2.0) : (CHEVRON_SPACING / 2.0);
-
-            var chevronCenterX = cx.toFloat() + dirX * shift;
-            var chevronCenterY = cy.toFloat() + dirY * shift;
-
-            var tipX = chevronCenterX + dirX * (CHEVRON_SIZE / 2.0);
-            var tipY = chevronCenterY + dirY * (CHEVRON_SIZE / 2.0);
-
-            var leftX = tipX + Math.cos(angle + CHEVRON_HEAD_ANGLE) * CHEVRON_SIZE;
-            var leftY = tipY - Math.sin(angle + CHEVRON_HEAD_ANGLE) * CHEVRON_SIZE;
-
-            var rightX = tipX + Math.cos(angle - CHEVRON_HEAD_ANGLE) * CHEVRON_SIZE;
-            var rightY = tipY - Math.sin(angle - CHEVRON_HEAD_ANGLE) * CHEVRON_SIZE;
-
-            dc.drawLine(tipX.toNumber(), tipY.toNumber(), leftX.toNumber(), leftY.toNumber());
-            dc.drawLine(tipX.toNumber(), tipY.toNumber(), rightX.toNumber(), rightY.toNumber());
-        }
     }
 
 }

@@ -1,3 +1,26 @@
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
+
+    <!-- 60px Wind direction arrow assets -->
+    <bitmap id="Arrow_60_black_0" filename="arrows/size60/Arrow_60_black_0.png" />
+    <bitmap id="Arrow_60_black_45" filename="arrows/size60/Arrow_60_black_45.png" />
+    <bitmap id="Arrow_60_black_90" filename="arrows/size60/Arrow_60_black_90.png" />
+    <bitmap id="Arrow_60_black_135" filename="arrows/size60/Arrow_60_black_135.png" />
+    <bitmap id="Arrow_60_black_180" filename="arrows/size60/Arrow_60_black_180.png" />
+    <bitmap id="Arrow_60_black_225" filename="arrows/size60/Arrow_60_black_225.png" />
+    <bitmap id="Arrow_60_black_270" filename="arrows/size60/Arrow_60_black_270.png" />
+    <bitmap id="Arrow_60_black_315" filename="arrows/size60/Arrow_60_black_315.png" />
+    
+    <bitmap id="Arrow_60_white_0" filename="arrows/size60/Arrow_60_white_0.png" />
+    <bitmap id="Arrow_60_white_45" filename="arrows/size60/Arrow_60_white_45.png" />
+    <bitmap id="Arrow_60_white_90" filename="arrows/size60/Arrow_60_white_90.png" />
+    <bitmap id="Arrow_60_white_135" filename="arrows/size60/Arrow_60_white_135.png" />
+    <bitmap id="Arrow_60_white_180" filename="arrows/size60/Arrow_60_white_180.png" />
+    <bitmap id="Arrow_60_white_225" filename="arrows/size60/Arrow_60_white_225.png" />
+    <bitmap id="Arrow_60_white_270" filename="arrows/size60/Arrow_60_white_270.png" />
+    <bitmap id="Arrow_60_white_315" filename="arrows/size60/Arrow_60_white_315.png" />
+
+
+    <!-- 80px Wind direction arrow assets -->
+
 </drawables>
