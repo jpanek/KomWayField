@@ -194,19 +194,22 @@ class KomWayFieldView extends WatchUi.DataField {
         viewData["WindAngleFrom"] = relativeFrom;
         viewData["WindAngleTo"] = relativeTo;
         viewData["WindAngleToRounded"] = relativeToRounded;
-
+        
+        /*
         // ################################### DEBUG ONLY: ###################################        
         var riderHeadingCompass = windDirToCompass8(headingDeg);
         var windCompass = windDirToCompass8(windDir);
         var fromCompass = windDirToCompass8(relativeFrom);
         var toCompass = windDirToCompass8(relativeToRounded);
 
+        
         System.println(
             "HEAD " + riderHeadingCompass +
             " | WIND " + windCompass +
             " | FROM rider=" + relativeFrom.format("%.0f") + " " + fromCompass +
             " | ARROW to=" + relativeToRounded.format("%.0f") + " " + toCompass
         );
+        */
 
     }
 
@@ -317,42 +320,87 @@ class KomWayFieldView extends WatchUi.DataField {
             var angle = viewData["WindAngleToRounded"] as Lang.Float;
             var arrowRes = null;
 
-            // pick the file name
+            var useSmallArrow = (height < 90 || width < 140);
+            var arrowSize = useSmallArrow ? 48 : 60;
+
+            //System.print("screen size:" + width +"x"+height+". Using arrow size: "+arrowSize);
+            
+
             if (bgColor == Graphics.COLOR_BLACK) {
-                if (angle == 0.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_0;
-                } else if (angle == 45.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_45;
-                } else if (angle == 90.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_90;
-                } else if (angle == 135.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_135;
-                } else if (angle == 180.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_180;
-                } else if (angle == 225.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_225;
-                } else if (angle == 270.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_270;
-                } else if (angle == 315.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_white_315;
+                if (arrowSize == 48) {
+                    if (angle == 0.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_0;
+                    } else if (angle == 45.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_45;
+                    } else if (angle == 90.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_90;
+                    } else if (angle == 135.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_135;
+                    } else if (angle == 180.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_180;
+                    } else if (angle == 225.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_225;
+                    } else if (angle == 270.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_270;
+                    } else if (angle == 315.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_white_315;
+                    }
+                } else {
+                    if (angle == 0.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_0;
+                    } else if (angle == 45.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_45;
+                    } else if (angle == 90.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_90;
+                    } else if (angle == 135.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_135;
+                    } else if (angle == 180.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_180;
+                    } else if (angle == 225.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_225;
+                    } else if (angle == 270.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_270;
+                    } else if (angle == 315.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_white_315;
+                    }
                 }
             } else {
-                if (angle == 0.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_0;
-                } else if (angle == 45.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_45;
-                } else if (angle == 90.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_90;
-                } else if (angle == 135.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_135;
-                } else if (angle == 180.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_180;
-                } else if (angle == 225.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_225;
-                } else if (angle == 270.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_270;
-                } else if (angle == 315.0) {
-                    arrowRes = Rez.Drawables.Arrow_60_black_315;
+                if (arrowSize == 48) {
+                    if (angle == 0.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_0;
+                    } else if (angle == 45.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_45;
+                    } else if (angle == 90.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_90;
+                    } else if (angle == 135.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_135;
+                    } else if (angle == 180.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_180;
+                    } else if (angle == 225.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_225;
+                    } else if (angle == 270.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_270;
+                    } else if (angle == 315.0) {
+                        arrowRes = Rez.Drawables.Arrow_48_black_315;
+                    }
+                } else {
+                    if (angle == 0.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_0;
+                    } else if (angle == 45.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_45;
+                    } else if (angle == 90.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_90;
+                    } else if (angle == 135.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_135;
+                    } else if (angle == 180.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_180;
+                    } else if (angle == 225.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_225;
+                    } else if (angle == 270.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_270;
+                    } else if (angle == 315.0) {
+                        arrowRes = Rez.Drawables.Arrow_60_black_315;
+                    }
                 }
             }
 
@@ -362,7 +410,6 @@ class KomWayFieldView extends WatchUi.DataField {
                     cachedArrowBmp = WatchUi.loadResource(arrowRes);
                 }
 
-                var arrowSize = 60;
                 var arrowX = (centerX - (arrowSize / 2)).toNumber();
                 var arrowY = ((height * CENTER_Y_RATIO) - (arrowSize / 2) + 6).toNumber();
 

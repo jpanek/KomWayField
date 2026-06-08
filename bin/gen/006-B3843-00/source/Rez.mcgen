@@ -22,6 +22,22 @@ module Rez {
         (:initialized) var Arrow_60_white_225 as ResourceId;
         (:initialized) var Arrow_60_white_270 as ResourceId;
         (:initialized) var Arrow_60_white_315 as ResourceId;
+        (:initialized) var Arrow_48_black_0 as ResourceId;
+        (:initialized) var Arrow_48_black_45 as ResourceId;
+        (:initialized) var Arrow_48_black_90 as ResourceId;
+        (:initialized) var Arrow_48_black_135 as ResourceId;
+        (:initialized) var Arrow_48_black_180 as ResourceId;
+        (:initialized) var Arrow_48_black_225 as ResourceId;
+        (:initialized) var Arrow_48_black_270 as ResourceId;
+        (:initialized) var Arrow_48_black_315 as ResourceId;
+        (:initialized) var Arrow_48_white_0 as ResourceId;
+        (:initialized) var Arrow_48_white_45 as ResourceId;
+        (:initialized) var Arrow_48_white_90 as ResourceId;
+        (:initialized) var Arrow_48_white_135 as ResourceId;
+        (:initialized) var Arrow_48_white_180 as ResourceId;
+        (:initialized) var Arrow_48_white_225 as ResourceId;
+        (:initialized) var Arrow_48_white_270 as ResourceId;
+        (:initialized) var Arrow_48_white_315 as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 

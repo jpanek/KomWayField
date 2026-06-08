@@ -21,6 +21,23 @@
     <bitmap id="Arrow_60_white_315" filename="arrows/size60/Arrow_60_white_315.png" />
 
 
-    <!-- 80px Wind direction arrow assets -->
+    <!-- 48px Wind direction arrow assets -->
+    <bitmap id="Arrow_48_black_0" filename="arrows/size48/Arrow_48_black_0.png" />
+    <bitmap id="Arrow_48_black_45" filename="arrows/size48/Arrow_48_black_45.png" />
+    <bitmap id="Arrow_48_black_90" filename="arrows/size48/Arrow_48_black_90.png" />
+    <bitmap id="Arrow_48_black_135" filename="arrows/size48/Arrow_48_black_135.png" />
+    <bitmap id="Arrow_48_black_180" filename="arrows/size48/Arrow_48_black_180.png" />
+    <bitmap id="Arrow_48_black_225" filename="arrows/size48/Arrow_48_black_225.png" />
+    <bitmap id="Arrow_48_black_270" filename="arrows/size48/Arrow_48_black_270.png" />
+    <bitmap id="Arrow_48_black_315" filename="arrows/size48/Arrow_48_black_315.png" />
+
+    <bitmap id="Arrow_48_white_0" filename="arrows/size48/Arrow_48_white_0.png" />
+    <bitmap id="Arrow_48_white_45" filename="arrows/size48/Arrow_48_white_45.png" />
+    <bitmap id="Arrow_48_white_90" filename="arrows/size48/Arrow_48_white_90.png" />
+    <bitmap id="Arrow_48_white_135" filename="arrows/size48/Arrow_48_white_135.png" />
+    <bitmap id="Arrow_48_white_180" filename="arrows/size48/Arrow_48_white_180.png" />
+    <bitmap id="Arrow_48_white_225" filename="arrows/size48/Arrow_48_white_225.png" />
+    <bitmap id="Arrow_48_white_270" filename="arrows/size48/Arrow_48_white_270.png" />
+    <bitmap id="Arrow_48_white_315" filename="arrows/size48/Arrow_48_white_315.png" />
 
 </drawables>
