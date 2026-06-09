@@ -1,0 +1,831 @@
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_0,9,27,43]; @symbol_type<0> = [ResourceId,9,47,57]; ]
+        var Arrow_60_black_0 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_45,10,27,44]; @symbol_type<0> = [ResourceId,10,48,58]; ]
+        var Arrow_60_black_45 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_90,11,27,44]; @symbol_type<0> = [ResourceId,11,48,58]; ]
+        var Arrow_60_black_90 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_135,12,27,45]; @symbol_type<0> = [ResourceId,12,49,59]; ]
+        var Arrow_60_black_135 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_180,13,27,45]; @symbol_type<0> = [ResourceId,13,49,59]; ]
+        var Arrow_60_black_180 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_225,14,27,45]; @symbol_type<0> = [ResourceId,14,49,59]; ]
+        var Arrow_60_black_225 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_270,15,27,45]; @symbol_type<0> = [ResourceId,15,49,59]; ]
+        var Arrow_60_black_270 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 16; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_black_315,16,27,45]; @symbol_type<0> = [ResourceId,16,49,59]; ]
+        var Arrow_60_black_315 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 17; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_0,17,27,43]; @symbol_type<0> = [ResourceId,17,47,57]; ]
+        var Arrow_60_white_0 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 18; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_45,18,27,44]; @symbol_type<0> = [ResourceId,18,48,58]; ]
+        var Arrow_60_white_45 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 19; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_90,19,27,44]; @symbol_type<0> = [ResourceId,19,48,58]; ]
+        var Arrow_60_white_90 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 20; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_135,20,27,45]; @symbol_type<0> = [ResourceId,20,49,59]; ]
+        var Arrow_60_white_135 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_180,21,27,45]; @symbol_type<0> = [ResourceId,21,49,59]; ]
+        var Arrow_60_white_180 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 22; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_225,22,27,45]; @symbol_type<0> = [ResourceId,22,49,59]; ]
+        var Arrow_60_white_225 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 23; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_270,23,27,45]; @symbol_type<0> = [ResourceId,23,49,59]; ]
+        var Arrow_60_white_270 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 24; @position = 27; initialized = true; @symbol_vardef = [Arrow_60_white_315,24,27,45]; @symbol_type<0> = [ResourceId,24,49,59]; ]
+        var Arrow_60_white_315 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 25; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_0,25,27,43]; @symbol_type<0> = [ResourceId,25,47,57]; ]
+        var Arrow_48_black_0 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 26; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_45,26,27,44]; @symbol_type<0> = [ResourceId,26,48,58]; ]
+        var Arrow_48_black_45 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 27; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_90,27,27,44]; @symbol_type<0> = [ResourceId,27,48,58]; ]
+        var Arrow_48_black_90 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 28; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_135,28,27,45]; @symbol_type<0> = [ResourceId,28,49,59]; ]
+        var Arrow_48_black_135 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 29; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_180,29,27,45]; @symbol_type<0> = [ResourceId,29,49,59]; ]
+        var Arrow_48_black_180 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 30; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_225,30,27,45]; @symbol_type<0> = [ResourceId,30,49,59]; ]
+        var Arrow_48_black_225 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 31; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_270,31,27,45]; @symbol_type<0> = [ResourceId,31,49,59]; ]
+        var Arrow_48_black_270 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 32; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_black_315,32,27,45]; @symbol_type<0> = [ResourceId,32,49,59]; ]
+        var Arrow_48_black_315 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 33; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_0,33,27,43]; @symbol_type<0> = [ResourceId,33,47,57]; ]
+        var Arrow_48_white_0 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 34; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_45,34,27,44]; @symbol_type<0> = [ResourceId,34,48,58]; ]
+        var Arrow_48_white_45 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 35; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_90,35,27,44]; @symbol_type<0> = [ResourceId,35,48,58]; ]
+        var Arrow_48_white_90 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 36; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_135,36,27,45]; @symbol_type<0> = [ResourceId,36,49,59]; ]
+        var Arrow_48_white_135 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 37; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_180,37,27,45]; @symbol_type<0> = [ResourceId,37,49,59]; ]
+        var Arrow_48_white_180 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 38; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_225,38,27,45]; @symbol_type<0> = [ResourceId,38,49,59]; ]
+        var Arrow_48_white_225 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 39; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_270,39,27,45]; @symbol_type<0> = [ResourceId,39,49,59]; ]
+        var Arrow_48_white_270 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 40; @position = 27; initialized = true; @symbol_vardef = [Arrow_48_white_315,40,27,45]; @symbol_type<0> = [ResourceId,40,49,59]; ]
+        var Arrow_48_white_315 as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 41; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,41,27,39]; @symbol_type<0> = [ResourceId,41,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 44; @symbol_moduledef = [Layouts,44,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 44; ]
+        <init> {
+        }
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 45; @symbol_functiondef = [MainLayout,45,17,27]; @symbol_param<0> = [dc,45,28,30]; @symbol_param<0>_type<0> = [Graphics,45,34,42]; @symbol_param<0>_type<1> = [Dc,45,43,45]; @symbol_return<0> = [Array,45,50,55]; @symbol_return<1> = [WatchUi,45,56,63]; @symbol_return<2> = [Drawable,45,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 46 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_stop" ]
+            %rez_cmp_local_var_dc_getHeight.1 = local;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 46 16 46 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 46 49 51 ];
+            symbol [ getHeight %tmp.2 46 52 61 ];
+            %tmp.2 = getv function %tmp.1 :getHeight;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getHeight.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 46 16 46 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 48 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.2 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 48 16 45 ];
+            %tmp.4 = lgetv %dc;
+            symbol [ dc %tmp.4 48 48 50 ];
+            symbol [ getWidth %tmp.5 48 51 59 ];
+            %tmp.5 = getv function %tmp.4 :getWidth;
+            %tmp.6 = invoke %tmp.4 %tmp.5();
+            lputv %rez_cmp_local_var_dc_getWidth.2 %tmp.6;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 48 16 45 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 50 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_stop" ]
+            %rez_cmp_local_custom_drawable_11939594661139614796.3 = local;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.3 50 16 66 ];
+            symbol [ Background %tmp.10 50 73 83 ];
+            %tmp.10 = getv ? :Background;
+            %tmp.7 = newc %tmp.10 ();
+            lputv %rez_cmp_local_custom_drawable_11939594661139614796.3 %tmp.7;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.3 50 16 66 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 52 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_stop" ]
+            %rez_cmp_local_text_label.4 = local;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.4 52 16 40 ];
+            symbol [ WatchUi %tmp.13 52 47 54 ];
+            %tmp.13 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.14 52 55 59 ];
+            %tmp.14 = getv function ? %tmp.13 :Text;
+            %tmp.15 = newd 6;
+            %tmp.17 = const :identifier;
+            symbol [ identifier %tmp.17 52 62 72 const ];
+            %tmp.18 = "label";
+            %tmp.19 = dup %tmp.15;
+            %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+            %tmp.22 = const :color;
+            symbol [ color %tmp.22 52 84 89 const ];
+            symbol [ Graphics %tmp.23 52 91 99 ];
+            %tmp.23 = getm $.Toybox.Graphics;
+            symbol [ COLOR_LT_GRAY %tmp.24 52 100 113 ];
+            %tmp.24 = getv %tmp.23 :COLOR_LT_GRAY;
+            %tmp.25 = dup %tmp.20;
+            %tmp.26 = aputv %tmp.25 %tmp.22 %tmp.24;
+            %tmp.28 = const :locX;
+            symbol [ locX %tmp.28 52 116 120 const ];
+            %tmp.29 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.29 52 123 152 ];
+            %tmp.30 = 0.5;
+            %tmp.31 = mul %tmp.29 %tmp.30;
+            %tmp.32 = dup %tmp.26;
+            %tmp.33 = aputv %tmp.32 %tmp.28 %tmp.31;
+            %tmp.35 = const :locY;
+            symbol [ locY %tmp.35 52 162 166 const ];
+            %tmp.36 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.36 52 170 200 ];
+            %tmp.37 = lgetv %dc;
+            symbol [ dc %tmp.37 52 203 205 ];
+            symbol [ getFontHeight %tmp.38 52 206 219 ];
+            %tmp.38 = getv function %tmp.37 :getFontHeight;
+            symbol [ Graphics %tmp.39 52 220 228 ];
+            %tmp.39 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.40 52 229 238 ];
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = invoke %tmp.37 %tmp.38(%tmp.40);
+            %tmp.42 = sub %tmp.36 %tmp.41;
+            %tmp.43 = 0.5;
+            %tmp.44 = mul %tmp.42 %tmp.43;
+            %tmp.45 = dup %tmp.33;
+            %tmp.46 = aputv %tmp.45 %tmp.35 %tmp.44;
+            %tmp.48 = const :justification;
+            symbol [ justification %tmp.48 52 250 263 const ];
+            symbol [ Graphics %tmp.49 52 265 273 ];
+            %tmp.49 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.50 52 274 293 ];
+            %tmp.50 = getv %tmp.49 :TEXT_JUSTIFY_CENTER;
+            %tmp.51 = dup %tmp.46;
+            %tmp.52 = aputv %tmp.51 %tmp.48 %tmp.50;
+            %tmp.54 = const :font;
+            symbol [ font %tmp.54 52 296 300 const ];
+            symbol [ Graphics %tmp.55 52 302 310 ];
+            %tmp.55 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.56 52 311 320 ];
+            %tmp.56 = getv %tmp.55 :FONT_TINY;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.11 = newc %tmp.14 (%tmp.58);
+            lputv %rez_cmp_local_text_label.4 %tmp.11;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.4 52 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 54 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_stop" ]
+            %rez_cmp_local_text_value.5 = local;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.5 54 16 40 ];
+            symbol [ WatchUi %tmp.61 54 47 54 ];
+            %tmp.61 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.62 54 55 59 ];
+            %tmp.62 = getv function ? %tmp.61 :Text;
+            %tmp.63 = newd 6;
+            %tmp.65 = const :identifier;
+            symbol [ identifier %tmp.65 54 62 72 const ];
+            %tmp.66 = "value";
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :color;
+            symbol [ color %tmp.70 54 84 89 const ];
+            symbol [ Graphics %tmp.71 54 91 99 ];
+            %tmp.71 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.72 54 100 111 ];
+            %tmp.72 = getv %tmp.71 :COLOR_WHITE;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :locX;
+            symbol [ locX %tmp.76 54 114 118 const ];
+            %tmp.77 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.77 54 121 150 ];
+            %tmp.78 = 0.5;
+            %tmp.79 = mul %tmp.77 %tmp.78;
+            %tmp.80 = dup %tmp.74;
+            %tmp.81 = aputv %tmp.80 %tmp.76 %tmp.79;
+            %tmp.83 = const :locY;
+            symbol [ locY %tmp.83 54 160 164 const ];
+            %tmp.84 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.84 54 168 198 ];
+            %tmp.85 = lgetv %dc;
+            symbol [ dc %tmp.85 54 201 203 ];
+            symbol [ getFontHeight %tmp.86 54 204 217 ];
+            %tmp.86 = getv function %tmp.85 :getFontHeight;
+            symbol [ Graphics %tmp.87 54 218 226 ];
+            %tmp.87 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.88 54 227 237 ];
+            %tmp.88 = getv %tmp.87 :FONT_LARGE;
+            %tmp.89 = invoke %tmp.85 %tmp.86(%tmp.88);
+            %tmp.90 = sub %tmp.84 %tmp.89;
+            %tmp.91 = 0.5;
+            %tmp.92 = mul %tmp.90 %tmp.91;
+            %tmp.93 = dup %tmp.81;
+            %tmp.94 = aputv %tmp.93 %tmp.83 %tmp.92;
+            %tmp.96 = const :justification;
+            symbol [ justification %tmp.96 54 249 262 const ];
+            symbol [ Graphics %tmp.97 54 264 272 ];
+            %tmp.97 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.98 54 273 292 ];
+            %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_CENTER;
+            %tmp.99 = dup %tmp.94;
+            %tmp.100 = aputv %tmp.99 %tmp.96 %tmp.98;
+            %tmp.102 = const :font;
+            symbol [ font %tmp.102 54 295 299 const ];
+            symbol [ Graphics %tmp.103 54 301 309 ];
+            %tmp.103 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.104 54 310 320 ];
+            %tmp.104 = getv %tmp.103 :FONT_LARGE;
+            %tmp.105 = dup %tmp.100;
+            %tmp.106 = aputv %tmp.105 %tmp.102 %tmp.104;
+            %tmp.59 = newc %tmp.62 (%tmp.106);
+            lputv %rez_cmp_local_text_value.5 %tmp.59;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.5 54 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 56 12 ]
+            %tmp.107 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.107 56 127 132 ];
+            symbol [ WatchUi %tmp.107 56 133 140 ];
+            symbol [ Drawable %tmp.107 56 141 149 ];
+            %tmp.108 = lgetv %rez_cmp_local_custom_drawable_11939594661139614796.3;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %tmp.108 56 20 70 ];
+            %tmp.109 = dup %tmp.107;
+            %tmp.110 = aputv %tmp.109 0 %tmp.108;
+            %tmp.111 = lgetv %rez_cmp_local_text_label.4;
+            symbol [ rez_cmp_local_text_label %tmp.111 56 72 96 ];
+            %tmp.112 = dup %tmp.110;
+            %tmp.113 = aputv %tmp.112 1 %tmp.111;
+            %tmp.114 = lgetv %rez_cmp_local_text_value.5;
+            symbol [ rez_cmp_local_text_value %tmp.114 56 98 122 ];
+            %tmp.115 = dup %tmp.113;
+            %tmp.116 = aputv %tmp.115 2 %tmp.114;
+            ret %tmp.116;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_45_74_57_8_stop:
+        }
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 59; @symbol_functiondef = [TopLeftLayout,59,17,30]; @symbol_param<0> = [dc,59,31,33]; @symbol_param<0>_type<0> = [Graphics,59,37,45]; @symbol_param<0>_type<1> = [Dc,59,46,48]; @symbol_return<0> = [Array,59,53,58]; @symbol_return<1> = [WatchUi,59,59,66]; @symbol_return<2> = [Drawable,59,67,75]; ]
+        function TopLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 60 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_stop" ]
+            %rez_cmp_local_custom_drawable_83741574912206153191.1 = local;
+            symbol [ rez_cmp_local_custom_drawable_83741574912206153191 %rez_cmp_local_custom_drawable_83741574912206153191.1 60 16 66 ];
+            symbol [ Background %tmp.4 60 73 83 ];
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_83741574912206153191.1 %tmp.1;
+            symbol [ rez_cmp_local_custom_drawable_83741574912206153191 %rez_cmp_local_custom_drawable_83741574912206153191.1 60 16 66 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 62 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 62 16 40 ];
+            symbol [ WatchUi %tmp.7 62 47 54 ];
+            %tmp.7 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.8 62 55 59 ];
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            symbol [ identifier %tmp.11 62 62 72 const ];
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            symbol [ color %tmp.16 62 84 89 const ];
+            symbol [ Graphics %tmp.17 62 91 99 ];
+            %tmp.17 = getm $.Toybox.Graphics;
+            symbol [ COLOR_LT_GRAY %tmp.18 62 100 113 ];
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            symbol [ locX %tmp.22 62 116 120 const ];
+            %tmp.23 = 95;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            symbol [ locY %tmp.27 62 127 131 const ];
+            %tmp.28 = 75;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            symbol [ justification %tmp.32 62 138 151 const ];
+            symbol [ Graphics %tmp.33 62 153 161 ];
+            %tmp.33 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_RIGHT %tmp.34 62 162 180 ];
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_RIGHT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            symbol [ font %tmp.38 62 183 187 const ];
+            symbol [ Graphics %tmp.39 62 189 197 ];
+            %tmp.39 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.40 62 198 207 ];
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 62 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 64 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 64 16 40 ];
+            symbol [ WatchUi %tmp.45 64 47 54 ];
+            %tmp.45 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.46 64 55 59 ];
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            symbol [ identifier %tmp.49 64 62 72 const ];
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            symbol [ color %tmp.54 64 84 89 const ];
+            symbol [ Graphics %tmp.55 64 91 99 ];
+            %tmp.55 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.56 64 100 111 ];
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            symbol [ locX %tmp.60 64 114 118 const ];
+            %tmp.61 = 95;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            symbol [ locY %tmp.65 64 125 129 const ];
+            %tmp.66 = 42;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            symbol [ justification %tmp.70 64 136 149 const ];
+            symbol [ Graphics %tmp.71 64 151 159 ];
+            %tmp.71 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_RIGHT %tmp.72 64 160 178 ];
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_RIGHT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            symbol [ font %tmp.76 64 181 185 const ];
+            symbol [ Graphics %tmp.77 64 187 195 ];
+            %tmp.77 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.78 64 196 206 ];
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 64 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 66 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.81 66 127 132 ];
+            symbol [ WatchUi %tmp.81 66 133 140 ];
+            symbol [ Drawable %tmp.81 66 141 149 ];
+            %tmp.82 = lgetv %rez_cmp_local_custom_drawable_83741574912206153191.1;
+            symbol [ rez_cmp_local_custom_drawable_83741574912206153191 %tmp.82 66 20 70 ];
+            %tmp.83 = dup %tmp.81;
+            %tmp.84 = aputv %tmp.83 0 %tmp.82;
+            %tmp.85 = lgetv %rez_cmp_local_text_label.2;
+            symbol [ rez_cmp_local_text_label %tmp.85 66 72 96 ];
+            %tmp.86 = dup %tmp.84;
+            %tmp.87 = aputv %tmp.86 1 %tmp.85;
+            %tmp.88 = lgetv %rez_cmp_local_text_value.3;
+            symbol [ rez_cmp_local_text_value %tmp.88 66 98 122 ];
+            %tmp.89 = dup %tmp.87;
+            %tmp.90 = aputv %tmp.89 2 %tmp.88;
+            ret %tmp.90;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_59_77_67_8_stop:
+        }
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 69; @symbol_functiondef = [TopRightLayout,69,17,31]; @symbol_param<0> = [dc,69,32,34]; @symbol_param<0>_type<0> = [Graphics,69,38,46]; @symbol_param<0>_type<1> = [Dc,69,47,49]; @symbol_return<0> = [Array,69,54,59]; @symbol_return<1> = [WatchUi,69,60,67]; @symbol_return<2> = [Drawable,69,68,76]; ]
+        function TopRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 70 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_stop" ]
+            %rez_cmp_local_custom_drawable_11824933295158922413.1 = local;
+            symbol [ rez_cmp_local_custom_drawable_11824933295158922413 %rez_cmp_local_custom_drawable_11824933295158922413.1 70 16 66 ];
+            symbol [ Background %tmp.4 70 73 83 ];
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_11824933295158922413.1 %tmp.1;
+            symbol [ rez_cmp_local_custom_drawable_11824933295158922413 %rez_cmp_local_custom_drawable_11824933295158922413.1 70 16 66 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 72 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 72 16 40 ];
+            symbol [ WatchUi %tmp.7 72 47 54 ];
+            %tmp.7 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.8 72 55 59 ];
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            symbol [ identifier %tmp.11 72 62 72 const ];
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            symbol [ color %tmp.16 72 84 89 const ];
+            symbol [ Graphics %tmp.17 72 91 99 ];
+            %tmp.17 = getm $.Toybox.Graphics;
+            symbol [ COLOR_LT_GRAY %tmp.18 72 100 113 ];
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            symbol [ locX %tmp.22 72 116 120 const ];
+            %tmp.23 = 14;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            symbol [ locY %tmp.27 72 127 131 const ];
+            %tmp.28 = 75;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            symbol [ justification %tmp.32 72 138 151 const ];
+            symbol [ Graphics %tmp.33 72 153 161 ];
+            %tmp.33 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_LEFT %tmp.34 72 162 179 ];
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_LEFT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            symbol [ font %tmp.38 72 182 186 const ];
+            symbol [ Graphics %tmp.39 72 188 196 ];
+            %tmp.39 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.40 72 197 206 ];
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 72 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 74 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 74 16 40 ];
+            symbol [ WatchUi %tmp.45 74 47 54 ];
+            %tmp.45 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.46 74 55 59 ];
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            symbol [ identifier %tmp.49 74 62 72 const ];
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            symbol [ color %tmp.54 74 84 89 const ];
+            symbol [ Graphics %tmp.55 74 91 99 ];
+            %tmp.55 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.56 74 100 111 ];
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            symbol [ locX %tmp.60 74 114 118 const ];
+            %tmp.61 = 14;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            symbol [ locY %tmp.65 74 125 129 const ];
+            %tmp.66 = 42;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            symbol [ justification %tmp.70 74 136 149 const ];
+            symbol [ Graphics %tmp.71 74 151 159 ];
+            %tmp.71 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_LEFT %tmp.72 74 160 177 ];
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_LEFT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            symbol [ font %tmp.76 74 180 184 const ];
+            symbol [ Graphics %tmp.77 74 186 194 ];
+            %tmp.77 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.78 74 195 205 ];
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 74 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 76 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.81 76 127 132 ];
+            symbol [ WatchUi %tmp.81 76 133 140 ];
+            symbol [ Drawable %tmp.81 76 141 149 ];
+            %tmp.82 = lgetv %rez_cmp_local_custom_drawable_11824933295158922413.1;
+            symbol [ rez_cmp_local_custom_drawable_11824933295158922413 %tmp.82 76 20 70 ];
+            %tmp.83 = dup %tmp.81;
+            %tmp.84 = aputv %tmp.83 0 %tmp.82;
+            %tmp.85 = lgetv %rez_cmp_local_text_label.2;
+            symbol [ rez_cmp_local_text_label %tmp.85 76 72 96 ];
+            %tmp.86 = dup %tmp.84;
+            %tmp.87 = aputv %tmp.86 1 %tmp.85;
+            %tmp.88 = lgetv %rez_cmp_local_text_value.3;
+            symbol [ rez_cmp_local_text_value %tmp.88 76 98 122 ];
+            %tmp.89 = dup %tmp.87;
+            %tmp.90 = aputv %tmp.89 2 %tmp.88;
+            ret %tmp.90;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_69_78_77_8_stop:
+        }
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 79; @symbol_functiondef = [BottomLeftLayout,79,17,33]; @symbol_param<0> = [dc,79,34,36]; @symbol_param<0>_type<0> = [Graphics,79,40,48]; @symbol_param<0>_type<1> = [Dc,79,49,51]; @symbol_return<0> = [Array,79,56,61]; @symbol_return<1> = [WatchUi,79,62,69]; @symbol_return<2> = [Drawable,79,70,78]; ]
+        function BottomLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 80 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_stop" ]
+            %rez_cmp_local_custom_drawable_16380678501279751870.1 = local;
+            symbol [ rez_cmp_local_custom_drawable_16380678501279751870 %rez_cmp_local_custom_drawable_16380678501279751870.1 80 16 66 ];
+            symbol [ Background %tmp.4 80 73 83 ];
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_16380678501279751870.1 %tmp.1;
+            symbol [ rez_cmp_local_custom_drawable_16380678501279751870 %rez_cmp_local_custom_drawable_16380678501279751870.1 80 16 66 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 82 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 82 16 40 ];
+            symbol [ WatchUi %tmp.7 82 47 54 ];
+            %tmp.7 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.8 82 55 59 ];
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            symbol [ identifier %tmp.11 82 62 72 const ];
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            symbol [ color %tmp.16 82 84 89 const ];
+            symbol [ Graphics %tmp.17 82 91 99 ];
+            %tmp.17 = getm $.Toybox.Graphics;
+            symbol [ COLOR_LT_GRAY %tmp.18 82 100 113 ];
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            symbol [ locX %tmp.22 82 116 120 const ];
+            %tmp.23 = 95;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            symbol [ locY %tmp.27 82 127 131 const ];
+            %tmp.28 = 10;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            symbol [ justification %tmp.32 82 138 151 const ];
+            symbol [ Graphics %tmp.33 82 153 161 ];
+            %tmp.33 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_RIGHT %tmp.34 82 162 180 ];
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_RIGHT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            symbol [ font %tmp.38 82 183 187 const ];
+            symbol [ Graphics %tmp.39 82 189 197 ];
+            %tmp.39 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.40 82 198 207 ];
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 82 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 84 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 84 16 40 ];
+            symbol [ WatchUi %tmp.45 84 47 54 ];
+            %tmp.45 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.46 84 55 59 ];
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            symbol [ identifier %tmp.49 84 62 72 const ];
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            symbol [ color %tmp.54 84 84 89 const ];
+            symbol [ Graphics %tmp.55 84 91 99 ];
+            %tmp.55 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.56 84 100 111 ];
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            symbol [ locX %tmp.60 84 114 118 const ];
+            %tmp.61 = 95;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            symbol [ locY %tmp.65 84 125 129 const ];
+            %tmp.66 = 27;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            symbol [ justification %tmp.70 84 136 149 const ];
+            symbol [ Graphics %tmp.71 84 151 159 ];
+            %tmp.71 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_RIGHT %tmp.72 84 160 178 ];
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_RIGHT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            symbol [ font %tmp.76 84 181 185 const ];
+            symbol [ Graphics %tmp.77 84 187 195 ];
+            %tmp.77 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.78 84 196 206 ];
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 84 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 86 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.81 86 127 132 ];
+            symbol [ WatchUi %tmp.81 86 133 140 ];
+            symbol [ Drawable %tmp.81 86 141 149 ];
+            %tmp.82 = lgetv %rez_cmp_local_custom_drawable_16380678501279751870.1;
+            symbol [ rez_cmp_local_custom_drawable_16380678501279751870 %tmp.82 86 20 70 ];
+            %tmp.83 = dup %tmp.81;
+            %tmp.84 = aputv %tmp.83 0 %tmp.82;
+            %tmp.85 = lgetv %rez_cmp_local_text_label.2;
+            symbol [ rez_cmp_local_text_label %tmp.85 86 72 96 ];
+            %tmp.86 = dup %tmp.84;
+            %tmp.87 = aputv %tmp.86 1 %tmp.85;
+            %tmp.88 = lgetv %rez_cmp_local_text_value.3;
+            symbol [ rez_cmp_local_text_value %tmp.88 86 98 122 ];
+            %tmp.89 = dup %tmp.87;
+            %tmp.90 = aputv %tmp.89 2 %tmp.88;
+            ret %tmp.90;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_79_80_87_8_stop:
+        }
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 89; @symbol_functiondef = [BottomRightLayout,89,17,34]; @symbol_param<0> = [dc,89,35,37]; @symbol_param<0>_type<0> = [Graphics,89,41,49]; @symbol_param<0>_type<1> = [Dc,89,50,52]; @symbol_return<0> = [Array,89,57,62]; @symbol_return<1> = [WatchUi,89,63,70]; @symbol_return<2> = [Drawable,89,71,79]; ]
+        function BottomRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_start:
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 90 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_stop" ]
+            %rez_cmp_local_custom_drawable_16187860511068497434.1 = local;
+            symbol [ rez_cmp_local_custom_drawable_16187860511068497434 %rez_cmp_local_custom_drawable_16187860511068497434.1 90 16 66 ];
+            symbol [ Background %tmp.4 90 73 83 ];
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_16187860511068497434.1 %tmp.1;
+            symbol [ rez_cmp_local_custom_drawable_16187860511068497434 %rez_cmp_local_custom_drawable_16187860511068497434.1 90 16 66 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 92 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 92 16 40 ];
+            symbol [ WatchUi %tmp.7 92 47 54 ];
+            %tmp.7 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.8 92 55 59 ];
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            symbol [ identifier %tmp.11 92 62 72 const ];
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            symbol [ color %tmp.16 92 84 89 const ];
+            symbol [ Graphics %tmp.17 92 91 99 ];
+            %tmp.17 = getm $.Toybox.Graphics;
+            symbol [ COLOR_LT_GRAY %tmp.18 92 100 113 ];
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            symbol [ locX %tmp.22 92 116 120 const ];
+            %tmp.23 = 14;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            symbol [ locY %tmp.27 92 127 131 const ];
+            %tmp.28 = 10;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            symbol [ justification %tmp.32 92 138 151 const ];
+            symbol [ Graphics %tmp.33 92 153 161 ];
+            %tmp.33 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_LEFT %tmp.34 92 162 179 ];
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_LEFT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            symbol [ font %tmp.38 92 182 186 const ];
+            symbol [ Graphics %tmp.39 92 188 196 ];
+            %tmp.39 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.40 92 197 206 ];
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+            symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 92 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 94 12 ]
+            [ "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_start" "_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 94 16 40 ];
+            symbol [ WatchUi %tmp.45 94 47 54 ];
+            %tmp.45 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.46 94 55 59 ];
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            symbol [ identifier %tmp.49 94 62 72 const ];
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            symbol [ color %tmp.54 94 84 89 const ];
+            symbol [ Graphics %tmp.55 94 91 99 ];
+            %tmp.55 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.56 94 100 111 ];
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            symbol [ locX %tmp.60 94 114 118 const ];
+            %tmp.61 = 14;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            symbol [ locY %tmp.65 94 125 129 const ];
+            %tmp.66 = 27;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            symbol [ justification %tmp.70 94 136 149 const ];
+            symbol [ Graphics %tmp.71 94 151 159 ];
+            %tmp.71 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_LEFT %tmp.72 94 160 177 ];
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_LEFT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            symbol [ font %tmp.76 94 180 184 const ];
+            symbol [ Graphics %tmp.77 94 186 194 ];
+            %tmp.77 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.78 94 195 205 ];
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+            symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 94 16 40 ];
+[ "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen" 96 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.81 96 127 132 ];
+            symbol [ WatchUi %tmp.81 96 133 140 ];
+            symbol [ Drawable %tmp.81 96 141 149 ];
+            %tmp.82 = lgetv %rez_cmp_local_custom_drawable_16187860511068497434.1;
+            symbol [ rez_cmp_local_custom_drawable_16187860511068497434 %tmp.82 96 20 70 ];
+            %tmp.83 = dup %tmp.81;
+            %tmp.84 = aputv %tmp.83 0 %tmp.82;
+            %tmp.85 = lgetv %rez_cmp_local_text_label.2;
+            symbol [ rez_cmp_local_text_label %tmp.85 96 72 96 ];
+            %tmp.86 = dup %tmp.84;
+            %tmp.87 = aputv %tmp.86 1 %tmp.85;
+            %tmp.88 = lgetv %rez_cmp_local_text_value.3;
+            symbol [ rez_cmp_local_text_value %tmp.88 96 98 122 ];
+            %tmp.89 = dup %tmp.87;
+            %tmp.90 = aputv %tmp.89 2 %tmp.88;
+            ret %tmp.90;
+_Users_jurajpanek_Documents_code_kom_way_GarminField_KomWayField_builds_edge1030_gen_006_B2713_00_source_Rez_mcgen_89_81_97_8_stop:
+        }
+    }
+    [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 100; @symbol_moduledef = [Strings,100,11,18]; ]
+    module Strings {
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 100; ]
+        <init> {
+        }
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 101; @position = 27; initialized = true; @symbol_vardef = [label,101,27,32]; @symbol_type<0> = [ResourceId,101,36,46]; ]
+        var label as ResourceId;
+        [ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 102; @position = 27; initialized = true; @symbol_vardef = [AppName,102,27,34]; @symbol_type<0> = [ResourceId,102,38,48]; ]
+        var AppName as ResourceId;
+    }
+}
+[ @file = "/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1030/gen/006-B2713-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

@@ -11,7 +11,7 @@ import Toybox.Time;
 class KomWayFieldView extends WatchUi.DataField {
 
     hidden var viewData as Lang.Dictionary;
-    hidden var weatherKickoffRequested as Lang.Boolean;
+    hidden var lastWeatherRefreshRequestEpoch as Lang.Number or Null;
     hidden var gpsReady as Lang.Boolean;
     var gpsMissCount = 0;
     var gpsMissCountMax = 5;
@@ -20,14 +20,6 @@ class KomWayFieldView extends WatchUi.DataField {
     const TOP_Y_RATIO = 0.17;
     const CENTER_Y_RATIO = 0.50;
     const BOTTOM_Y_RATIO = 0.90;
-
-    // Chevron style
-    //const CHEVRON_SIZE = 16.0; // 840
-    const CHEVRON_SIZE = 21.0;
-    const CHEVRON_SPACING = 12.0;
-    //const CHEVRON_PEN_WIDTH = 5.0; // 840
-    const CHEVRON_PEN_WIDTH = 6.0;
-    const CHEVRON_HEAD_ANGLE = 2.35619;
 
     var smoothedHeadingDeg = null;
 
@@ -42,7 +34,7 @@ class KomWayFieldView extends WatchUi.DataField {
         DataField.initialize();
 
         gpsReady = false;
-        weatherKickoffRequested = false;
+        lastWeatherRefreshRequestEpoch = null;
 
         viewData = {
             "heading"            => null,
@@ -122,6 +114,19 @@ class KomWayFieldView extends WatchUi.DataField {
         return smoothedHeadingDeg;
     }
 
+    // 6. Loading dots 
+    function getLoadingDots() as Lang.String {
+        var sec = Time.now().value().toNumber() % 3;
+
+        if (sec == 0) {
+            return ".";
+        } else if (sec == 1) {
+            return "..";
+        } else {
+            return "...";
+        }
+    }
+
     /*======================================================================================================
                         Compute block
     ======================================================================================================*/
@@ -129,6 +134,7 @@ class KomWayFieldView extends WatchUi.DataField {
     function compute(info as Activity.Info) as Void {
 
         var weatherData = getApp().getLatestWeather();
+        var nowEpoch = Time.now().value().toNumber();
 
         // Catching and saving GPS location
         if ((info has :currentLocation) && info.currentLocation != null) {
@@ -144,9 +150,24 @@ class KomWayFieldView extends WatchUi.DataField {
                     "source" => "activity"
                 });
 
-                if (!weatherKickoffRequested) {
-                    getApp().startWeatherRefreshNow();
-                    weatherKickoffRequested = true;
+                var weatherTime = weatherData["t"] as Lang.Number;
+                var shouldRefresh = false;
+
+                if (weatherTime == null || weatherTime <= 0) {
+                    shouldRefresh = true;
+                } else {
+                    var ageMinutes = ((nowEpoch - weatherTime) / 60).toNumber();
+                    if (ageMinutes > 15) {
+                        shouldRefresh = true;
+                    }
+                }
+
+                if (shouldRefresh) {
+                    if (lastWeatherRefreshRequestEpoch == null ||
+                        (nowEpoch - lastWeatherRefreshRequestEpoch) >= 305) {
+                        getApp().startWeatherRefreshNow();
+                        lastWeatherRefreshRequestEpoch = nowEpoch;
+                    }
                 }
             } else {
                 gpsMissCount += 1;
@@ -171,24 +192,16 @@ class KomWayFieldView extends WatchUi.DataField {
             return;
         }
 
-        // take the raw heading and smooth it out a bit (it can be noisy)
         var rawHeadingDeg = normalizeDeg(Math.toDegrees(info.currentHeading));
         var headingDeg = smoothHeadingDeg(rawHeadingDeg);
-
 
         var windDir = weatherData["wd"] as Lang.Float;
 
         viewData["heading"] = headingDeg;
         viewData["WindCompass"] = windDirToCompass8(windDir);
 
-        // Relative source direction around rider:
-        // 0 = from front, 90 = from right, 180 = from back, 270 = from left
         var relativeFrom = normalizeDeg(windDir - headingDeg);
-
-        // Convert source direction to flow direction
         var relativeTo = normalizeDeg(relativeFrom + 180.0);
-
-        // Snap flow direction to 8 sectors for cleaner chevrons
         var relativeToRounded = roundToNearest45(relativeTo);
 
         viewData["WindAngleFrom"] = relativeFrom;
@@ -243,25 +256,53 @@ class KomWayFieldView extends WatchUi.DataField {
             }
         }
 
+        var weatherTime = weatherData["t"] as Lang.Number;
+        var nowEpoch = Time.now().value().toNumber();
+        var ageMinutes = 999999;
+
+        if (weatherTime != null) {
+            ageMinutes = ((nowEpoch - weatherTime) / 60).toNumber();
+            if (ageMinutes < 0) {
+                ageMinutes = 0;
+            }
+        }
+
+        //var weatherStale = (ageMinutes > 2 * 60); // weather more than 2 hours old
+        var weatherExpired = (ageMinutes > 24 * 60); // weather more than 1 day old
+
         // show when GPS is not ready
         if (!gpsReady) {
             dc.drawText(
                 centerX,
-                (height / 2).toNumber(),
+                (height / 2 - 2).toNumber(),
                 Graphics.FONT_TINY,
                 "Waiting for GPS",
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+            );
+            dc.drawText(
+                centerX,
+                ((height / 2) + 10).toNumber(),
+                Graphics.FONT_TINY,
+                getLoadingDots(),
                 Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
             );
             return;
         }
 
-        // show when Weather is not ready
-        if (!weatherReady) {
+        // show when Weather is not ready at all
+        if (!weatherReady || weatherExpired) {
             dc.drawText(
                 centerX,
-                (height / 2 ).toNumber(),
+                (height / 2 - 2).toNumber(),
                 Graphics.FONT_TINY,
                 "Loading weather",
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+            );
+            dc.drawText(
+                centerX,
+                ((height / 2) + 10).toNumber(),
+                Graphics.FONT_TINY,
+                getLoadingDots(),
                 Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
             );
             return;
@@ -269,14 +310,9 @@ class KomWayFieldView extends WatchUi.DataField {
         // ------------------- Negative scenario: END ------------------------------
 
 
-
         // ------------- Drawing things on display: START --------------------------
         var windCompass = viewData["WindCompass"] as Lang.String;
         var ws = weatherData["ws"] as Lang.Float;
-        var wg = weatherData["wg"] as Lang.Float;
-        var temp = weatherData["temp"] as Lang.Float;
-        var rain = weatherData["rain"] as Lang.Float;
-        var weatherTime = weatherData["t"] as Lang.Number;
 
         var mainStr = windCompass + " " + ws.format("%.0f");
         var unitStr = "kmh";
@@ -294,9 +330,6 @@ class KomWayFieldView extends WatchUi.DataField {
         var y = (height * TOP_Y_RATIO).toNumber();
         var unitY = y - 2;
 
-        // ----------------------------------------------------------------------------
-        // [Section 1]: Large wind direction + wind speed
-        // large NW + number
         dc.drawText(
             baseX,
             y,
@@ -304,7 +337,7 @@ class KomWayFieldView extends WatchUi.DataField {
             mainStr,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
-        // tiny kmh
+
         dc.drawText(
             baseX + mainW + gap,
             unitY,
@@ -313,18 +346,12 @@ class KomWayFieldView extends WatchUi.DataField {
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
-
-        // ----------------------------------------------------------------------------
-        // [Section 2]: Drawing the arrow bitmap instead of chevrons
         if (viewData["WindAngleToRounded"] != null) {
             var angle = viewData["WindAngleToRounded"] as Lang.Float;
             var arrowRes = null;
 
             var useSmallArrow = (height < 90 || width < 140);
             var arrowSize = useSmallArrow ? 48 : 60;
-
-            //System.print("screen size:" + width +"x"+height+". Using arrow size: "+arrowSize);
-            
 
             if (bgColor == Graphics.COLOR_BLACK) {
                 if (arrowSize == 48) {
@@ -417,27 +444,94 @@ class KomWayFieldView extends WatchUi.DataField {
             }
         }
 
-        // ----------------------------------------------------------------------------
-        // [Section 3]: Bottom line with gusts, temperature, rain and minutes since update
-        var nowEpoch = Time.now().value().toNumber();
-        var ageMinutes = ((nowEpoch - weatherTime) / 60).toNumber();
-        if (ageMinutes < 0) {
-            ageMinutes = 0;
-        }
+        var temp = weatherData["temp"] as Lang.Float;
+        var rain = weatherData["rain"] as Lang.Float;
+        //var rain = 1.1;
 
-        var detailStr =
-            "G" + wg.format("%.0f") +
-            "  " + temp.format("%.0f") + "°" +
-            "  R" + rain.format("%.1f") +
-            "  " + ageMinutes.format("%d") + "m";
+        var tempStr = temp.format("%.0f") + "°";
+        var ageStr  = ageMinutes.format("%d") + "m";
+
+        var bottomY = (height * BOTTOM_Y_RATIO).toNumber();
+        var padX = 4;
+
         dc.drawText(
-            centerX,
-            (height * BOTTOM_Y_RATIO).toNumber(),
+            padX,
+            bottomY,
             Graphics.FONT_TINY,
-            detailStr,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+            tempStr,
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
+        if (rain > 0.0) {
+            var rainStr = rain.format("%.1f") + "mm";
+            var textW = dc.getTextWidthInPixels(rainStr, Graphics.FONT_TINY);
+            var textH = dc.getFontHeight(Graphics.FONT_TINY);
+
+            var boxPadX = 4;
+            var boxPadY = 2;
+            var boxW = textW + (boxPadX * 2);
+            var boxH = textH + (boxPadY * 2);
+            var boxX = width - padX - boxW;
+            var boxY = (bottomY - (boxH / 2)).toNumber();
+
+            dc.setColor(textColor, bgColor);
+            dc.fillRoundedRectangle(boxX, boxY, boxW, boxH, 4);
+
+            dc.setColor(bgColor, textColor);
+            dc.drawText(
+                width - padX - boxPadX,
+                bottomY,
+                Graphics.FONT_TINY,
+                rainStr,
+                Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER
+            );
+
+            dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
+
+            var ageFont = Graphics.FONT_XTINY;
+            var ageW = dc.getTextWidthInPixels(ageStr, ageFont);
+
+            //var ageLeft = centerX - (ageW / 2);
+            var ageRight = centerX + (ageW / 2);
+
+            var minGap = 6;
+            var allowedRight = boxX - minGap;
+
+            if (ageRight <= allowedRight) {
+                dc.drawText(
+                    centerX,
+                    bottomY,
+                    ageFont,
+                    ageStr,
+                    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+                );
+            } else {
+                var shiftedCenterX = allowedRight - (ageW / 2);
+                var minCenterX = padX + 20;
+
+                if (shiftedCenterX > minCenterX) {
+                    dc.drawText(
+                        shiftedCenterX,
+                        bottomY,
+                        ageFont,
+                        ageStr,
+                        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+                    );
+                }
+                // else: skip ageStr on very small screens when rain badge is present
+            }
+        }
+
+        
+        else {
+            dc.drawText(
+                centerX,
+                bottomY,
+                Graphics.FONT_XTINY,
+                ageStr,
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+            );
+        }
     }
 
 }

@@ -10,7 +10,8 @@ import Toybox.Time;
 
 class KomWayFieldApp extends Application.AppBase {
 
-    const KEY_LATEST_COORDS = "latestCoords";
+    const KEY_LATEST_COORDS  = "latestCoords";
+    const KEY_LATEST_WEATHER = "latestWeather";
 
     hidden var latestWeather as Lang.Dictionary;
     hidden var latestCoords as Lang.Dictionary;
@@ -36,7 +37,7 @@ class KomWayFieldApp extends Application.AppBase {
         };
 
         loadLatestCoords();
-
+        loadLatestWeather();
     }
 
     function onStart(state as Lang.Dictionary or Null) as Void {
@@ -74,11 +75,11 @@ class KomWayFieldApp extends Application.AppBase {
         }
 
         latestWeather = weather;
+        saveLatestWeather(weather);
         WatchUi.requestUpdate();
     }
 
     function startWeatherRefreshNow() as Void {
-        // Function: triggered from View.mc to fire off the background API call in Service.mc
         var lastRun = Background.getLastTemporalEventTime();
 
         try {
@@ -101,7 +102,6 @@ class KomWayFieldApp extends Application.AppBase {
         }
     }
 
-    // Getter and Setter of latest weather data
     function getLatestWeather() as Lang.Dictionary {
         return latestWeather;
     }
@@ -110,20 +110,36 @@ class KomWayFieldApp extends Application.AppBase {
         latestWeather = data;
     }
 
-    // Getter and Setter of latest GPS coordinates (they'll come from View.mc and Service.mc will take them)
+    function saveLatestWeather(data as Lang.Dictionary) as Void {
+        latestWeather = data;
+
+        try {
+            Storage.setValue(KEY_LATEST_WEATHER, data);
+        } catch(e) {
+            System.println("saveLatestWeather failed: " + e.toString());
+        }
+    }
+
+    function loadLatestWeather() as Lang.Dictionary {
+        var stored = Storage.getValue(KEY_LATEST_WEATHER) as Lang.Dictionary;
+
+        if (stored != null) {
+            latestWeather = stored;
+        }
+
+        return latestWeather;
+    }
+
     function getLatestCoords() as Lang.Dictionary {
-        // get LatestCoords from memory (in-app)
         return latestCoords;
     }
 
     function saveLatestCoords(data as Lang.Dictionary) as Void {
-        // SAVE latest coordinates to memory and persistent storage
         latestCoords = data;
         Storage.setValue(KEY_LATEST_COORDS, data);
     }
 
     function loadLatestCoords() as Lang.Dictionary {
-        // LOAD latest coordinates from memory
         var stored = Storage.getValue(KEY_LATEST_COORDS) as Lang.Dictionary;
 
         if (stored != null) {
