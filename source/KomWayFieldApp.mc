@@ -8,6 +8,8 @@ import Toybox.Application.Storage;
 import Toybox.Background;
 import Toybox.Time;
 
+
+(:background)
 class KomWayFieldApp extends Application.AppBase {
 
     const KEY_LATEST_COORDS  = "latestCoords";

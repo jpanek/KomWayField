@@ -207,22 +207,6 @@ class KomWayFieldView extends WatchUi.DataField {
         viewData["WindAngleFrom"] = relativeFrom;
         viewData["WindAngleTo"] = relativeTo;
         viewData["WindAngleToRounded"] = relativeToRounded;
-        
-        /*
-        // ################################### DEBUG ONLY: ###################################        
-        var riderHeadingCompass = windDirToCompass8(headingDeg);
-        var windCompass = windDirToCompass8(windDir);
-        var fromCompass = windDirToCompass8(relativeFrom);
-        var toCompass = windDirToCompass8(relativeToRounded);
-
-        
-        System.println(
-            "HEAD " + riderHeadingCompass +
-            " | WIND " + windCompass +
-            " | FROM rider=" + relativeFrom.format("%.0f") + " " + fromCompass +
-            " | ARROW to=" + relativeToRounded.format("%.0f") + " " + toCompass
-        );
-        */
 
     }
 
