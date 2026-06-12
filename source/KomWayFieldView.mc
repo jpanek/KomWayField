@@ -295,46 +295,98 @@ class KomWayFieldView extends WatchUi.DataField {
 
 
         // ------------- Drawing things on display: START --------------------------
+        var useSmallArrow = (height < 90 || width < 140); // true if screen is smaller
+        var useSmallFont = (height < 65) || (dc.getFontHeight(Graphics.FONT_TINY) > 19); // for small screens (830 or old versions with large tiny font)
+
+        /*
+        System.println("height " + height);
+        System.println("width " + width);
+        System.println("tiny font " + dc.getFontHeight(Graphics.FONT_TINY));
+        System.println("xtiny font " + dc.getFontHeight(Graphics.FONT_XTINY));
+        */
+
+
+        /*
+        10 field layout (h x w):
+            1040:  92 x 140
+            840:   66 x 122
+            830:   63 x 122
+            1030:  93 x 140
+        */
+
+        // -------------------- Top row: Wind direction, wind speed --------------------------------------------
         var windCompass = viewData["WindCompass"] as Lang.String;
         var ws = weatherData["ws"] as Lang.Float;
 
-        var mainStr = windCompass + " " + ws.format("%.0f");
-        var unitStr = "kmh";
+        var moveFromTop = useSmallArrow ? 6 : 3;
 
-        var mainFont = Graphics.FONT_MEDIUM;
+        var y = (height * TOP_Y_RATIO).toNumber();
+        var padX = 2;
+
+        // Use FONT_LARGE for text, FONT_NUMBER_MILD for numbers
+        var compassFont = Graphics.FONT_MEDIUM;
+        var speedFont = Graphics.FONT_NUMBER_MILD;
         var unitFont = Graphics.FONT_XTINY;
 
-        var gap = 4;
-
-        var mainW = dc.getTextWidthInPixels(mainStr, mainFont);
-        var unitW = dc.getTextWidthInPixels(unitStr, unitFont);
-        var totalW = mainW + gap + unitW;
-
-        var baseX = centerX - (totalW / 2);
-        var y = (height * TOP_Y_RATIO).toNumber();
-        var unitY = y - 2;
-
+        // Top Left: Wind Direction
         dc.drawText(
-            baseX,
+            padX,
             y,
-            mainFont,
-            mainStr,
+            compassFont,
+            windCompass,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
+        // Top Right: Speed + Unit (Maintained Font Hierarchy)
+        var speedStr = ws.format("%.0f");
+        
+        var speedW = dc.getTextWidthInPixels(speedStr, speedFont);
+        var unitW = dc.getTextWidthInPixels("km", unitFont);
+        var gap = 2;
+        var totalBlockW = speedW + gap + unitW;
+        
+        // Calculate start position for right-aligned block
+        var startX = width - padX - totalBlockW;
+        var unitX = startX + speedW + gap;
+
+        // Speed of wind
         dc.drawText(
-            baseX + mainW + gap,
-            unitY,
-            unitFont,
-            unitStr,
+            startX,
+            y + moveFromTop,
+            speedFont,
+            speedStr,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
+        // Draw "km"
+        dc.drawText(
+            unitX,
+            y - 6,
+            unitFont,
+            "km",
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
+        );
+
+        // Draw "h"
+        dc.drawText(
+            unitX + (unitW / 3),
+            y + 6, // Shift down
+            unitFont,
+            "h",
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
+        );
+
+        // -------------------- Center: Arrows --------------------------------------------
         if (viewData["WindAngleToRounded"] != null) {
             var angle = viewData["WindAngleToRounded"] as Lang.Float;
             var arrowRes = null;
-
-            var useSmallArrow = (height < 90 || width < 140);
+            
+            var moveArrowLeft = 0;
+            if (useSmallFont){
+                // on small tiny screens (*30 series) better to move the arrow a bit to the left
+                moveArrowLeft = 4;
+            }
+            
             var arrowSize = useSmallArrow ? 48 : 60;
 
             if (bgColor == Graphics.COLOR_BLACK) {
@@ -421,35 +473,43 @@ class KomWayFieldView extends WatchUi.DataField {
                     cachedArrowBmp = WatchUi.loadResource(arrowRes);
                 }
 
-                var arrowX = (centerX - (arrowSize / 2)).toNumber();
-                var arrowY = ((height * CENTER_Y_RATIO) - (arrowSize / 2) + 6).toNumber();
+                var arrowX = (centerX - (arrowSize / 2) - moveArrowLeft).toNumber();
+                var arrowY = ((height * CENTER_Y_RATIO) - (arrowSize / 2) + 2).toNumber();
 
                 dc.drawBitmap(arrowX, arrowY, cachedArrowBmp);
             }
         }
 
+        // -------------------- Bottom row: Temperature, time, rain --------------------------------------------
         var temp = weatherData["temp"] as Lang.Float;
         var rain = weatherData["rain"] as Lang.Float;
-        //var rain = 1.1;
+        //rain = 1.1;
 
         var tempStr = temp.format("%.0f") + "°";
         var ageStr  = ageMinutes.format("%d") + "m";
 
         var bottomY = (height * BOTTOM_Y_RATIO).toNumber();
-        var padX = 4;
+
+        var moveFromBottom = useSmallArrow ? 4 : 0;
 
         dc.drawText(
             padX,
-            bottomY,
+            bottomY - moveFromBottom,
             Graphics.FONT_TINY,
             tempStr,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
         if (rain > 0.0) {
+            
+            var rainFont = Graphics.FONT_TINY;
+            if (useSmallFont) {
+                rainFont = Graphics.FONT_XTINY;
+            }
+
             var rainStr = rain.format("%.1f") + "mm";
-            var textW = dc.getTextWidthInPixels(rainStr, Graphics.FONT_TINY);
-            var textH = dc.getFontHeight(Graphics.FONT_TINY);
+            var textW = dc.getTextWidthInPixels(rainStr, rainFont);
+            var textH = dc.getFontHeight(rainFont);
 
             var boxPadX = 4;
             var boxPadY = 2;
@@ -457,15 +517,16 @@ class KomWayFieldView extends WatchUi.DataField {
             var boxH = textH + (boxPadY * 2);
             var boxX = width - padX - boxW;
             var boxY = (bottomY - (boxH / 2)).toNumber();
+            
 
             dc.setColor(textColor, bgColor);
-            dc.fillRoundedRectangle(boxX, boxY, boxW, boxH, 4);
+            dc.fillRoundedRectangle(boxX, boxY - moveFromBottom, boxW, boxH, 4);
 
             dc.setColor(bgColor, textColor);
             dc.drawText(
                 width - padX - boxPadX,
-                bottomY,
-                Graphics.FONT_TINY,
+                bottomY - moveFromBottom,
+                rainFont,
                 rainStr,
                 Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER
             );
@@ -505,9 +566,7 @@ class KomWayFieldView extends WatchUi.DataField {
                 // else: skip ageStr on very small screens when rain badge is present
             }
         }
-
-        
-        else {
+        else { //no rain
             dc.drawText(
                 centerX,
                 bottomY,
