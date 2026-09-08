@@ -1,0 +1,5 @@
+<properties>
+    <property id="WIND_UNITS" type="number">0</property>
+    <property id="HEADING_SMOOTHING" type="number">1</property>
+    <property id="TEMP_UNITS" type="number">0</property>
+</properties>

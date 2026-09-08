@@ -16,7 +16,7 @@ class KomWayFieldApp extends Application.AppBase {
     const KEY_LATEST_WEATHER = "latestWeather";
 
     hidden var latestWeather as Lang.Dictionary;
-    hidden var latestCoords as Lang.Dictionary;
+    hidden var latestCoords as Lang.Dictionary or Null;
 
     function initialize() {
         AppBase.initialize();
@@ -32,11 +32,7 @@ class KomWayFieldApp extends Application.AppBase {
             "rain" => -1.0
         };
 
-        latestCoords = {
-            "lat" => 50.0755,
-            "lon" => 14.4378,
-            "source" => "fallback"
-        };
+        latestCoords = null;
 
         loadLatestCoords();
         loadLatestWeather();

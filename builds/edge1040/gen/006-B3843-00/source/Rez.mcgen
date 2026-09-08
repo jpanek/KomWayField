@@ -98,7 +98,10 @@ module Rez {
     } // Layouts
 
     module Strings {
+        (:initialized) var wind_units_kmh as ResourceId;
+        (:initialized) var wind_units_mps as ResourceId;
         (:initialized) var label as ResourceId;
+        (:initialized) var wind_units_title as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 

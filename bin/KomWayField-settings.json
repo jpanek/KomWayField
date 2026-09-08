@@ -1,0 +1,86 @@
+{
+  "settings" : [ {
+    "key" : "WIND_UNITS",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "wind_units_title",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "wind_units_kmh",
+      "value" : 0
+    }, {
+      "display" : "wind_units_mps",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HEADING_SMOOTHING",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "heading_smoothing_title",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "heading_smoothing_low",
+      "value" : 0
+    }, {
+      "display" : "heading_smoothing_medium",
+      "value" : 1
+    }, {
+      "display" : "heading_smoothing_high",
+      "value" : 2
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "TEMP_UNITS",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "temp_units_title",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "temp_units_celsius",
+      "value" : 0
+    }, {
+      "display" : "temp_units_fahrenheit",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "heading_smoothing_title" : "Heading smoothing",
+      "wind_units_kmh" : "km/h",
+      "wind_units_mps" : "m/s",
+      "heading_smoothing_medium" : "Medium",
+      "temp_units_celsius" : "Celsius",
+      "label" : "My Value",
+      "heading_smoothing_low" : "Low",
+      "wind_units_title" : "Wind units",
+      "heading_smoothing_high" : "High",
+      "temp_units_fahrenheit" : "Fahrenheit",
+      "AppName" : "KomWayField",
+      "temp_units_title" : "Temperature"
+    }
+  }
+}

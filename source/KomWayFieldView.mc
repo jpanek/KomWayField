@@ -7,6 +7,7 @@ import Toybox.Math;
 import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.Time;
+import Toybox.Application;
 
 class KomWayFieldView extends WatchUi.DataField {
 
@@ -95,7 +96,17 @@ class KomWayFieldView extends WatchUi.DataField {
 
     // 5. Smooth heading while handling 0/360 wrap correctly
     private function smoothHeadingDeg(newHeadingDeg as Lang.Float) as Lang.Float {
-        var alpha = 0.25; // lower = smoother, higher = more responsive
+        
+        var alpha = 0.25;
+        var smoothing = Application.Properties.getValue("HEADING_SMOOTHING");
+
+        if (smoothing == 0) {
+            alpha = 0.15;
+        } else if (smoothing == 1) {
+            alpha = 0.25;
+        } else if (smoothing == 2) {
+            alpha = 0.40;
+        }
 
         if (smoothedHeadingDeg == null) {
             smoothedHeadingDeg = newHeadingDeg;
@@ -251,8 +262,8 @@ class KomWayFieldView extends WatchUi.DataField {
             }
         }
 
-        //var weatherStale = (ageMinutes > 2 * 60); // weather more than 2 hours old
-        var weatherExpired = (ageMinutes > 24 * 60); // weather more than 1 day old
+        //var weatherStale = (ageMinutes > 1 * 60); // weather more than 2 hours old
+        var weatherExpired = (ageMinutes > 3 * 60); // weather more than 1 day old
 
         // show when GPS is not ready
         if (!gpsReady) {
@@ -318,6 +329,33 @@ class KomWayFieldView extends WatchUi.DataField {
         var windCompass = viewData["WindCompass"] as Lang.String;
         var ws = weatherData["ws"] as Lang.Float;
 
+        // Get the settings on Unit:
+        /*
+        var windUnits = Application.getApp().getProperty("WIND_UNITS");
+        if (windUnits == null) {
+            windUnits = 0;
+        }
+        */
+        var windUnits = 0;
+
+        if (Application has :Properties) {
+            var storedWindUnits = Application.Properties.getValue("WIND_UNITS");
+            if (storedWindUnits != null) {
+                windUnits = storedWindUnits;
+            }
+        }
+        
+
+        var displayWs = ws;
+        var unitTop = "km";
+        var unitBottom = "h";
+
+        if (windUnits == 1) {
+            displayWs = ws / 3.6;
+            unitTop = "m";
+            unitBottom = "s";
+        }
+
         var moveFromTop = useSmallArrow ? 6 : 3;
 
         var y = (height * TOP_Y_RATIO).toNumber();
@@ -338,10 +376,10 @@ class KomWayFieldView extends WatchUi.DataField {
         );
 
         // Top Right: Speed + Unit (Maintained Font Hierarchy)
-        var speedStr = ws.format("%.0f");
+        var speedStr = displayWs.format("%.0f");
         
         var speedW = dc.getTextWidthInPixels(speedStr, speedFont);
-        var unitW = dc.getTextWidthInPixels("km", unitFont);
+        var unitW = dc.getTextWidthInPixels(unitTop, unitFont);
         var gap = 2;
         var totalBlockW = speedW + gap + unitW;
         
@@ -363,7 +401,7 @@ class KomWayFieldView extends WatchUi.DataField {
             unitX,
             y - 6,
             unitFont,
-            "km",
+            unitTop,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
@@ -372,7 +410,7 @@ class KomWayFieldView extends WatchUi.DataField {
             unitX + (unitW / 3),
             y + 6, // Shift down
             unitFont,
-            "h",
+            unitBottom,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
         );
 
@@ -485,8 +523,20 @@ class KomWayFieldView extends WatchUi.DataField {
         var rain = weatherData["rain"] as Lang.Float;
         //rain = 1.1;
 
+        //string showing the temperature
+        var tempSetting = Application.Properties.getValue("TEMP_UNITS");
+        if (tempSetting == 1) {
+            temp = (temp * 9.0 / 5.0) + 32.0;
+        }
         var tempStr = temp.format("%.0f") + "°";
-        var ageStr  = ageMinutes.format("%d") + "m";
+
+        //string showing minutes since last weather update
+        var ageStr = "";
+        if (ageMinutes > 20){
+            ageStr  = ageMinutes.format("%d") + "m";
+            ageStr = "⚠";
+        }
+        //System.println("Age of weather: " + ageMinutes);
 
         var bottomY = (height * BOTTOM_Y_RATIO).toNumber();
 

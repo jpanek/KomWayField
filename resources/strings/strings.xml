@@ -2,4 +2,21 @@
     <string id="AppName">KomWayField</string>
 
     <string id="label">My Value</string>
+
+    <!--Wind units -->
+    <string id="wind_units_title">Wind units</string>
+    <string id="wind_units_kmh">km/h</string>
+    <string id="wind_units_mps">m/s</string>
+
+    <!--Heading smoothing -->
+    <string id="heading_smoothing_title">Heading smoothing</string>
+    <string id="heading_smoothing_low">Low</string>
+    <string id="heading_smoothing_medium">Medium</string>
+    <string id="heading_smoothing_high">High</string>
+
+    <!--Temperature units -->
+    <string id="temp_units_title">Temperature</string>
+    <string id="temp_units_celsius">Celsius</string>
+    <string id="temp_units_fahrenheit">Fahrenheit</string>
+    
 </strings>

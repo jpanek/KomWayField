@@ -1,0 +1,34 @@
+{
+  "settings" : [ {
+    "key" : "WIND_UNITS",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "wind_units_title",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "wind_units_kmh",
+      "value" : 0
+    }, {
+      "display" : "wind_units_mps",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "wind_units_kmh" : "km/h",
+      "label" : "My Value",
+      "wind_units_mps" : "m/s",
+      "wind_units_title" : "Wind units",
+      "AppName" : "KomWayField"
+    }
+  }
+}

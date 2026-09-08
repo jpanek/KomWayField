@@ -98,8 +98,18 @@ module Rez {
     } // Layouts
 
     module Strings {
+        (:initialized) var heading_smoothing_title as ResourceId;
+        (:initialized) var wind_units_kmh as ResourceId;
+        (:initialized) var wind_units_mps as ResourceId;
+        (:initialized) var heading_smoothing_medium as ResourceId;
+        (:initialized) var temp_units_celsius as ResourceId;
         (:initialized) var label as ResourceId;
+        (:initialized) var heading_smoothing_low as ResourceId;
+        (:initialized) var wind_units_title as ResourceId;
+        (:initialized) var heading_smoothing_high as ResourceId;
+        (:initialized) var temp_units_fahrenheit as ResourceId;
         (:initialized) var AppName as ResourceId;
+        (:initialized) var temp_units_title as ResourceId;
     } // Strings
 
     module Styles {

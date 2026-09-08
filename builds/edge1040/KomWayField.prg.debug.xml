@@ -2,72 +2,72 @@
 <debugInfo>
     <manifest filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="1" lineNum="11" parent="globals/KomWayFieldApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="1" lineNum="13" parent="globals/KomWayFieldApp" pc="268435460" symbol="&lt;init&gt;"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldService.mc" id="2" lineNum="14" parent="globals/KomWayFieldService" pc="268435472" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="113" parent="globals/KomWayFieldApp" pc="268435484" symbol="saveLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="114" parent="globals/KomWayFieldApp" pc="268435487" symbol="saveLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="117" parent="globals/KomWayFieldApp" pc="268435496" symbol="saveLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="118" parent="globals/KomWayFieldApp" pc="268435522" symbol="saveLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="119" parent="globals/KomWayFieldApp" pc="268435526" symbol="saveLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="4" lineNum="137" parent="globals/KomWayFieldApp" pc="268435565" symbol="saveLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="4" lineNum="138" parent="globals/KomWayFieldApp" pc="268435567" symbol="saveLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="4" lineNum="139" parent="globals/KomWayFieldApp" pc="268435576" symbol="saveLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="142" parent="globals/KomWayFieldApp" pc="268435597" symbol="loadLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="143" parent="globals/KomWayFieldApp" pc="268435600" symbol="loadLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="145" parent="globals/KomWayFieldApp" pc="268435619" symbol="loadLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="146" parent="globals/KomWayFieldApp" pc="268435625" symbol="loadLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="149" parent="globals/KomWayFieldApp" pc="268435637" symbol="loadLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="6" lineNum="49" parent="globals/KomWayFieldApp" pc="268435643" symbol="getInitialView"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="6" lineNum="50" parent="globals/KomWayFieldApp" pc="268435645" symbol="getInitialView"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="7" lineNum="133" parent="globals/KomWayFieldApp" pc="268435671" symbol="getLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="7" lineNum="134" parent="globals/KomWayFieldApp" pc="268435673" symbol="getLatestCoords"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="57" parent="globals/KomWayFieldApp" pc="268435679" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="58" parent="globals/KomWayFieldApp" pc="268435682" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="59" parent="globals/KomWayFieldApp" pc="268435698" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="60" parent="globals/KomWayFieldApp" pc="268435716" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="63" parent="globals/KomWayFieldApp" pc="268435720" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="64" parent="globals/KomWayFieldApp" pc="268435724" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="66" parent="globals/KomWayFieldApp" pc="268435734" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="67" parent="globals/KomWayFieldApp" pc="268435740" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="68" parent="globals/KomWayFieldApp" pc="268435758" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="71" parent="globals/KomWayFieldApp" pc="268435762" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="72" parent="globals/KomWayFieldApp" pc="268435766" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="73" parent="globals/KomWayFieldApp" pc="268435783" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="74" parent="globals/KomWayFieldApp" pc="268435801" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="77" parent="globals/KomWayFieldApp" pc="268435805" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="78" parent="globals/KomWayFieldApp" pc="268435814" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="79" parent="globals/KomWayFieldApp" pc="268435825" symbol="onBackgroundData"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="9" lineNum="105" parent="globals/KomWayFieldApp" pc="268435837" symbol="getLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="9" lineNum="106" parent="globals/KomWayFieldApp" pc="268435839" symbol="getLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="123" parent="globals/KomWayFieldApp" pc="268435845" symbol="loadLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="124" parent="globals/KomWayFieldApp" pc="268435848" symbol="loadLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="126" parent="globals/KomWayFieldApp" pc="268435867" symbol="loadLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="127" parent="globals/KomWayFieldApp" pc="268435873" symbol="loadLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="130" parent="globals/KomWayFieldApp" pc="268435885" symbol="loadLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="82" parent="globals/KomWayFieldApp" pc="268435891" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="83" parent="globals/KomWayFieldApp" pc="268435894" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="86" parent="globals/KomWayFieldApp" pc="268435906" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="87" parent="globals/KomWayFieldApp" pc="268435912" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="88" parent="globals/KomWayFieldApp" pc="268435935" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="91" parent="globals/KomWayFieldApp" pc="268435942" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="92" parent="globals/KomWayFieldApp" pc="268435978" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="94" parent="globals/KomWayFieldApp" pc="268435990" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="95" parent="globals/KomWayFieldApp" pc="268436008" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="97" parent="globals/KomWayFieldApp" pc="268436026" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="100" parent="globals/KomWayFieldApp" pc="268436047" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="101" parent="globals/KomWayFieldApp" pc="268436051" symbol="startWeatherRefreshNow"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="12" lineNum="43" parent="globals/KomWayFieldApp" pc="268436090" symbol="onStart"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="13" lineNum="53" parent="globals/KomWayFieldApp" pc="268436093" symbol="getServiceDelegate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="13" lineNum="54" parent="globals/KomWayFieldApp" pc="268436095" symbol="getServiceDelegate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="14" lineNum="109" parent="globals/KomWayFieldApp" pc="268436121" symbol="setLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="14" lineNum="110" parent="globals/KomWayFieldApp" pc="268436123" symbol="setLatestWeather"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="19" parent="globals/KomWayFieldApp" pc="268436133" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="20" parent="globals/KomWayFieldApp" pc="268436135" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="22" parent="globals/KomWayFieldApp" pc="268436147" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="33" parent="globals/KomWayFieldApp" pc="268436159" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="39" parent="globals/KomWayFieldApp" pc="268436171" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="40" parent="globals/KomWayFieldApp" pc="268436178" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="16" lineNum="46" parent="globals/KomWayFieldApp" pc="268436186" symbol="onStop"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="115" parent="globals/KomWayFieldApp" pc="268435484" symbol="saveLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="116" parent="globals/KomWayFieldApp" pc="268435487" symbol="saveLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="119" parent="globals/KomWayFieldApp" pc="268435496" symbol="saveLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="120" parent="globals/KomWayFieldApp" pc="268435522" symbol="saveLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="3" lineNum="121" parent="globals/KomWayFieldApp" pc="268435526" symbol="saveLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="4" lineNum="139" parent="globals/KomWayFieldApp" pc="268435565" symbol="saveLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="4" lineNum="140" parent="globals/KomWayFieldApp" pc="268435567" symbol="saveLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="4" lineNum="141" parent="globals/KomWayFieldApp" pc="268435576" symbol="saveLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="144" parent="globals/KomWayFieldApp" pc="268435597" symbol="loadLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="145" parent="globals/KomWayFieldApp" pc="268435600" symbol="loadLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="147" parent="globals/KomWayFieldApp" pc="268435619" symbol="loadLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="148" parent="globals/KomWayFieldApp" pc="268435625" symbol="loadLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="5" lineNum="151" parent="globals/KomWayFieldApp" pc="268435637" symbol="loadLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="6" lineNum="51" parent="globals/KomWayFieldApp" pc="268435643" symbol="getInitialView"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="6" lineNum="52" parent="globals/KomWayFieldApp" pc="268435645" symbol="getInitialView"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="7" lineNum="135" parent="globals/KomWayFieldApp" pc="268435671" symbol="getLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="7" lineNum="136" parent="globals/KomWayFieldApp" pc="268435673" symbol="getLatestCoords"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="59" parent="globals/KomWayFieldApp" pc="268435679" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="60" parent="globals/KomWayFieldApp" pc="268435682" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="61" parent="globals/KomWayFieldApp" pc="268435698" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="62" parent="globals/KomWayFieldApp" pc="268435716" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="65" parent="globals/KomWayFieldApp" pc="268435720" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="66" parent="globals/KomWayFieldApp" pc="268435724" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="68" parent="globals/KomWayFieldApp" pc="268435734" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="69" parent="globals/KomWayFieldApp" pc="268435740" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="70" parent="globals/KomWayFieldApp" pc="268435758" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="73" parent="globals/KomWayFieldApp" pc="268435762" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="74" parent="globals/KomWayFieldApp" pc="268435766" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="75" parent="globals/KomWayFieldApp" pc="268435783" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="76" parent="globals/KomWayFieldApp" pc="268435801" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="79" parent="globals/KomWayFieldApp" pc="268435805" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="80" parent="globals/KomWayFieldApp" pc="268435814" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="8" lineNum="81" parent="globals/KomWayFieldApp" pc="268435825" symbol="onBackgroundData"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="9" lineNum="107" parent="globals/KomWayFieldApp" pc="268435837" symbol="getLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="9" lineNum="108" parent="globals/KomWayFieldApp" pc="268435839" symbol="getLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="125" parent="globals/KomWayFieldApp" pc="268435845" symbol="loadLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="126" parent="globals/KomWayFieldApp" pc="268435848" symbol="loadLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="128" parent="globals/KomWayFieldApp" pc="268435867" symbol="loadLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="129" parent="globals/KomWayFieldApp" pc="268435873" symbol="loadLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="10" lineNum="132" parent="globals/KomWayFieldApp" pc="268435885" symbol="loadLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="84" parent="globals/KomWayFieldApp" pc="268435891" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="85" parent="globals/KomWayFieldApp" pc="268435894" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="88" parent="globals/KomWayFieldApp" pc="268435906" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="89" parent="globals/KomWayFieldApp" pc="268435912" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="90" parent="globals/KomWayFieldApp" pc="268435935" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="93" parent="globals/KomWayFieldApp" pc="268435942" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="94" parent="globals/KomWayFieldApp" pc="268435978" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="96" parent="globals/KomWayFieldApp" pc="268435990" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="97" parent="globals/KomWayFieldApp" pc="268436008" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="99" parent="globals/KomWayFieldApp" pc="268436026" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="102" parent="globals/KomWayFieldApp" pc="268436047" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="11" lineNum="103" parent="globals/KomWayFieldApp" pc="268436051" symbol="startWeatherRefreshNow"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="12" lineNum="45" parent="globals/KomWayFieldApp" pc="268436090" symbol="onStart"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="13" lineNum="55" parent="globals/KomWayFieldApp" pc="268436093" symbol="getServiceDelegate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="13" lineNum="56" parent="globals/KomWayFieldApp" pc="268436095" symbol="getServiceDelegate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="14" lineNum="111" parent="globals/KomWayFieldApp" pc="268436121" symbol="setLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="14" lineNum="112" parent="globals/KomWayFieldApp" pc="268436123" symbol="setLatestWeather"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="21" parent="globals/KomWayFieldApp" pc="268436133" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="22" parent="globals/KomWayFieldApp" pc="268436135" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="24" parent="globals/KomWayFieldApp" pc="268436147" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="35" parent="globals/KomWayFieldApp" pc="268436159" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="41" parent="globals/KomWayFieldApp" pc="268436171" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="15" lineNum="42" parent="globals/KomWayFieldApp" pc="268436178" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="16" lineNum="48" parent="globals/KomWayFieldApp" pc="268436186" symbol="onStop"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldService.mc" id="17" lineNum="61" parent="globals/KomWayFieldService" pc="268436189" symbol="onWeatherResponse"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldService.mc" id="17" lineNum="65" parent="globals/KomWayFieldService" pc="268436192" symbol="onWeatherResponse"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldService.mc" id="17" lineNum="67" parent="globals/KomWayFieldService" pc="268436195" symbol="onWeatherResponse"/>
@@ -122,11 +122,11 @@
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldService.mc" id="19" lineNum="51" parent="globals/KomWayFieldService" pc="268437150" symbol="onTemporalEvent"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldService.mc" id="20" lineNum="21" parent="globals/KomWayFieldService" pc="268437186" symbol="initialize"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldService.mc" id="20" lineNum="22" parent="globals/KomWayFieldService" pc="268437188" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="21" lineNum="153" parent="globals" pc="268437201" symbol="getApp"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="21" lineNum="154" parent="globals" pc="268437211" symbol="getApp"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="21" lineNum="155" parent="globals" pc="268437201" symbol="getApp"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldApp.mc" id="21" lineNum="156" parent="globals" pc="268437211" symbol="getApp"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldBackground.mc" id="22" lineNum="7" parent="globals/Background" pc="268437222" symbol="&lt;init&gt;"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="23" lineNum="7" parent="globals/Rez" pc="268437234" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="24" lineNum="11" parent="globals/KomWayFieldView" pc="268437254" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="24" lineNum="12" parent="globals/KomWayFieldView" pc="268437254" symbol="&lt;init&gt;"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldBackground.mc" id="25" lineNum="21" parent="globals/Background" pc="268437266" symbol="setColor"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldBackground.mc" id="25" lineNum="22" parent="globals/Background" pc="268437268" symbol="setColor"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldBackground.mc" id="26" lineNum="11" parent="globals/Background" pc="268437278" symbol="initialize"/>
@@ -136,273 +136,306 @@
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldBackground.mc" id="27" lineNum="25" parent="globals/Background" pc="268437328" symbol="draw"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldBackground.mc" id="27" lineNum="26" parent="globals/Background" pc="268437330" symbol="draw"/>
         <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldBackground.mc" id="27" lineNum="27" parent="globals/Background" pc="268437347" symbol="draw"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="56" parent="globals/KomWayFieldView" pc="268437356" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="57" parent="globals/KomWayFieldView" pc="268437359" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="59" parent="globals/KomWayFieldView" pc="268437363" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="60" parent="globals/KomWayFieldView" pc="268437370" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="63" parent="globals/KomWayFieldView" pc="268437383" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="64" parent="globals/KomWayFieldView" pc="268437394" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="67" parent="globals/KomWayFieldView" pc="268437407" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="29" lineNum="48" parent="globals/KomWayFieldView" pc="268437410" symbol="onLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="118" parent="globals/KomWayFieldView" pc="268437413" symbol="getLoadingDots"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="119" parent="globals/KomWayFieldView" pc="268437416" symbol="getLoadingDots"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="121" parent="globals/KomWayFieldView" pc="268437443" symbol="getLoadingDots"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="122" parent="globals/KomWayFieldView" pc="268437450" symbol="getLoadingDots"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="123" parent="globals/KomWayFieldView" pc="268437459" symbol="getLoadingDots"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="124" parent="globals/KomWayFieldView" pc="268437467" symbol="getLoadingDots"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="126" parent="globals/KomWayFieldView" pc="268437476" symbol="getLoadingDots"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="79" parent="globals/KomWayFieldView" pc="268437483" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="80" parent="globals/KomWayFieldView" pc="268437486" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="81" parent="globals/KomWayFieldView" pc="268437498" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="83" parent="globals/KomWayFieldView" pc="268437514" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="84" parent="globals/KomWayFieldView" pc="268437522" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="87" parent="globals/KomWayFieldView" pc="268437528" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="134" parent="globals/KomWayFieldView" pc="268437537" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="136" parent="globals/KomWayFieldView" pc="268437540" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="137" parent="globals/KomWayFieldView" pc="268437554" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="140" parent="globals/KomWayFieldView" pc="268437578" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="141" parent="globals/KomWayFieldView" pc="268437600" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="143" parent="globals/KomWayFieldView" pc="268437615" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="144" parent="globals/KomWayFieldView" pc="268437640" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="145" parent="globals/KomWayFieldView" pc="268437648" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="147" parent="globals/KomWayFieldView" pc="268437656" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="153" parent="globals/KomWayFieldView" pc="268437699" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="154" parent="globals/KomWayFieldView" pc="268437709" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="156" parent="globals/KomWayFieldView" pc="268437712" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="157" parent="globals/KomWayFieldView" pc="268437725" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="159" parent="globals/KomWayFieldView" pc="268437731" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="160" parent="globals/KomWayFieldView" pc="268437747" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="161" parent="globals/KomWayFieldView" pc="268437755" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="165" parent="globals/KomWayFieldView" pc="268437761" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="166" parent="globals/KomWayFieldView" pc="268437766" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="168" parent="globals/KomWayFieldView" pc="268437790" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="169" parent="globals/KomWayFieldView" pc="268437803" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="173" parent="globals/KomWayFieldView" pc="268437821" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="174" parent="globals/KomWayFieldView" pc="268437836" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="175" parent="globals/KomWayFieldView" pc="268437850" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="180" parent="globals/KomWayFieldView" pc="268437864" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="181" parent="globals/KomWayFieldView" pc="268437879" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="182" parent="globals/KomWayFieldView" pc="268437893" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="186" parent="globals/KomWayFieldView" pc="268437904" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="187" parent="globals/KomWayFieldView" pc="268437927" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="188" parent="globals/KomWayFieldView" pc="268437939" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="189" parent="globals/KomWayFieldView" pc="268437951" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="190" parent="globals/KomWayFieldView" pc="268437963" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="191" parent="globals/KomWayFieldView" pc="268437975" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="192" parent="globals/KomWayFieldView" pc="268437991" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="195" parent="globals/KomWayFieldView" pc="268437995" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="196" parent="globals/KomWayFieldView" pc="268438023" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="198" parent="globals/KomWayFieldView" pc="268438035" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="200" parent="globals/KomWayFieldView" pc="268438045" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="201" parent="globals/KomWayFieldView" pc="268438058" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="203" parent="globals/KomWayFieldView" pc="268438079" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="204" parent="globals/KomWayFieldView" pc="268438094" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="205" parent="globals/KomWayFieldView" pc="268438112" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="207" parent="globals/KomWayFieldView" pc="268438124" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="208" parent="globals/KomWayFieldView" pc="268438137" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="209" parent="globals/KomWayFieldView" pc="268438150" symbol="compute"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="71" parent="globals/KomWayFieldView" pc="268438164" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="72" parent="globals/KomWayFieldView" pc="268438167" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="73" parent="globals/KomWayFieldView" pc="268438179" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="74" parent="globals/KomWayFieldView" pc="268438201" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="75" parent="globals/KomWayFieldView" pc="268438216" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="34" lineNum="91" parent="globals/KomWayFieldView" pc="268438227" symbol="&lt;globals/KomWayFieldView/&lt;&gt;relativeFlowDegToScreenRad&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="34" lineNum="92" parent="globals/KomWayFieldView" pc="268438230" symbol="&lt;globals/KomWayFieldView/&lt;&gt;relativeFlowDegToScreenRad&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="34" lineNum="93" parent="globals/KomWayFieldView" pc="268438240" symbol="&lt;globals/KomWayFieldView/&lt;&gt;relativeFlowDegToScreenRad&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="97" parent="globals/KomWayFieldView" pc="268438257" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="98" parent="globals/KomWayFieldView" pc="268438260" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="100" parent="globals/KomWayFieldView" pc="268438267" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="101" parent="globals/KomWayFieldView" pc="268438276" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="102" parent="globals/KomWayFieldView" pc="268438285" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="105" parent="globals/KomWayFieldView" pc="268438294" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="107" parent="globals/KomWayFieldView" pc="268438304" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="108" parent="globals/KomWayFieldView" pc="268438315" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="109" parent="globals/KomWayFieldView" pc="268438328" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="110" parent="globals/KomWayFieldView" pc="268438339" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="113" parent="globals/KomWayFieldView" pc="268438352" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="114" parent="globals/KomWayFieldView" pc="268438378" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="33" parent="globals/KomWayFieldView" pc="268438384" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="34" parent="globals/KomWayFieldView" pc="268438386" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="36" parent="globals/KomWayFieldView" pc="268438398" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="37" parent="globals/KomWayFieldView" pc="268438406" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="39" parent="globals/KomWayFieldView" pc="268438414" symbol="initialize"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="233" parent="globals/KomWayFieldView" pc="268438427" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="234" parent="globals/KomWayFieldView" pc="268438430" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="236" parent="globals/KomWayFieldView" pc="268438444" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="237" parent="globals/KomWayFieldView" pc="268438453" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="238" parent="globals/KomWayFieldView" pc="268438462" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="240" parent="globals/KomWayFieldView" pc="268438475" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="241" parent="globals/KomWayFieldView" pc="268438483" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="243" parent="globals/KomWayFieldView" pc="268438501" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="244" parent="globals/KomWayFieldView" pc="268438515" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="246" parent="globals/KomWayFieldView" pc="268438523" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="249" parent="globals/KomWayFieldView" pc="268438537" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="250" parent="globals/KomWayFieldView" pc="268438547" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="252" parent="globals/KomWayFieldView" pc="268438550" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="253" parent="globals/KomWayFieldView" pc="268438556" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="254" parent="globals/KomWayFieldView" pc="268438560" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="255" parent="globals/KomWayFieldView" pc="268438577" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="259" parent="globals/KomWayFieldView" pc="268438586" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="260" parent="globals/KomWayFieldView" pc="268438596" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="261" parent="globals/KomWayFieldView" pc="268438620" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="263" parent="globals/KomWayFieldView" pc="268438626" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="264" parent="globals/KomWayFieldView" pc="268438632" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="265" parent="globals/KomWayFieldView" pc="268438648" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="266" parent="globals/KomWayFieldView" pc="268438655" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="271" parent="globals/KomWayFieldView" pc="268438664" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="274" parent="globals/KomWayFieldView" pc="268438672" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="275" parent="globals/KomWayFieldView" pc="268438681" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="282" parent="globals/KomWayFieldView" pc="268438716" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="289" parent="globals/KomWayFieldView" pc="268438752" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="293" parent="globals/KomWayFieldView" pc="268438756" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="294" parent="globals/KomWayFieldView" pc="268438767" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="301" parent="globals/KomWayFieldView" pc="268438802" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="308" parent="globals/KomWayFieldView" pc="268438838" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="314" parent="globals/KomWayFieldView" pc="268438842" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="315" parent="globals/KomWayFieldView" pc="268438855" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="317" parent="globals/KomWayFieldView" pc="268438865" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="318" parent="globals/KomWayFieldView" pc="268438890" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="320" parent="globals/KomWayFieldView" pc="268438897" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="321" parent="globals/KomWayFieldView" pc="268438901" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="323" parent="globals/KomWayFieldView" pc="268438904" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="325" parent="globals/KomWayFieldView" pc="268438908" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="326" parent="globals/KomWayFieldView" pc="268438923" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="327" parent="globals/KomWayFieldView" pc="268438938" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="329" parent="globals/KomWayFieldView" pc="268438948" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="330" parent="globals/KomWayFieldView" pc="268438958" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="331" parent="globals/KomWayFieldView" pc="268438974" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="333" parent="globals/KomWayFieldView" pc="268438981" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="341" parent="globals/KomWayFieldView" pc="268439001" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="349" parent="globals/KomWayFieldView" pc="268439027" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="350" parent="globals/KomWayFieldView" pc="268439042" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="351" parent="globals/KomWayFieldView" pc="268439055" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="353" parent="globals/KomWayFieldView" pc="268439058" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="354" parent="globals/KomWayFieldView" pc="268439077" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="356" parent="globals/KomWayFieldView" pc="268439091" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="357" parent="globals/KomWayFieldView" pc="268439098" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="358" parent="globals/KomWayFieldView" pc="268439106" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="359" parent="globals/KomWayFieldView" pc="268439113" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="360" parent="globals/KomWayFieldView" pc="268439137" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="361" parent="globals/KomWayFieldView" pc="268439148" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="362" parent="globals/KomWayFieldView" pc="268439172" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="363" parent="globals/KomWayFieldView" pc="268439183" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="364" parent="globals/KomWayFieldView" pc="268439207" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="365" parent="globals/KomWayFieldView" pc="268439218" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="366" parent="globals/KomWayFieldView" pc="268439242" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="367" parent="globals/KomWayFieldView" pc="268439253" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="368" parent="globals/KomWayFieldView" pc="268439277" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="369" parent="globals/KomWayFieldView" pc="268439288" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="370" parent="globals/KomWayFieldView" pc="268439312" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="371" parent="globals/KomWayFieldView" pc="268439323" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="372" parent="globals/KomWayFieldView" pc="268439347" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="373" parent="globals/KomWayFieldView" pc="268439358" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="376" parent="globals/KomWayFieldView" pc="268439385" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="377" parent="globals/KomWayFieldView" pc="268439392" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="378" parent="globals/KomWayFieldView" pc="268439416" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="379" parent="globals/KomWayFieldView" pc="268439427" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="380" parent="globals/KomWayFieldView" pc="268439451" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="381" parent="globals/KomWayFieldView" pc="268439462" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="382" parent="globals/KomWayFieldView" pc="268439486" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="383" parent="globals/KomWayFieldView" pc="268439497" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="384" parent="globals/KomWayFieldView" pc="268439521" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="385" parent="globals/KomWayFieldView" pc="268439532" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="386" parent="globals/KomWayFieldView" pc="268439556" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="387" parent="globals/KomWayFieldView" pc="268439567" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="388" parent="globals/KomWayFieldView" pc="268439591" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="389" parent="globals/KomWayFieldView" pc="268439602" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="390" parent="globals/KomWayFieldView" pc="268439626" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="391" parent="globals/KomWayFieldView" pc="268439637" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="395" parent="globals/KomWayFieldView" pc="268439664" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="396" parent="globals/KomWayFieldView" pc="268439672" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="397" parent="globals/KomWayFieldView" pc="268439679" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="398" parent="globals/KomWayFieldView" pc="268439703" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="399" parent="globals/KomWayFieldView" pc="268439714" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="400" parent="globals/KomWayFieldView" pc="268439738" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="401" parent="globals/KomWayFieldView" pc="268439749" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="402" parent="globals/KomWayFieldView" pc="268439773" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="403" parent="globals/KomWayFieldView" pc="268439784" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="404" parent="globals/KomWayFieldView" pc="268439808" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="405" parent="globals/KomWayFieldView" pc="268439819" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="406" parent="globals/KomWayFieldView" pc="268439843" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="407" parent="globals/KomWayFieldView" pc="268439854" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="408" parent="globals/KomWayFieldView" pc="268439878" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="409" parent="globals/KomWayFieldView" pc="268439889" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="410" parent="globals/KomWayFieldView" pc="268439913" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="411" parent="globals/KomWayFieldView" pc="268439924" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="414" parent="globals/KomWayFieldView" pc="268439951" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="415" parent="globals/KomWayFieldView" pc="268439958" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="416" parent="globals/KomWayFieldView" pc="268439982" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="417" parent="globals/KomWayFieldView" pc="268439993" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="418" parent="globals/KomWayFieldView" pc="268440017" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="419" parent="globals/KomWayFieldView" pc="268440028" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="420" parent="globals/KomWayFieldView" pc="268440052" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="421" parent="globals/KomWayFieldView" pc="268440063" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="422" parent="globals/KomWayFieldView" pc="268440087" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="423" parent="globals/KomWayFieldView" pc="268440098" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="424" parent="globals/KomWayFieldView" pc="268440122" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="425" parent="globals/KomWayFieldView" pc="268440133" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="426" parent="globals/KomWayFieldView" pc="268440157" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="427" parent="globals/KomWayFieldView" pc="268440168" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="428" parent="globals/KomWayFieldView" pc="268440192" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="429" parent="globals/KomWayFieldView" pc="268440203" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="434" parent="globals/KomWayFieldView" pc="268440227" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="435" parent="globals/KomWayFieldView" pc="268440233" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="436" parent="globals/KomWayFieldView" pc="268440253" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="437" parent="globals/KomWayFieldView" pc="268440262" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="440" parent="globals/KomWayFieldView" pc="268440286" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="441" parent="globals/KomWayFieldView" pc="268440302" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="443" parent="globals/KomWayFieldView" pc="268440327" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="447" parent="globals/KomWayFieldView" pc="268440352" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="448" parent="globals/KomWayFieldView" pc="268440362" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="450" parent="globals/KomWayFieldView" pc="268440372" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="451" parent="globals/KomWayFieldView" pc="268440394" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="453" parent="globals/KomWayFieldView" pc="268440416" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="454" parent="globals/KomWayFieldView" pc="268440432" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="456" parent="globals/KomWayFieldView" pc="268440436" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="464" parent="globals/KomWayFieldView" pc="268440456" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="465" parent="globals/KomWayFieldView" pc="268440463" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="466" parent="globals/KomWayFieldView" pc="268440485" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="467" parent="globals/KomWayFieldView" pc="268440500" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="469" parent="globals/KomWayFieldView" pc="268440513" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="470" parent="globals/KomWayFieldView" pc="268440517" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="471" parent="globals/KomWayFieldView" pc="268440521" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="472" parent="globals/KomWayFieldView" pc="268440531" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="473" parent="globals/KomWayFieldView" pc="268440541" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="474" parent="globals/KomWayFieldView" pc="268440551" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="476" parent="globals/KomWayFieldView" pc="268440567" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="477" parent="globals/KomWayFieldView" pc="268440581" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="479" parent="globals/KomWayFieldView" pc="268440601" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="480" parent="globals/KomWayFieldView" pc="268440615" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="488" parent="globals/KomWayFieldView" pc="268440641" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="489" parent="globals/KomWayFieldView" pc="268440655" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="497" parent="globals/KomWayFieldView" pc="268440677" symbol="onUpdate"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="89" parent="globals/Rez/Layouts" pc="268440697" symbol="BottomRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="90" parent="globals/Rez/Layouts" pc="268440708" symbol="BottomRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="92" parent="globals/Rez/Layouts" pc="268440732" symbol="BottomRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="94" parent="globals/Rez/Layouts" pc="268440815" symbol="BottomRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="96" parent="globals/Rez/Layouts" pc="268440898" symbol="BottomRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="69" parent="globals/Rez/Layouts" pc="268440918" symbol="TopRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="70" parent="globals/Rez/Layouts" pc="268440929" symbol="TopRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="72" parent="globals/Rez/Layouts" pc="268440953" symbol="TopRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="74" parent="globals/Rez/Layouts" pc="268441036" symbol="TopRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="76" parent="globals/Rez/Layouts" pc="268441119" symbol="TopRightLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="79" parent="globals/Rez/Layouts" pc="268441139" symbol="BottomLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="80" parent="globals/Rez/Layouts" pc="268441150" symbol="BottomLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="82" parent="globals/Rez/Layouts" pc="268441174" symbol="BottomLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="84" parent="globals/Rez/Layouts" pc="268441256" symbol="BottomLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="86" parent="globals/Rez/Layouts" pc="268441338" symbol="BottomLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="59" parent="globals/Rez/Layouts" pc="268441358" symbol="TopLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="60" parent="globals/Rez/Layouts" pc="268441369" symbol="TopLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="62" parent="globals/Rez/Layouts" pc="268441393" symbol="TopLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="64" parent="globals/Rez/Layouts" pc="268441475" symbol="TopLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="66" parent="globals/Rez/Layouts" pc="268441557" symbol="TopLeftLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="45" parent="globals/Rez/Layouts" pc="268441577" symbol="MainLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="46" parent="globals/Rez/Layouts" pc="268441588" symbol="MainLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="48" parent="globals/Rez/Layouts" pc="268441597" symbol="MainLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="50" parent="globals/Rez/Layouts" pc="268441606" symbol="MainLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="52" parent="globals/Rez/Layouts" pc="268441630" symbol="MainLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="54" parent="globals/Rez/Layouts" pc="268441737" symbol="MainLayout"/>
-        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="56" parent="globals/Rez/Layouts" pc="268441844" symbol="MainLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="57" parent="globals/KomWayFieldView" pc="268437356" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="58" parent="globals/KomWayFieldView" pc="268437359" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="60" parent="globals/KomWayFieldView" pc="268437363" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="61" parent="globals/KomWayFieldView" pc="268437370" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="64" parent="globals/KomWayFieldView" pc="268437383" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="65" parent="globals/KomWayFieldView" pc="268437394" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="28" lineNum="68" parent="globals/KomWayFieldView" pc="268437407" symbol="&lt;globals/KomWayFieldView/&lt;&gt;normalizeDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="29" lineNum="49" parent="globals/KomWayFieldView" pc="268437410" symbol="onLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="119" parent="globals/KomWayFieldView" pc="268437413" symbol="getLoadingDots"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="120" parent="globals/KomWayFieldView" pc="268437416" symbol="getLoadingDots"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="122" parent="globals/KomWayFieldView" pc="268437443" symbol="getLoadingDots"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="123" parent="globals/KomWayFieldView" pc="268437450" symbol="getLoadingDots"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="124" parent="globals/KomWayFieldView" pc="268437459" symbol="getLoadingDots"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="125" parent="globals/KomWayFieldView" pc="268437467" symbol="getLoadingDots"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="30" lineNum="127" parent="globals/KomWayFieldView" pc="268437476" symbol="getLoadingDots"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="80" parent="globals/KomWayFieldView" pc="268437483" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="81" parent="globals/KomWayFieldView" pc="268437486" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="82" parent="globals/KomWayFieldView" pc="268437498" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="84" parent="globals/KomWayFieldView" pc="268437514" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="85" parent="globals/KomWayFieldView" pc="268437522" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="31" lineNum="88" parent="globals/KomWayFieldView" pc="268437528" symbol="&lt;globals/KomWayFieldView/&lt;&gt;windDirToCompass8&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="135" parent="globals/KomWayFieldView" pc="268437537" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="137" parent="globals/KomWayFieldView" pc="268437540" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="138" parent="globals/KomWayFieldView" pc="268437554" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="141" parent="globals/KomWayFieldView" pc="268437578" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="142" parent="globals/KomWayFieldView" pc="268437600" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="144" parent="globals/KomWayFieldView" pc="268437615" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="145" parent="globals/KomWayFieldView" pc="268437640" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="146" parent="globals/KomWayFieldView" pc="268437648" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="148" parent="globals/KomWayFieldView" pc="268437656" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="154" parent="globals/KomWayFieldView" pc="268437699" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="155" parent="globals/KomWayFieldView" pc="268437709" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="157" parent="globals/KomWayFieldView" pc="268437712" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="158" parent="globals/KomWayFieldView" pc="268437725" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="160" parent="globals/KomWayFieldView" pc="268437731" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="161" parent="globals/KomWayFieldView" pc="268437747" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="162" parent="globals/KomWayFieldView" pc="268437755" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="166" parent="globals/KomWayFieldView" pc="268437761" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="167" parent="globals/KomWayFieldView" pc="268437766" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="169" parent="globals/KomWayFieldView" pc="268437790" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="170" parent="globals/KomWayFieldView" pc="268437803" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="174" parent="globals/KomWayFieldView" pc="268437821" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="175" parent="globals/KomWayFieldView" pc="268437836" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="176" parent="globals/KomWayFieldView" pc="268437850" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="181" parent="globals/KomWayFieldView" pc="268437864" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="182" parent="globals/KomWayFieldView" pc="268437879" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="183" parent="globals/KomWayFieldView" pc="268437893" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="187" parent="globals/KomWayFieldView" pc="268437904" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="188" parent="globals/KomWayFieldView" pc="268437927" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="189" parent="globals/KomWayFieldView" pc="268437939" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="190" parent="globals/KomWayFieldView" pc="268437951" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="191" parent="globals/KomWayFieldView" pc="268437963" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="192" parent="globals/KomWayFieldView" pc="268437975" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="193" parent="globals/KomWayFieldView" pc="268437991" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="196" parent="globals/KomWayFieldView" pc="268437995" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="197" parent="globals/KomWayFieldView" pc="268438023" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="199" parent="globals/KomWayFieldView" pc="268438035" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="201" parent="globals/KomWayFieldView" pc="268438045" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="202" parent="globals/KomWayFieldView" pc="268438058" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="204" parent="globals/KomWayFieldView" pc="268438079" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="205" parent="globals/KomWayFieldView" pc="268438094" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="206" parent="globals/KomWayFieldView" pc="268438112" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="208" parent="globals/KomWayFieldView" pc="268438124" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="209" parent="globals/KomWayFieldView" pc="268438137" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="32" lineNum="210" parent="globals/KomWayFieldView" pc="268438150" symbol="compute"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="72" parent="globals/KomWayFieldView" pc="268438164" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="73" parent="globals/KomWayFieldView" pc="268438167" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="74" parent="globals/KomWayFieldView" pc="268438179" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="75" parent="globals/KomWayFieldView" pc="268438201" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="33" lineNum="76" parent="globals/KomWayFieldView" pc="268438216" symbol="&lt;globals/KomWayFieldView/&lt;&gt;roundToNearest45&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="34" lineNum="92" parent="globals/KomWayFieldView" pc="268438227" symbol="&lt;globals/KomWayFieldView/&lt;&gt;relativeFlowDegToScreenRad&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="34" lineNum="93" parent="globals/KomWayFieldView" pc="268438230" symbol="&lt;globals/KomWayFieldView/&lt;&gt;relativeFlowDegToScreenRad&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="34" lineNum="94" parent="globals/KomWayFieldView" pc="268438240" symbol="&lt;globals/KomWayFieldView/&lt;&gt;relativeFlowDegToScreenRad&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="98" parent="globals/KomWayFieldView" pc="268438257" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="99" parent="globals/KomWayFieldView" pc="268438260" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="101" parent="globals/KomWayFieldView" pc="268438267" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="102" parent="globals/KomWayFieldView" pc="268438276" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="103" parent="globals/KomWayFieldView" pc="268438285" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="106" parent="globals/KomWayFieldView" pc="268438294" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="108" parent="globals/KomWayFieldView" pc="268438304" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="109" parent="globals/KomWayFieldView" pc="268438315" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="110" parent="globals/KomWayFieldView" pc="268438328" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="111" parent="globals/KomWayFieldView" pc="268438339" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="114" parent="globals/KomWayFieldView" pc="268438352" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="35" lineNum="115" parent="globals/KomWayFieldView" pc="268438378" symbol="&lt;globals/KomWayFieldView/&lt;&gt;smoothHeadingDeg&gt;"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="34" parent="globals/KomWayFieldView" pc="268438384" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="35" parent="globals/KomWayFieldView" pc="268438386" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="37" parent="globals/KomWayFieldView" pc="268438398" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="38" parent="globals/KomWayFieldView" pc="268438406" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="36" lineNum="40" parent="globals/KomWayFieldView" pc="268438414" symbol="initialize"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="218" parent="globals/KomWayFieldView" pc="268438427" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="219" parent="globals/KomWayFieldView" pc="268438430" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="221" parent="globals/KomWayFieldView" pc="268438444" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="222" parent="globals/KomWayFieldView" pc="268438453" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="223" parent="globals/KomWayFieldView" pc="268438462" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="225" parent="globals/KomWayFieldView" pc="268438475" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="226" parent="globals/KomWayFieldView" pc="268438483" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="228" parent="globals/KomWayFieldView" pc="268438501" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="229" parent="globals/KomWayFieldView" pc="268438515" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="231" parent="globals/KomWayFieldView" pc="268438523" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="234" parent="globals/KomWayFieldView" pc="268438537" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="235" parent="globals/KomWayFieldView" pc="268438547" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="237" parent="globals/KomWayFieldView" pc="268438550" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="238" parent="globals/KomWayFieldView" pc="268438556" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="239" parent="globals/KomWayFieldView" pc="268438560" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="240" parent="globals/KomWayFieldView" pc="268438577" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="244" parent="globals/KomWayFieldView" pc="268438586" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="245" parent="globals/KomWayFieldView" pc="268438596" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="246" parent="globals/KomWayFieldView" pc="268438620" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="248" parent="globals/KomWayFieldView" pc="268438626" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="249" parent="globals/KomWayFieldView" pc="268438632" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="250" parent="globals/KomWayFieldView" pc="268438648" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="251" parent="globals/KomWayFieldView" pc="268438655" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="256" parent="globals/KomWayFieldView" pc="268438664" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="259" parent="globals/KomWayFieldView" pc="268438672" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="260" parent="globals/KomWayFieldView" pc="268438681" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="267" parent="globals/KomWayFieldView" pc="268438716" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="274" parent="globals/KomWayFieldView" pc="268438752" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="278" parent="globals/KomWayFieldView" pc="268438756" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="279" parent="globals/KomWayFieldView" pc="268438767" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="286" parent="globals/KomWayFieldView" pc="268438802" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="293" parent="globals/KomWayFieldView" pc="268438838" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="299" parent="globals/KomWayFieldView" pc="268438842" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="300" parent="globals/KomWayFieldView" pc="268438861" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="319" parent="globals/KomWayFieldView" pc="268438888" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="320" parent="globals/KomWayFieldView" pc="268438901" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="329" parent="globals/KomWayFieldView" pc="268438911" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="331" parent="globals/KomWayFieldView" pc="268438914" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="332" parent="globals/KomWayFieldView" pc="268438929" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="333" parent="globals/KomWayFieldView" pc="268438948" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="334" parent="globals/KomWayFieldView" pc="268438954" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="339" parent="globals/KomWayFieldView" pc="268438964" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="340" parent="globals/KomWayFieldView" pc="268438968" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="341" parent="globals/KomWayFieldView" pc="268438975" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="343" parent="globals/KomWayFieldView" pc="268438982" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="344" parent="globals/KomWayFieldView" pc="268438990" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="345" parent="globals/KomWayFieldView" pc="268439000" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="346" parent="globals/KomWayFieldView" pc="268439007" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="349" parent="globals/KomWayFieldView" pc="268439017" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="351" parent="globals/KomWayFieldView" pc="268439031" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="352" parent="globals/KomWayFieldView" pc="268439047" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="355" parent="globals/KomWayFieldView" pc="268439051" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="356" parent="globals/KomWayFieldView" pc="268439055" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="357" parent="globals/KomWayFieldView" pc="268439059" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="360" parent="globals/KomWayFieldView" pc="268439062" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="369" parent="globals/KomWayFieldView" pc="268439082" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="371" parent="globals/KomWayFieldView" pc="268439098" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="372" parent="globals/KomWayFieldView" pc="268439113" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="373" parent="globals/KomWayFieldView" pc="268439128" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="374" parent="globals/KomWayFieldView" pc="268439132" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="377" parent="globals/KomWayFieldView" pc="268439142" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="378" parent="globals/KomWayFieldView" pc="268439152" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="381" parent="globals/KomWayFieldView" pc="268439162" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="390" parent="globals/KomWayFieldView" pc="268439185" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="399" parent="globals/KomWayFieldView" pc="268439208" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="408" parent="globals/KomWayFieldView" pc="268439237" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="409" parent="globals/KomWayFieldView" pc="268439252" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="410" parent="globals/KomWayFieldView" pc="268439265" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="412" parent="globals/KomWayFieldView" pc="268439268" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="413" parent="globals/KomWayFieldView" pc="268439271" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="415" parent="globals/KomWayFieldView" pc="268439276" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="418" parent="globals/KomWayFieldView" pc="268439283" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="420" parent="globals/KomWayFieldView" pc="268439297" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="421" parent="globals/KomWayFieldView" pc="268439304" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="422" parent="globals/KomWayFieldView" pc="268439312" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="423" parent="globals/KomWayFieldView" pc="268439319" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="424" parent="globals/KomWayFieldView" pc="268439343" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="425" parent="globals/KomWayFieldView" pc="268439354" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="426" parent="globals/KomWayFieldView" pc="268439378" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="427" parent="globals/KomWayFieldView" pc="268439389" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="428" parent="globals/KomWayFieldView" pc="268439413" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="429" parent="globals/KomWayFieldView" pc="268439424" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="430" parent="globals/KomWayFieldView" pc="268439448" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="431" parent="globals/KomWayFieldView" pc="268439459" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="432" parent="globals/KomWayFieldView" pc="268439483" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="433" parent="globals/KomWayFieldView" pc="268439494" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="434" parent="globals/KomWayFieldView" pc="268439518" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="435" parent="globals/KomWayFieldView" pc="268439529" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="436" parent="globals/KomWayFieldView" pc="268439553" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="437" parent="globals/KomWayFieldView" pc="268439564" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="440" parent="globals/KomWayFieldView" pc="268439591" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="441" parent="globals/KomWayFieldView" pc="268439598" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="442" parent="globals/KomWayFieldView" pc="268439622" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="443" parent="globals/KomWayFieldView" pc="268439633" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="444" parent="globals/KomWayFieldView" pc="268439657" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="445" parent="globals/KomWayFieldView" pc="268439668" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="446" parent="globals/KomWayFieldView" pc="268439692" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="447" parent="globals/KomWayFieldView" pc="268439703" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="448" parent="globals/KomWayFieldView" pc="268439727" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="449" parent="globals/KomWayFieldView" pc="268439738" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="450" parent="globals/KomWayFieldView" pc="268439762" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="451" parent="globals/KomWayFieldView" pc="268439773" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="452" parent="globals/KomWayFieldView" pc="268439797" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="453" parent="globals/KomWayFieldView" pc="268439808" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="454" parent="globals/KomWayFieldView" pc="268439832" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="455" parent="globals/KomWayFieldView" pc="268439843" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="459" parent="globals/KomWayFieldView" pc="268439870" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="460" parent="globals/KomWayFieldView" pc="268439878" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="461" parent="globals/KomWayFieldView" pc="268439885" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="462" parent="globals/KomWayFieldView" pc="268439909" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="463" parent="globals/KomWayFieldView" pc="268439920" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="464" parent="globals/KomWayFieldView" pc="268439944" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="465" parent="globals/KomWayFieldView" pc="268439955" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="466" parent="globals/KomWayFieldView" pc="268439979" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="467" parent="globals/KomWayFieldView" pc="268439990" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="468" parent="globals/KomWayFieldView" pc="268440014" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="469" parent="globals/KomWayFieldView" pc="268440025" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="470" parent="globals/KomWayFieldView" pc="268440049" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="471" parent="globals/KomWayFieldView" pc="268440060" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="472" parent="globals/KomWayFieldView" pc="268440084" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="473" parent="globals/KomWayFieldView" pc="268440095" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="474" parent="globals/KomWayFieldView" pc="268440119" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="475" parent="globals/KomWayFieldView" pc="268440130" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="478" parent="globals/KomWayFieldView" pc="268440157" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="479" parent="globals/KomWayFieldView" pc="268440164" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="480" parent="globals/KomWayFieldView" pc="268440188" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="481" parent="globals/KomWayFieldView" pc="268440199" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="482" parent="globals/KomWayFieldView" pc="268440223" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="483" parent="globals/KomWayFieldView" pc="268440234" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="484" parent="globals/KomWayFieldView" pc="268440258" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="485" parent="globals/KomWayFieldView" pc="268440269" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="486" parent="globals/KomWayFieldView" pc="268440293" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="487" parent="globals/KomWayFieldView" pc="268440304" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="488" parent="globals/KomWayFieldView" pc="268440328" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="489" parent="globals/KomWayFieldView" pc="268440339" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="490" parent="globals/KomWayFieldView" pc="268440363" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="491" parent="globals/KomWayFieldView" pc="268440374" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="492" parent="globals/KomWayFieldView" pc="268440398" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="493" parent="globals/KomWayFieldView" pc="268440409" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="498" parent="globals/KomWayFieldView" pc="268440433" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="499" parent="globals/KomWayFieldView" pc="268440439" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="500" parent="globals/KomWayFieldView" pc="268440459" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="501" parent="globals/KomWayFieldView" pc="268440468" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="504" parent="globals/KomWayFieldView" pc="268440492" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="505" parent="globals/KomWayFieldView" pc="268440511" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="507" parent="globals/KomWayFieldView" pc="268440536" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="512" parent="globals/KomWayFieldView" pc="268440561" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="513" parent="globals/KomWayFieldView" pc="268440571" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="516" parent="globals/KomWayFieldView" pc="268440581" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="517" parent="globals/KomWayFieldView" pc="268440603" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="519" parent="globals/KomWayFieldView" pc="268440625" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="521" parent="globals/KomWayFieldView" pc="268440641" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="523" parent="globals/KomWayFieldView" pc="268440654" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="531" parent="globals/KomWayFieldView" pc="268440677" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="533" parent="globals/KomWayFieldView" pc="268440684" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="534" parent="globals/KomWayFieldView" pc="268440688" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="535" parent="globals/KomWayFieldView" pc="268440693" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="538" parent="globals/KomWayFieldView" pc="268440699" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="539" parent="globals/KomWayFieldView" pc="268440721" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="540" parent="globals/KomWayFieldView" pc="268440736" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="542" parent="globals/KomWayFieldView" pc="268440749" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="543" parent="globals/KomWayFieldView" pc="268440753" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="544" parent="globals/KomWayFieldView" pc="268440757" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="545" parent="globals/KomWayFieldView" pc="268440767" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="546" parent="globals/KomWayFieldView" pc="268440777" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="547" parent="globals/KomWayFieldView" pc="268440787" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="550" parent="globals/KomWayFieldView" pc="268440803" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="551" parent="globals/KomWayFieldView" pc="268440817" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="553" parent="globals/KomWayFieldView" pc="268440840" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="554" parent="globals/KomWayFieldView" pc="268440854" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="562" parent="globals/KomWayFieldView" pc="268440883" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="564" parent="globals/KomWayFieldView" pc="268440897" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="565" parent="globals/KomWayFieldView" pc="268440900" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="568" parent="globals/KomWayFieldView" pc="268440915" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="570" parent="globals/KomWayFieldView" pc="268440925" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="571" parent="globals/KomWayFieldView" pc="268440929" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="573" parent="globals/KomWayFieldView" pc="268440936" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="574" parent="globals/KomWayFieldView" pc="268440944" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="582" parent="globals/KomWayFieldView" pc="268440967" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="583" parent="globals/KomWayFieldView" pc="268440977" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="585" parent="globals/KomWayFieldView" pc="268440984" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="586" parent="globals/KomWayFieldView" pc="268440992" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/source/KomWayFieldView.mc" id="37" lineNum="598" parent="globals/KomWayFieldView" pc="268441018" symbol="onUpdate"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="89" parent="globals/Rez/Layouts" pc="268441038" symbol="BottomRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="90" parent="globals/Rez/Layouts" pc="268441049" symbol="BottomRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="92" parent="globals/Rez/Layouts" pc="268441073" symbol="BottomRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="94" parent="globals/Rez/Layouts" pc="268441156" symbol="BottomRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="38" lineNum="96" parent="globals/Rez/Layouts" pc="268441239" symbol="BottomRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="69" parent="globals/Rez/Layouts" pc="268441259" symbol="TopRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="70" parent="globals/Rez/Layouts" pc="268441270" symbol="TopRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="72" parent="globals/Rez/Layouts" pc="268441294" symbol="TopRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="74" parent="globals/Rez/Layouts" pc="268441377" symbol="TopRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="39" lineNum="76" parent="globals/Rez/Layouts" pc="268441460" symbol="TopRightLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="79" parent="globals/Rez/Layouts" pc="268441480" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="80" parent="globals/Rez/Layouts" pc="268441491" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="82" parent="globals/Rez/Layouts" pc="268441515" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="84" parent="globals/Rez/Layouts" pc="268441597" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="40" lineNum="86" parent="globals/Rez/Layouts" pc="268441679" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="59" parent="globals/Rez/Layouts" pc="268441699" symbol="TopLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="60" parent="globals/Rez/Layouts" pc="268441710" symbol="TopLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="62" parent="globals/Rez/Layouts" pc="268441734" symbol="TopLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="64" parent="globals/Rez/Layouts" pc="268441816" symbol="TopLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="41" lineNum="66" parent="globals/Rez/Layouts" pc="268441898" symbol="TopLeftLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="45" parent="globals/Rez/Layouts" pc="268441918" symbol="MainLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="46" parent="globals/Rez/Layouts" pc="268441929" symbol="MainLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="48" parent="globals/Rez/Layouts" pc="268441938" symbol="MainLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="50" parent="globals/Rez/Layouts" pc="268441947" symbol="MainLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="52" parent="globals/Rez/Layouts" pc="268441971" symbol="MainLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="54" parent="globals/Rez/Layouts" pc="268442078" symbol="MainLayout"/>
+        <entry filename="/Users/jurajpanek/Documents/code/kom-way/GarminField/KomWayField/builds/edge1040/gen/006-B3843-00/source/Rez.mcgen" id="42" lineNum="56" parent="globals/Rez/Layouts" pc="268442185" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry field="true" id="47" symbol="Arrow_48_white_180"/>
@@ -418,6 +451,7 @@
         <entry field="true" id="66" symbol="Arrow_60_white_315"/>
         <entry id="72" method="true" symbol="MainLayout"/>
         <entry field="true" id="44" symbol="Arrow_48_black_90"/>
+        <entry field="true" id="78" symbol="wind_units_title"/>
         <entry id="25" method="true" symbol="getLoadingDots"/>
         <entry field="true" id="43" symbol="Arrow_48_black_45"/>
         <entry field="true" id="58" symbol="Arrow_60_black_315"/>
@@ -442,12 +476,14 @@
         <entry id="5" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389594" symbol="headers"/>
         <entry field="true" id="12" symbol="latestWeather"/>
+        <entry field="true" id="77" symbol="wind_units_mps"/>
         <entry id="8388631" module="true" symbol="Activity"/>
         <entry field="true" id="56" symbol="Arrow_60_black_225"/>
         <entry field="true" id="52" symbol="Arrow_48_white_90"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry field="true" id="8389138" symbol="label"/>
         <entry field="true" id="51" symbol="Arrow_48_white_45"/>
+        <entry id="8390425" module="true" symbol="Properties"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8390148" method="true" symbol="onTemporalEvent"/>
         <entry field="true" id="24" symbol="cachedArrowRes"/>
@@ -480,6 +516,7 @@
         <entry id="8388786" method="true" symbol="method"/>
         <entry field="true" id="37" symbol="Arrow_48_black_0"/>
         <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="76" symbol="wind_units_kmh"/>
         <entry id="13" method="true" symbol="loadLatestCoords"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
@@ -591,76 +628,93 @@
         <entry arg="true" endPc="268438383" name="newHeadingDeg" stackId="1" startPc="268438257"/>
         <entry endPc="268438383" name="alpha" stackId="2" startPc="268438260"/>
         <entry endPc="268438383" name="delta" stackId="3" startPc="268438260"/>
-        <entry arg="true" endPc="268440696" name="dc" stackId="1" startPc="268438427"/>
-        <entry endPc="268440695" name="weatherData" stackId="2" startPc="268438430"/>
-        <entry endPc="268440695" name="width" stackId="3" startPc="268438430"/>
-        <entry endPc="268440695" name="height" stackId="4" startPc="268438430"/>
-        <entry endPc="268440695" name="centerX" stackId="5" startPc="268438430"/>
-        <entry endPc="268440695" name="bgColor" stackId="6" startPc="268438430"/>
-        <entry endPc="268440695" name="textColor" stackId="7" startPc="268438430"/>
-        <entry endPc="268440695" name="tempObj" stackId="8" startPc="268438430"/>
-        <entry endPc="268440695" name="weatherReady" stackId="9" startPc="268438430"/>
+        <entry arg="true" endPc="268441037" name="dc" stackId="1" startPc="268438427"/>
+        <entry endPc="268441036" name="weatherData" stackId="2" startPc="268438430"/>
+        <entry endPc="268441036" name="width" stackId="3" startPc="268438430"/>
+        <entry endPc="268441036" name="height" stackId="4" startPc="268438430"/>
+        <entry endPc="268441036" name="centerX" stackId="5" startPc="268438430"/>
+        <entry endPc="268441036" name="bgColor" stackId="6" startPc="268438430"/>
+        <entry endPc="268441036" name="textColor" stackId="7" startPc="268438430"/>
+        <entry endPc="268441036" name="tempObj" stackId="8" startPc="268438430"/>
+        <entry endPc="268441036" name="weatherReady" stackId="9" startPc="268438430"/>
         <entry endPc="268438582" name="tempVal" stackId="10" startPc="268438556"/>
-        <entry endPc="268440695" name="weatherTime" stackId="11" startPc="268438430"/>
-        <entry endPc="268440695" name="nowEpoch" stackId="12" startPc="268438430"/>
-        <entry endPc="268440695" name="ageMinutes" stackId="13" startPc="268438430"/>
-        <entry endPc="268440695" name="weatherExpired" stackId="14" startPc="268438430"/>
-        <entry endPc="268440695" name="windCompass" stackId="15" startPc="268438430"/>
-        <entry endPc="268440695" name="ws" stackId="16" startPc="268438430"/>
-        <entry endPc="268440695" name="mainStr" stackId="17" startPc="268438430"/>
-        <entry endPc="268440695" name="unitStr" stackId="18" startPc="268438430"/>
-        <entry endPc="268440695" name="mainFont" stackId="19" startPc="268438430"/>
-        <entry endPc="268440695" name="unitFont" stackId="20" startPc="268438430"/>
-        <entry endPc="268440695" name="gap" stackId="21" startPc="268438430"/>
-        <entry endPc="268440695" name="mainW" stackId="22" startPc="268438430"/>
-        <entry endPc="268440695" name="unitW" stackId="23" startPc="268438430"/>
-        <entry endPc="268440695" name="totalW" stackId="24" startPc="268438430"/>
-        <entry endPc="268440695" name="baseX" stackId="25" startPc="268438430"/>
-        <entry endPc="268440695" name="y" stackId="26" startPc="268438430"/>
-        <entry endPc="268440695" name="unitY" stackId="27" startPc="268438430"/>
-        <entry endPc="268440348" name="angle" stackId="28" startPc="268439042"/>
-        <entry endPc="268440348" name="arrowRes" stackId="29" startPc="268439042"/>
-        <entry endPc="268440348" name="useSmallArrow" stackId="30" startPc="268439042"/>
-        <entry endPc="268440348" name="arrowSize" stackId="31" startPc="268439042"/>
-        <entry endPc="268440345" name="arrowX" stackId="32" startPc="268440233"/>
-        <entry endPc="268440345" name="arrowY" stackId="33" startPc="268440233"/>
-        <entry endPc="268440695" name="temp" stackId="34" startPc="268438430"/>
-        <entry endPc="268440695" name="rain" stackId="35" startPc="268438430"/>
-        <entry endPc="268440695" name="tempStr" stackId="36" startPc="268438430"/>
-        <entry endPc="268440695" name="ageStr" stackId="37" startPc="268438430"/>
-        <entry endPc="268440695" name="bottomY" stackId="38" startPc="268438430"/>
-        <entry endPc="268440695" name="padX" stackId="39" startPc="268438430"/>
-        <entry endPc="268440673" name="rainStr" stackId="40" startPc="268440463"/>
-        <entry endPc="268440673" name="textW" stackId="41" startPc="268440463"/>
-        <entry endPc="268440673" name="textH" stackId="42" startPc="268440463"/>
-        <entry endPc="268440673" name="boxPadX" stackId="43" startPc="268440463"/>
-        <entry endPc="268440673" name="boxPadY" stackId="44" startPc="268440463"/>
-        <entry endPc="268440673" name="boxW" stackId="45" startPc="268440463"/>
-        <entry endPc="268440673" name="boxH" stackId="46" startPc="268440463"/>
-        <entry endPc="268440673" name="boxX" stackId="47" startPc="268440463"/>
-        <entry endPc="268440673" name="boxY" stackId="48" startPc="268440463"/>
-        <entry arg="true" endPc="268440917" name="dc" stackId="1" startPc="268440697"/>
-        <entry endPc="268440917" name="rez_cmp_local_custom_drawable_16187860511068497434" stackId="2" startPc="268440708"/>
-        <entry endPc="268440917" name="rez_cmp_local_text_label" stackId="3" startPc="268440708"/>
-        <entry endPc="268440917" name="rez_cmp_local_text_value" stackId="4" startPc="268440708"/>
-        <entry arg="true" endPc="268441138" name="dc" stackId="1" startPc="268440918"/>
-        <entry endPc="268441138" name="rez_cmp_local_custom_drawable_11824933295158922413" stackId="2" startPc="268440929"/>
-        <entry endPc="268441138" name="rez_cmp_local_text_label" stackId="3" startPc="268440929"/>
-        <entry endPc="268441138" name="rez_cmp_local_text_value" stackId="4" startPc="268440929"/>
-        <entry arg="true" endPc="268441357" name="dc" stackId="1" startPc="268441139"/>
-        <entry endPc="268441357" name="rez_cmp_local_custom_drawable_16380678501279751870" stackId="2" startPc="268441150"/>
-        <entry endPc="268441357" name="rez_cmp_local_text_label" stackId="3" startPc="268441150"/>
-        <entry endPc="268441357" name="rez_cmp_local_text_value" stackId="4" startPc="268441150"/>
-        <entry arg="true" endPc="268441576" name="dc" stackId="1" startPc="268441358"/>
-        <entry endPc="268441576" name="rez_cmp_local_custom_drawable_83741574912206153191" stackId="2" startPc="268441369"/>
-        <entry endPc="268441576" name="rez_cmp_local_text_label" stackId="3" startPc="268441369"/>
-        <entry endPc="268441576" name="rez_cmp_local_text_value" stackId="4" startPc="268441369"/>
-        <entry arg="true" endPc="268441863" name="dc" stackId="1" startPc="268441577"/>
-        <entry endPc="268441863" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268441588"/>
-        <entry endPc="268441863" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268441588"/>
-        <entry endPc="268441863" name="rez_cmp_local_custom_drawable_11939594661139614796" stackId="4" startPc="268441588"/>
-        <entry endPc="268441863" name="rez_cmp_local_text_label" stackId="5" startPc="268441588"/>
-        <entry endPc="268441863" name="rez_cmp_local_text_value" stackId="6" startPc="268441588"/>
+        <entry endPc="268441036" name="weatherTime" stackId="11" startPc="268438430"/>
+        <entry endPc="268441036" name="nowEpoch" stackId="12" startPc="268438430"/>
+        <entry endPc="268441036" name="ageMinutes" stackId="13" startPc="268438430"/>
+        <entry endPc="268441036" name="weatherExpired" stackId="14" startPc="268438430"/>
+        <entry endPc="268441036" name="useSmallArrow" stackId="15" startPc="268438430"/>
+        <entry endPc="268441036" name="useSmallFont" stackId="16" startPc="268438430"/>
+        <entry endPc="268441036" name="windCompass" stackId="17" startPc="268438430"/>
+        <entry endPc="268441036" name="ws" stackId="18" startPc="268438430"/>
+        <entry endPc="268441036" name="windUnits" stackId="19" startPc="268438430"/>
+        <entry endPc="268438960" name="storedWindUnits" stackId="20" startPc="268438929"/>
+        <entry endPc="268441036" name="displayWs" stackId="21" startPc="268438430"/>
+        <entry endPc="268441036" name="unitTop" stackId="22" startPc="268438430"/>
+        <entry endPc="268441036" name="unitBottom" stackId="23" startPc="268438430"/>
+        <entry endPc="268441036" name="moveFromTop" stackId="24" startPc="268438430"/>
+        <entry endPc="268441036" name="y" stackId="25" startPc="268438430"/>
+        <entry endPc="268441036" name="padX" stackId="26" startPc="268438430"/>
+        <entry endPc="268441036" name="compassFont" stackId="27" startPc="268438430"/>
+        <entry endPc="268441036" name="speedFont" stackId="28" startPc="268438430"/>
+        <entry endPc="268441036" name="unitFont" stackId="29" startPc="268438430"/>
+        <entry endPc="268441036" name="speedStr" stackId="30" startPc="268438430"/>
+        <entry endPc="268441036" name="speedW" stackId="31" startPc="268438430"/>
+        <entry endPc="268441036" name="unitW" stackId="32" startPc="268438430"/>
+        <entry endPc="268441036" name="gap" stackId="33" startPc="268438430"/>
+        <entry endPc="268441036" name="totalBlockW" stackId="34" startPc="268438430"/>
+        <entry endPc="268441036" name="startX" stackId="35" startPc="268438430"/>
+        <entry endPc="268441036" name="unitX" stackId="36" startPc="268438430"/>
+        <entry endPc="268440557" name="angle" stackId="37" startPc="268439252"/>
+        <entry endPc="268440557" name="arrowRes" stackId="38" startPc="268439252"/>
+        <entry endPc="268440557" name="moveArrowLeft" stackId="39" startPc="268439252"/>
+        <entry endPc="268440557" name="arrowSize" stackId="40" startPc="268439252"/>
+        <entry endPc="268440554" name="arrowX" stackId="41" startPc="268440439"/>
+        <entry endPc="268440554" name="arrowY" stackId="42" startPc="268440439"/>
+        <entry endPc="268441036" name="temp" stackId="43" startPc="268438430"/>
+        <entry endPc="268441036" name="rain" stackId="44" startPc="268438430"/>
+        <entry endPc="268441036" name="tempStr" stackId="45" startPc="268438430"/>
+        <entry endPc="268441036" name="ageStr" stackId="46" startPc="268438430"/>
+        <entry endPc="268441036" name="bottomY" stackId="47" startPc="268438430"/>
+        <entry endPc="268441036" name="moveFromBottom" stackId="48" startPc="268438430"/>
+        <entry endPc="268441014" name="rainFont" stackId="49" startPc="268440684"/>
+        <entry endPc="268441014" name="rainStr" stackId="50" startPc="268440684"/>
+        <entry endPc="268441014" name="textW" stackId="51" startPc="268440684"/>
+        <entry endPc="268441014" name="textH" stackId="52" startPc="268440684"/>
+        <entry endPc="268441014" name="boxPadX" stackId="53" startPc="268440684"/>
+        <entry endPc="268441014" name="boxPadY" stackId="54" startPc="268440684"/>
+        <entry endPc="268441014" name="boxW" stackId="55" startPc="268440684"/>
+        <entry endPc="268441014" name="boxH" stackId="56" startPc="268440684"/>
+        <entry endPc="268441014" name="boxX" stackId="57" startPc="268440684"/>
+        <entry endPc="268441014" name="boxY" stackId="58" startPc="268440684"/>
+        <entry endPc="268441014" name="ageFont" stackId="59" startPc="268440684"/>
+        <entry endPc="268441014" name="ageW" stackId="60" startPc="268440684"/>
+        <entry endPc="268441014" name="ageRight" stackId="61" startPc="268440684"/>
+        <entry endPc="268441014" name="minGap" stackId="62" startPc="268440684"/>
+        <entry endPc="268441014" name="allowedRight" stackId="63" startPc="268440684"/>
+        <entry endPc="268441014" name="shiftedCenterX" stackId="64" startPc="268440967"/>
+        <entry endPc="268441014" name="minCenterX" stackId="65" startPc="268440967"/>
+        <entry arg="true" endPc="268441258" name="dc" stackId="1" startPc="268441038"/>
+        <entry endPc="268441258" name="rez_cmp_local_custom_drawable_16187860511068497434" stackId="2" startPc="268441049"/>
+        <entry endPc="268441258" name="rez_cmp_local_text_label" stackId="3" startPc="268441049"/>
+        <entry endPc="268441258" name="rez_cmp_local_text_value" stackId="4" startPc="268441049"/>
+        <entry arg="true" endPc="268441479" name="dc" stackId="1" startPc="268441259"/>
+        <entry endPc="268441479" name="rez_cmp_local_custom_drawable_11824933295158922413" stackId="2" startPc="268441270"/>
+        <entry endPc="268441479" name="rez_cmp_local_text_label" stackId="3" startPc="268441270"/>
+        <entry endPc="268441479" name="rez_cmp_local_text_value" stackId="4" startPc="268441270"/>
+        <entry arg="true" endPc="268441698" name="dc" stackId="1" startPc="268441480"/>
+        <entry endPc="268441698" name="rez_cmp_local_custom_drawable_16380678501279751870" stackId="2" startPc="268441491"/>
+        <entry endPc="268441698" name="rez_cmp_local_text_label" stackId="3" startPc="268441491"/>
+        <entry endPc="268441698" name="rez_cmp_local_text_value" stackId="4" startPc="268441491"/>
+        <entry arg="true" endPc="268441917" name="dc" stackId="1" startPc="268441699"/>
+        <entry endPc="268441917" name="rez_cmp_local_custom_drawable_83741574912206153191" stackId="2" startPc="268441710"/>
+        <entry endPc="268441917" name="rez_cmp_local_text_label" stackId="3" startPc="268441710"/>
+        <entry endPc="268441917" name="rez_cmp_local_text_value" stackId="4" startPc="268441710"/>
+        <entry arg="true" endPc="268442204" name="dc" stackId="1" startPc="268441918"/>
+        <entry endPc="268442204" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268441929"/>
+        <entry endPc="268442204" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268441929"/>
+        <entry endPc="268442204" name="rez_cmp_local_custom_drawable_11939594661139614796" stackId="4" startPc="268441929"/>
+        <entry endPc="268442204" name="rez_cmp_local_text_label" stackId="5" startPc="268441929"/>
+        <entry endPc="268442204" name="rez_cmp_local_text_value" stackId="6" startPc="268441929"/>
     </localVars>
     <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B3843-00"/>
     <annotations>
@@ -697,11 +751,14 @@
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Arrow_60_white_315"/>
         <annotationEntry annotation="background" class="KomWayFieldService" module="globals" symbol="RETRY_INTERVAL"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Arrow_48_white_315"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="wind_units_mps"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Arrow_60_black_0"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Arrow_60_black_135"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Arrow_60_white_270"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Arrow_48_black_135"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="wind_units_kmh"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="wind_units_title"/>
         <annotationEntry annotation="background" class="KomWayFieldApp" module="globals" symbol="getServiceDelegate"/>
         <annotationEntry annotation="background" class="KomWayFieldApp" module="globals" symbol="loadLatestWeather"/>
         <annotationEntry annotation="background" class="KomWayFieldService" module="globals" symbol="initialize"/>
@@ -873,27 +930,27 @@
         <functionEntry accessMode="public" endPc="268438426" name="initialize" parent="KomWayFieldView" startPc="268438384">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440696" name="onUpdate" parent="KomWayFieldView" startPc="268438427">
+        <functionEntry accessMode="public" endPc="268441037" name="onUpdate" parent="KomWayFieldView" startPc="268438427">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440917" name="BottomRightLayout" parent="Layouts" startPc="268440697">
+        <functionEntry accessMode="public" endPc="268441258" name="BottomRightLayout" parent="Layouts" startPc="268441038">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441138" name="TopRightLayout" parent="Layouts" startPc="268440918">
+        <functionEntry accessMode="public" endPc="268441479" name="TopRightLayout" parent="Layouts" startPc="268441259">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441357" name="BottomLeftLayout" parent="Layouts" startPc="268441139">
+        <functionEntry accessMode="public" endPc="268441698" name="BottomLeftLayout" parent="Layouts" startPc="268441480">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441576" name="TopLeftLayout" parent="Layouts" startPc="268441358">
+        <functionEntry accessMode="public" endPc="268441917" name="TopLeftLayout" parent="Layouts" startPc="268441699">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441863" name="MainLayout" parent="Layouts" startPc="268441577">
+        <functionEntry accessMode="public" endPc="268442204" name="MainLayout" parent="Layouts" startPc="268441918">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

@@ -1,0 +1,26 @@
+<settings>
+    <!--Wind units settings -->
+    <setting propertyKey="@Properties.WIND_UNITS" title="@Strings.wind_units_title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.wind_units_kmh</listEntry>
+            <listEntry value="1">@Strings.wind_units_mps</listEntry>
+        </settingConfig>
+    </setting>
+
+    <!-- Smoothing settings -->
+    <setting propertyKey="@Properties.HEADING_SMOOTHING" title="@Strings.heading_smoothing_title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.heading_smoothing_low</listEntry>
+            <listEntry value="1">@Strings.heading_smoothing_medium</listEntry>
+            <listEntry value="2">@Strings.heading_smoothing_high</listEntry>
+        </settingConfig>
+    </setting>
+
+    <!-- Temperature units -->
+    <setting propertyKey="@Properties.TEMP_UNITS" title="@Strings.temp_units_title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.temp_units_celsius</listEntry>
+            <listEntry value="1">@Strings.temp_units_fahrenheit</listEntry>
+        </settingConfig>
+    </setting>
+</settings>
